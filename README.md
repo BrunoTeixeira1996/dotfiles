@@ -32,10 +32,17 @@ sudo apt-get install lightdm
 sudo reboot
 ```
 
-# Instal zsh
+# Instal chromium
+
+```
+apt install chromium chromium-l10n
+```
+
+# Instal omyzsh
 ```
 apt install zsh
 sudo chsh -s /bin/zsh brun0
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 nano ~/.zshrc
 ZSH_THEME="afowler"
 ```
