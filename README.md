@@ -32,6 +32,13 @@ sudo apt-get install i3 xorg i3-wm i3blocks
 sudo apt-get install lightdm
 ```
 
+# Instal zsh
+```
+apt install zsh
+nano ~/.zshrc
+ZSH_THEME="afowler"
+```
+
 # Instal xfce4
 ```
 apt install xfce4
