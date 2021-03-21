@@ -45,6 +45,10 @@ sudo chsh -s /bin/zsh brun0
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 nano ~/.zshrc
 ZSH_THEME="afowler"
+sudo aptitude install kitty
+chsh -s $(which zsh)
+sudo update-alternatives --config x-terminal-emulator
+and choose -> kitty
 ```
 
 # Instal xfce4
