@@ -2,7 +2,6 @@
 ```
 apt install aptitude
 aptitude install debian-archive-keyring
-aptitude install synaptic apt-xapian-index gdebi
 ```
 
 # Install sudo and add user to sudoers
