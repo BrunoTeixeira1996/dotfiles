@@ -7,7 +7,7 @@ aptitude install synaptic apt-xapian-index gdebi
 
 # Install sudo and add user to sudoers
 ```
-aptitude install sudo gksu
+apt install sudo
 adduser brun0 sudo
 ```
 
