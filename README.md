@@ -26,7 +26,8 @@ apt-get update && apt-get upgrade -y
 
 ## Instal i3 and lightdm
 ```
-sudo apt-get install i3 xorg i3status i3lock i3blocks dmenu
+sudo apt-get install xorg
+sudo apt-get install i3 i3status i3lock i3blocks dmenu
 sudo apt-get install lightdm
 sudo reboot
 ```
