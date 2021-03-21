@@ -35,6 +35,7 @@ sudo reboot
 # Instal zsh
 ```
 apt install zsh
+sudo chsh -s /bin/zsh brun0
 nano ~/.zshrc
 ZSH_THEME="afowler"
 ```
