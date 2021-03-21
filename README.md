@@ -27,6 +27,7 @@ apt-get update && apt-get upgrade -y
 ```
 sudo apt-get install i3 xorg i3-wm i3blocks
 sudo apt-get install lightdm
+sudo reboot
 ```
 
 # Instal zsh
