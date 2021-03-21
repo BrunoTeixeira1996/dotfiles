@@ -1,0 +1,5 @@
+2021/03/21-00:21:10.768 ac2 Reusing MANIFEST /home/brun0/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/03/21-00:22:04.226 add Level-0 table #5: started
+2021/03/21-00:22:04.231 add Level-0 table #5: 34997 bytes OK
+2021/03/21-00:22:04.232 add Delete type=0 #3
+2021/03/21-00:22:04.232 add Manual compaction at level-0 from (begin) .. (end); will stop at (end)
