@@ -1,14 +1,11 @@
-# Edit the ‘/etc/apt/sources.list’ file
 ```
-deb http://deb.debian.org/debian buster main contrib non-free
-deb-src http://deb.debian.org/debian buster main contrib non-free
-deb http://deb.debian.org/debian-security/ buster/updates main contrib non-free
-deb-src http://deb.debian.org/debian-security/ buster/updates main contrib non-free
+Git clone this repo and execute the ignition_key.sh script
+
+This script will do each command that has a number
+
+Commands without number means you have to do it manually
 ```
-## Update
-```
-apt-get update && apt-get upgrade -y
-```
+
 # Install sudo
 
 ```
@@ -28,20 +25,34 @@ nano /etc/sudoers and insert user ALL=(ALL:ALL) ALL
 apt install git
 ```
 
-# Setting the repositories
+
+#  Edit the ‘/etc/apt/sources.list’ file
+```
+deb http://deb.debian.org/debian buster main contrib non-free
+deb-src http://deb.debian.org/debian buster main contrib non-free
+deb http://deb.debian.org/debian-security/ buster/updates main contrib non-free
+deb-src http://deb.debian.org/debian-security/ buster/updates main contrib non-free
+```
+##  Update
+```
+apt-get update && apt-get upgrade -y
+```
+
+
+# 1 Setting the repositories
 ```
 apt install aptitude
 aptitude install debian-archive-keyring
 aptitude install synaptic apt-xapian-index gdebi
 ```
 
-# Install sudo and add user to sudoers
+# 2 Install sudo and add user to sudoers
 ```
 apt install sudo
 adduser brun0 sudo
 ```
 
-# Install i3
+# 3 Install i3
 
 ## Instal i3 and lightdm
 ```
@@ -51,7 +62,21 @@ sudo apt-get install lightdm
 sudo reboot
 ```
 
-# Instal chromium
+# 4 Instal xfce4
+```
+apt install xfce4
+```
+
+# 5 Install clipit
+```
+apt install clipit
+```
+# 6 Instal Numix theme
+```
+sudo aptitude install numix-gtk-theme numix-icon-theme
+```
+
+# 7 Instal chromium
 
 ```
 apt install chromium chromium-l10n
@@ -70,19 +95,7 @@ sudo update-alternatives --config x-terminal-emulator
 and choose -> kitty
 ```
 
-# Instal xfce4
-```
-apt install xfce4
-```
 
-# Install clipit
-```
-apt install clipit
-```
-# Instal Numix theme
-```
-sudo aptitude install numix-gtk-theme numix-icon-theme
-```
 
 # Inside i3
 ## Create ~/.config/.font, download SanFrancisco and place all  ttfs inside .font
