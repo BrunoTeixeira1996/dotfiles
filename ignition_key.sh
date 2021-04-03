@@ -56,13 +56,14 @@ dpkg --add-architecture i386
 GREEN "Installing xfce4\n"
 apt install xfce4
 
-#installing clipit
-GREEN "Installing clipit\n"
+#installing clipit and unzip
+GREEN "Installing clipit and unzip\n"
 apt install clipit
+apt install unzip
 
 #installing numix theme
 GREEN "Installing numix theme\n"
-aptitude install numix-gtk-theme numix-icon-theme
+apt install numix-gtk-theme numix-icon-theme
 
 #installing chromium
 GREEN "Installing chromium\n"
@@ -72,13 +73,13 @@ apt install chromium-l10n
 GREEN "Installing curl\n"
 apt install curl
 
-#installing zsh
+#installing ohmyzsh
 apt install zsh
-
-#installing ohmyzh
-#touch ~/.zshrc
-#sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+chsh -s /bin/zsh brun0
+#nano ~/.zshrc
+#ZSH_THEME="afowler"
+chsh -s $(which zsh)
 
 #installing i3
 GREEN "Installing i3\n"
