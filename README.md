@@ -1,13 +1,23 @@
-# Edit the ‘/etc/apt/sources.list’ file
 ```
-deb http://deb.debian.org/debian buster main contrib non-free
-deb-src http://deb.debian.org/debian buster main contrib non-free
-deb http://deb.debian.org/debian-security/ buster/updates main contrib non-free
-deb-src http://deb.debian.org/debian-security/ buster/updates main contrib non-free
+Git clone this repo and execute the ignition_key.sh script
+
+This script will do each command that has a number
+
+Commands without number means you have to do it manually
 ```
-## Update
+
+# Install sudo
+
 ```
-apt-get update && apt-get upgrade -y
+su -
+apt install sudo
+```
+
+# Add user to sudoers
+
+```
+sudo -
+nano /etc/sudoers and insert user ALL=(ALL:ALL) ALL
 ```
 
 # Install git
@@ -15,22 +25,36 @@ apt-get update && apt-get upgrade -y
 apt install git
 ```
 
-# Setting the repositories
+
+#  Edit the ‘/etc/apt/sources.list’ file
+```
+deb http://deb.debian.org/debian buster main contrib non-free
+deb-src http://deb.debian.org/debian buster main contrib non-free
+deb http://deb.debian.org/debian-security/ buster/updates main contrib non-free
+deb-src http://deb.debian.org/debian-security/ buster/updates main contrib non-free
+```
+##  Update
+```
+apt-get update && apt-get upgrade -y
+```
+
+
+# 1 Setting the repositories
 ```
 apt install aptitude
 aptitude install debian-archive-keyring
 aptitude install synaptic apt-xapian-index gdebi
 ```
 
-# Install sudo and add user to sudoers
+# 2 Install sudo and add user to sudoers
 ```
 apt install sudo
 adduser brun0 sudo
 ```
 
-# Install i3
+# 3 Install i3
 
-## Instal i3 and lightdm
+## Install i3 and lightdm
 ```
 sudo apt-get install xorg
 sudo apt-get install i3 i3status i3lock i3blocks dmenu
@@ -38,38 +62,36 @@ sudo apt-get install lightdm
 sudo reboot
 ```
 
-# Instal chromium
-
-```
-apt install chromium chromium-l10n
-```
-
-# Instal omyzsh
-```
-apt install zsh
-sudo chsh -s /bin/zsh brun0
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-nano ~/.zshrc
-ZSH_THEME="afowler"
-sudo aptitude install kitty
-chsh -s $(which zsh)
-sudo update-alternatives --config x-terminal-emulator
-and choose -> kitty
-```
-
-# Instal xfce4
+# 4 Install xfce4
 ```
 apt install xfce4
 ```
 
-# Install clipit
+# 5 Install clipit
 ```
 apt install clipit
 ```
-# Instal Numix theme
+# 6 Install Numix theme
 ```
 sudo aptitude install numix-gtk-theme numix-icon-theme
 ```
+
+# 7 Install chromium
+
+```
+apt install chromium chromium-l10n
+```
+# 8 Install ohmyzsh
+```
+apt install zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+chsh -s /bin/zsh brun0
+nano ~/.zshrc
+ZSH_THEME="afowler"
+chsh -s $(which zsh)
+```
+
+
 
 # Inside i3
 ## Create ~/.config/.font, download SanFrancisco and place all  ttfs inside .font
