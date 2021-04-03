@@ -54,7 +54,7 @@ adduser brun0 sudo
 
 # 3 Install i3
 
-## Instal i3 and lightdm
+## Install i3 and lightdm
 ```
 sudo apt-get install xorg
 sudo apt-get install i3 i3status i3lock i3blocks dmenu
@@ -62,7 +62,7 @@ sudo apt-get install lightdm
 sudo reboot
 ```
 
-# 4 Instal xfce4
+# 4 Install xfce4
 ```
 apt install xfce4
 ```
@@ -71,28 +71,24 @@ apt install xfce4
 ```
 apt install clipit
 ```
-# 6 Instal Numix theme
+# 6 Install Numix theme
 ```
 sudo aptitude install numix-gtk-theme numix-icon-theme
 ```
 
-# 7 Instal chromium
+# 7 Install chromium
 
 ```
 apt install chromium chromium-l10n
 ```
-
-# Instal omyzsh
+# 8 Install ohmyzsh
 ```
 apt install zsh
-sudo chsh -s /bin/zsh brun0
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+chsh -s /bin/zsh brun0
 nano ~/.zshrc
 ZSH_THEME="afowler"
-sudo aptitude install kitty
 chsh -s $(which zsh)
-sudo update-alternatives --config x-terminal-emulator
-and choose -> kitty
 ```
 
 
