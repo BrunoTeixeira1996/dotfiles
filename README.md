@@ -9,6 +9,19 @@ deb-src http://deb.debian.org/debian-security/ buster/updates main contrib non-f
 ```
 apt-get update && apt-get upgrade -y
 ```
+# Install sudo
+
+```
+su -
+apt install sudo
+```
+
+# Add user to sudoers
+
+```
+sudo -
+nano /etc/sudoers and insert user ALL=(ALL:ALL) ALL
+```
 
 # Install git
 ```
