@@ -1,3 +1,20 @@
+# Edit the ‘/etc/apt/sources.list’ file
+```
+deb http://deb.debian.org/debian buster main contrib non-free
+deb-src http://deb.debian.org/debian buster main contrib non-free
+deb http://deb.debian.org/debian-security/ buster/updates main contrib non-free
+deb-src http://deb.debian.org/debian-security/ buster/updates main contrib non-free
+```
+## Update
+```
+apt-get update && apt-get upgrade -y
+```
+
+# Install git
+```
+apt install git
+```
+
 # Setting the repositories
 ```
 apt install aptitude
@@ -12,17 +29,6 @@ adduser brun0 sudo
 ```
 
 # Install i3
-## Edit the ‘/etc/apt/sources.list’ file
-```
-deb http://deb.debian.org/debian buster main contrib non-free
-deb-src http://deb.debian.org/debian buster main contrib non-free
-deb http://deb.debian.org/debian-security/ buster/updates main contrib non-free
-deb-src http://deb.debian.org/debian-security/ buster/updates main contrib non-free
-```
-## Update
-```
-apt-get update && apt-get upgrade -y
-```
 
 ## Instal i3 and lightdm
 ```
