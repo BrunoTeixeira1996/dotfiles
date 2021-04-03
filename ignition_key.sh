@@ -87,3 +87,8 @@ apt install xorg
 apt install i3 i3status i3lock i3blocks dmenu
 apt install lightdm
 
+#installing lxappearance
+apt install lxappearance
+
+#installing fonts
+sudo apt install ttf-mscorefonts-installer ttf-dejavu fonts-hack-ttf fonts-font-awesome fonts-open-sans fonts-paratype
