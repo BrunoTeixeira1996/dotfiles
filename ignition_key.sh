@@ -64,13 +64,25 @@ apt install clipit
 GREEN "Installing numix theme\n"
 aptitude install numix-gtk-theme numix-icon-theme
 
+#installing chromium
+GREEN "Installing chromium\n"
+apt install chromium-l10n
+
+#installing curl
+GREEN "Installing curl\n"
+apt install curl
+
+#installing zsh
+apt install zsh
+
 #installing ohmyzh
 #touch ~/.zshrc
 #sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 
 #installing i3
-#apt install xorg
-#apt install i3 i3status i3lock i3blocks dmenu
-#apt install lightdm
+GREEN "Installing i3\n"
+apt install xorg
+apt install i3 i3status i3lock i3blocks dmenu
+apt install lightdm
 
