@@ -90,19 +90,16 @@ nano ~/.zshrc
 ZSH_THEME="afowler"
 chsh -s $(which zsh)
 ```
-
-
+# 9 Install fonts
+```
+sudo apt install ttf-mscorefonts-installer ttf-dejavu fonts-hack-ttf fonts-font-awesome fonts-open-sans fonts-paratype
+```
 
 # Inside i3
 ## Create ~/.config/.font, download SanFrancisco and place all  ttfs inside .font
 ```
 mkdir .font
 https://github.com/supermarin/YosemiteSanFranciscoFont
-```
-
-## Download FontAwesome and place all files inside .font
-```
-https://github.com/FortAwesome/Font-Awesome
 ```
 
 ## Create a script to resize Screen
