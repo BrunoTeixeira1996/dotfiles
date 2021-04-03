@@ -220,10 +220,10 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
-set $workspace1 "Terminal "
-set $workspace2 "Web "
-set $workspace3 "Code "
-set $workspace4 "Chat "
+set $workspace1 "1 Terminal "
+set $workspace2 "2 Web "
+set $workspace3 "3 Code "
+set $workspace4 "4 Chat "
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -283,7 +283,6 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-
 #Window colors and stuff
 set $bg-color            #2f343f
 set $inactive-bg-color   #2f343f
@@ -331,6 +330,7 @@ exec --no-startup-id xsetroot -solid "#333333"
 #Copy and paste
 exec --no-startup-id clipit
 ```
+
 # ~/.config/i3blocks.conf
 ```
 # i3blocks config file
