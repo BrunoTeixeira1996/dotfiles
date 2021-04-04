@@ -76,10 +76,7 @@ apt install curl
 #installing ohmyzsh
 apt install zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-chsh -s /bin/zsh brun0
-#nano ~/.zshrc
-#ZSH_THEME="afowler"
-chsh -s $(which zsh)
+
 
 #installing i3
 GREEN "Installing i3\n"
@@ -102,3 +99,9 @@ apt install emacs
 GREEN "Installing python3 pip"
 apt install python3-pip
 apt update
+
+#making zsh default shell
+chsh -s /bin/zsh brun0
+#nano ~/.zshrc
+#ZSH_THEME="afowler"
+chsh -s $(which zsh)
