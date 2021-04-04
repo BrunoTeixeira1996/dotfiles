@@ -360,7 +360,7 @@ exec --no-startup-id clipit
 # The top properties below are applied to every block, but can be overridden.
 # Each block command defaults to the script name to avoid boilerplate.
 command=/usr/share/i3blocks/$BLOCK_NAME
-separator_block_width=15
+separator_block_width=10
 markup=none
 
 
@@ -368,15 +368,15 @@ markup=none
 #
 # The type defaults to "mem" if the instance is not specified.
 [memory]
-separator=false
+label=
+separator=true
 interval=30
-label= 
 
-[memory]
-label=
-instance=swap
-separator=false
-interval=30
+#[memory]
+#label=SWAP
+#instance=swap
+#separator=false
+#interval=30
 
 # Disk usage
 #
@@ -384,29 +384,72 @@ interval=30
 # The script may be called with a optional argument to set the alert
 # (defaults to 10 for 10%).
 [disk]
-label=
-#instance=/mnt/data
+label=
 interval=30
 
+# Network interface monitoring
+#
+# If the instance is not specified, use the interface used for default route.
+# The address can be forced to IPv4 or IPv6 with -4 or -6 switches.
+# [iface]
+# #instance=wlan0
+# color=#00FF00
+# interval=10
+# separator=false
+
+#[wifi]
+#label=
+# color=#CCCCFF
+#instance=wlp2s0
+#interval=1
+#separator=true
+
+#[bandwidth]
+#instance=wlp3s0
+#interval=5
 
 # CPU usage
 #
 # The script may be called with -w and -c switches to specify thresholds,
 # see the script for details.
 [cpu_usage]
-label=
+label=
 interval=10
-min_width=CPU: 100.00%
-#separator=false
+min_width= 100%
+separator=true
 
 #[load_average]
 #interval=10
 
+#[mail]
+#color=#FFEEEE
+#label=
+#command=sh /home/sahib/bin/mail-count-new.sh
+#interval=60
+
+#[pacman]
+#color=#FFEE00
+#label=
+#command=date '+%Y-%m-%d %H:%M:%S'
+#command=checkupdates | wc -l
+#interval=60
+
+
+# The battery instance defaults to 0.
+#[battery]
+#color=#99FFCC
+# ⚡
+#label=
+#instance=0
+#interval=30
 
 # Date Time
 #
 [time]
-command=date '+%d-%m-%Y %H:%M:%S'
-interval=1
+#color=#FFCCCC
 label=
+command=date '+%Y-%m-%d %H:%M:%S'
+#command=date '+%H:%M '
+interval=1
+
 ```
