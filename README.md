@@ -131,7 +131,7 @@ sudo apt install ttf-mscorefonts-installer ttf-dejavu fonts-hack-ttf fonts-font-
 
 ```
 apt install emacs
-git clone https://github.com/BrunoTeixeira1996/my_emacs_configs
+cd doftfiles/emacs
 cp -r * ~/.emacs.d
 ```
 

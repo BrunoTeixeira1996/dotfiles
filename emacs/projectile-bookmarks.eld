@@ -1,0 +1,1 @@
+("~/.emacs.d/" "~/Desktop/universidade/2ºAno/2ºSemestre/CE/CE_2020_21/" "~/Desktop/brun0 Stuff/Org-mode-Configs/" "~/Desktop/universidade/2ºAno/1ºSemestre/IIA/TP-2/IIA-TP2/" "~/Desktop/brun0 Stuff/random_bots/" "~/Desktop/universidade/2ºAno/1ºSemestre/IIA/codigo_pratica/ficha8_2/codigo/")
