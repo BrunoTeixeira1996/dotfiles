@@ -1,3 +1,36 @@
+# TODO
+```
+Install Thunderbird
+https://vitux.com/thunderbird_gmail/
+
+Install Zoom
+https://support.zoom.us/hc/en-us/articles/204206269-Installing-or-updating-Zoom-on-Linux
+
+Install Telegram
+https://portaldosaber.net/2017/09/como-instalar-o-telegram-desktop-no-debian/
+
+Install Obs
+https://vitux.com/how-to-install-obs-screen-recording-software-on-debian-10/
+
+Install Xournalpp
+https://xournalpp.github.io/installation/linux/
+
+Install Wireshark
+https://linuxhint.com/install_wireshark_debian/
+
+Install VisualStudio Code
+https://linuxize.com/post/how-to-install-visual-studio-code-on-debian-10/
+
+Install Anydesk
+https://computingforgeeks.com/how-to-install-anydesk-on-debian-10-buster/
+
+Install WireGuard and Configure the connection
+https://linuxize.com/post/how-to-set-up-wireguard-vpn-on-debian-10/
+
+```
+
+# Instruction
+
 ```
 > Git clone this repo and execute the ignition_key.sh script or just do it manually
 > This script will do each command that has a number
