@@ -29,9 +29,10 @@ deb http://deb.debian.org/debian-security/ buster/updates main contrib non-free
 deb-src http://deb.debian.org/debian-security/ buster/updates main contrib non-free
 ```
 ##  Update
+
 ```
-apt update
 apt upgrade
+apt update
 ```
 
 # Install git
