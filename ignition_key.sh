@@ -35,14 +35,14 @@ adduser brun0 sudo
 
 
 #edit the '/etc/apt/sources.list
-GREEN "Editing the '/etc/apt/sources.list'\n"
-cp /etc/apt/sources.list /etc/apt/sources.list.backup
-sed -i '/deb cdrom*/d' /etc/apt/sources.list
-sh -c "echo 'deb http://deb.debian.org/debian buster main contrib non-free' >> /etc/apt/sources.list"
-sh -c "echo 'deb-src http://deb.debian.org/debian buster main contrib non-free' >> /etc/apt/sources.list"
-sh -c "echo 'deb http://deb.debian.org/debian-security buster/updates main contrib non-free' >> /etc/apt/sources.list"
-sh -c "echo 'deb-src http://deb.debian.org/debian-security buster/updates main contrib non-free' >> /etc/apt/sources.list"
-apt update && apt upgrade -y
+#GREEN "Editing the '/etc/apt/sources.list'\n"
+#cp /etc/apt/sources.list /etc/apt/sources.list.backup
+#sed -i '/deb cdrom*/d' /etc/apt/sources.list
+#sh -c "echo 'deb http://deb.debian.org/debian buster main contrib non-free' >> /etc/apt/sources.list"
+#sh -c "echo 'deb-src http://deb.debian.org/debian buster main contrib non-free' >> /etc/apt/sources.list"
+#sh -c "echo 'deb http://deb.debian.org/debian-security buster/updates main contrib non-free' >> /etc/apt/sources.list"
+#sh -c "echo 'deb-src http://deb.debian.org/debian-security buster/updates main contrib non-free' >> /etc/apt/sources.list"
+#apt update && apt upgrade -y
 
 
 #installing the firmware
