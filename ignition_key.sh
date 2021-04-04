@@ -97,3 +97,8 @@ sudo apt install ttf-mscorefonts-installer ttf-dejavu fonts-hack-ttf fonts-font-
 GREEN "Installing emacs\n"
 apt update
 apt install emacs
+
+#installing python3 pip
+GREEN "Installing python3 pip"
+apt install python3-pip
+apt update
