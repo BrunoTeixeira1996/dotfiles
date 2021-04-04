@@ -18,6 +18,7 @@ apt install sudo
 ```
 su -
 adduser brun0 sudo
+reboot
 ```
 
 #  Edit the ‘/etc/apt/sources.list’ file
