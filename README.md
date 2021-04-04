@@ -94,6 +94,13 @@ sudo update-alternatives --config x-terminal-emulator and choose kitty , then re
 ```
 sudo apt install ttf-mscorefonts-installer ttf-dejavu fonts-hack-ttf fonts-font-awesome fonts-open-sans fonts-paratype
 ```
+# 9 Install Emacs
+
+```
+apt install emacs
+git clone https://github.com/BrunoTeixeira1996/my_emacs_configs
+cp -r * ~/.emacs.d
+```
 
 # Inside i3
 ## Create ~/.config/.font, download SanFrancisco and place all  ttfs inside .font
