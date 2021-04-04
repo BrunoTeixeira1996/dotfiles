@@ -92,3 +92,8 @@ apt install lxappearance
 
 #installing fonts
 sudo apt install ttf-mscorefonts-installer ttf-dejavu fonts-hack-ttf fonts-font-awesome fonts-open-sans fonts-paratype
+
+#installing emacs
+GREEN "Installing emacs\n"
+apt update
+apt install emacs
