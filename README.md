@@ -16,8 +16,8 @@ apt install sudo
 # Add user to sudoers
 
 ```
-sudo -
-nano /etc/sudoers and insert user ALL=(ALL:ALL) ALL
+su -
+adduser brun0 sudo
 ```
 
 # Install git
@@ -46,13 +46,7 @@ aptitude install debian-archive-keyring
 aptitude install synaptic apt-xapian-index gdebi
 ```
 
-# 2 Install sudo and add user to sudoers
-```
-apt install sudo
-adduser brun0 sudo
-```
-
-# 3 Install i3
+# 2 Install i3
 
 ## Install i3 and lightdm
 ```
@@ -62,26 +56,26 @@ sudo apt-get install lightdm
 sudo reboot
 ```
 
-# 4 Install xfce4
+# 3 Install xfce4
 ```
 apt install xfce4
 ```
 
-# 5 Install clipit
+# 4 Install clipit
 ```
 apt install clipit
 ```
-# 6 Install Numix theme
+# 5 Install Numix theme
 ```
 sudo aptitude install numix-gtk-theme numix-icon-theme
 ```
 
-# 7 Install chromium
+# 6 Install chromium
 
 ```
 apt install chromium chromium-l10n
 ```
-# 8 Install ohmyzsh
+# 7 Install ohmyzsh
 ```
 apt install zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -90,7 +84,7 @@ nano ~/.zshrc
 ZSH_THEME="afowler"
 chsh -s $(which zsh)
 ```
-# 9 Install fonts
+# 8 Install fonts
 ```
 sudo apt install ttf-mscorefonts-installer ttf-dejavu fonts-hack-ttf fonts-font-awesome fonts-open-sans fonts-paratype
 ```
