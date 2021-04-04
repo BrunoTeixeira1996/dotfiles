@@ -329,6 +329,9 @@ exec --no-startup-id xsetroot -solid "#333333"
 
 #Copy and paste
 exec --no-startup-id clipit
+
+#Resize screen
+exec --no-startup-id /home/brun0/dotfiles/screen_resize.sh
 ```
 
 # ~/.config/i3blocks.conf
