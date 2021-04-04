@@ -20,12 +20,6 @@ su -
 adduser brun0 sudo
 ```
 
-# Install git
-```
-apt install git
-```
-
-
 #  Edit the ‘/etc/apt/sources.list’ file
 ```
 deb http://deb.debian.org/debian buster main contrib non-free
@@ -36,6 +30,12 @@ deb-src http://deb.debian.org/debian-security/ buster/updates main contrib non-f
 ##  Update
 ```
 apt-get update && apt-get upgrade
+```
+
+# Install git
+```
+apt install git
+and git clone this repo ... then just execute ignition_key.sh
 ```
 
 
