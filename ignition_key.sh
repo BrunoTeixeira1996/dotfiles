@@ -73,10 +73,10 @@ apt install chromium-l10n
 GREEN "Installing curl\n"
 apt install curl
 
-#installing ohmyzsh
+#installing ohmyzsh and kitty
 apt install zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
+apt install kitty
 
 #installing i3
 GREEN "Installing i3\n"
