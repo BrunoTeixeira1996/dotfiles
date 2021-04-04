@@ -84,12 +84,38 @@ apt install chromium chromium-l10n
 apt install zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 apt install kitty
-chsh -s /bin/zsh brun0
+create the brun0.zsh-theme inside .oh-my-zsh/themes
 nano ~/.zshrc
-ZSH_THEME="afowler"
+ZSH_THEME="brun0"
 chsh -s $(which zsh)
 sudo update-alternatives --config x-terminal-emulator and choose kitty , then reboot
 ```
+
+# brun0.zsh-theme
+```
+eval my_yellow='$FG[011]'
+eval my_green='$FG[022]'
+eval my_git_blue='$FG[006]'
+eval my_red='$FG[009]'
+eval my_orange='$FG[130]'
+
+
+# the svn plugin has to be activated for this to work.
+local ret_status="%(?:%{$my_yellow%} ➜:%{$fg_bold[red]%} ➜%s )"
+
+PROMPT='${ret_status}%{$my_yellow%} %{$fg_bold[cyan]%}%c %{$my_git_blue%}$(git_prompt_info)%{$my_git_blue%}$(svn_prompt_info)%{$reset_color%}'
+
+
+
+ZSH_THEME_GIT_PROMPT_PREFIX="git:(%{$my_yellow%}"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$my_git_blue%})%{$fg[yellow]%} ✗ %{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$my_git_blue%}) "
+
+ZSH_PROMPT_BASE_COLOR="%{$fg_bold[blue]%}"
+ZSH_THEME_REPO_NAME_COLOR="%{$fg_bold[red]%}"
+```
+
 # 8 Install fonts
 ```
 sudo apt install ttf-mscorefonts-installer ttf-dejavu fonts-hack-ttf fonts-font-awesome fonts-open-sans fonts-paratype
