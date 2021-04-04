@@ -27,6 +27,12 @@ https://computingforgeeks.com/how-to-install-anydesk-on-debian-10-buster/
 Install WireGuard and Configure the connection
 https://linuxize.com/post/how-to-set-up-wireguard-vpn-on-debian-10/
 
+Install Flameshot
+https://kathirvelrajendran.wordpress.com/2019/07/27/how-to-install-the-flameshot-screen-capture-tool-in-debian-10buster/
+
+Install TeamSpeak
+https://linuxhint.com/install-teamspeak-debian-10/
+
 ```
 
 # Instruction
