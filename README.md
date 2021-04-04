@@ -35,7 +35,7 @@ deb-src http://deb.debian.org/debian-security/ buster/updates main contrib non-f
 ```
 ##  Update
 ```
-apt-get update && apt-get upgrade -y
+apt-get update && apt-get upgrade
 ```
 
 
