@@ -79,13 +79,16 @@ sudo aptitude install numix-gtk-theme numix-icon-theme
 apt install chromium chromium-l10n
 ```
 # 7 Install ohmyzsh
+
 ```
 apt install zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+apt install kitty
 chsh -s /bin/zsh brun0
 nano ~/.zshrc
 ZSH_THEME="afowler"
 chsh -s $(which zsh)
+sudo update-alternatives --config x-terminal-emulator and choose kitty , then reboot
 ```
 # 8 Install fonts
 ```
