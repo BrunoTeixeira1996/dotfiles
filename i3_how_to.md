@@ -113,14 +113,30 @@ sudo apt install ttf-mscorefonts-installer ttf-dejavu fonts-hack-ttf fonts-font-
 ## Install basic utilities
 
 ```
+apt install terminator
 apt install git
-.... TODO
+apt install thunderbird
+apt install wireguard
+apt install flameshot
+wget https://zoom.us/client/latest/zoom_amd64.deb
+apt install ./zoom_amd64.deb
 ```
+
+### Manually download basic utilities
+
+* Telegram
+* Xournalpp
+* TeamSpeak
+* Visual Studio Code
+* Discord
+* Slack
+* Oracle Virtual Box
 
 ## Install Emacs
 
 ```
 apt install emacs
+Open emacs and close it to automatic create the .emacs.d folder
 cd doftfiles/emacs
 cp -r * ~/.emacs.d
 ```
