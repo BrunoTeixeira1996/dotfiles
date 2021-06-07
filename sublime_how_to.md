@@ -26,3 +26,19 @@ sudo apt upgrade
 > Save everything, restart sublime
 
 > Open a `tex` file and compile using `Ctrl + B`
+
+## User Settings
+
+{
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
+	"font_size": 14,
+	"font_face" : "inconsolata",
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"theme": "Afterglow-blue.sublime-theme",
+	"sidebar_no_icon": false,
+	"tabs_small": true,
+
+}
