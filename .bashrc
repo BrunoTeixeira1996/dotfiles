@@ -47,12 +47,12 @@ esac
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
-	# We have color support; assume it's compliant with Ecma-48
-	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
-	# a case would tend to support setf rather than setaf.)
-	color_prompt=yes
+    # We have color support; assume it's compliant with Ecma-48
+    # (ISO/IEC-6429). (Lack of such support is extremely rare, and such
+    # a case would tend to support setf rather than setaf.)
+    color_prompt=yes
     else
-	color_prompt=
+    color_prompt=
     fi
 fi
 
@@ -125,7 +125,27 @@ wtr () {
 
 # alias to git add, git commit and git push
 acp (){
-	git add -A && git commit -m "$1" && git push
+    git add -A && git commit -m "$1" && git push
+}
+
+# alias to use cht.sh for python help
+chtp(){
+    curl cht.sh/python/"$1"
+}
+
+# alias to use cht.sh for c help
+chtc(){
+    curl cht.sh/c/"$1"
+}
+
+# alias to use cht.sh for c# help
+chtc#(){
+    curl cht.sh/csharp/"$1"
+}
+
+# alias to use cht.sh in general
+cht(){
+    curl cht.sh/"$1"
 }
 
 # alias to backup Desktop folder to external hdd
