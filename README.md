@@ -1,3 +1,3 @@
 # README
 
-This are my dotfiles
+my dotfiles

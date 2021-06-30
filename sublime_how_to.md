@@ -17,18 +17,19 @@ sudo apt upgrade
 ```
 
 
-> Install sublime package control
+* Install sublime package control
 
-> Go to package control `Ctrl + Shift + P` then type `install package` then install `latextools`
+* Go to package control (`Ctrl + Shift + P`) then type `install package` then install `latextools`
 
-> Go to `Preferences > Package Settings > LatexTools > Settings-User` and change `"builder"` from `traditional` to `simple`
+*  Go to `Preferences > Package Settings > LatexTools > Settings-User` and change `"builder"` from `traditional` to `simple`
 
-> Save everything, restart sublime
+* Save everything, and restart sublime
 
-> Open a `tex` file and compile using `Ctrl + B`
+* Open a `.tex` file and compile using `Ctrl + B`
 
 ## User Settings
 
+```json
 {
 	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
 	"font_size": 14,
@@ -42,3 +43,10 @@ sudo apt upgrade
 	"tabs_small": true,
 
 }
+```
+
+
+## Themes
+
+* Monokai
+* Darkula
