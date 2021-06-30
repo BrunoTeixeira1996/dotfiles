@@ -46,6 +46,13 @@ sudo apt-get install lightdm
 aptitude install -t testing xfce4
 ```
 
+## Install inconsolata
+
+```
+sudo apt-get install ttf-inconsolata
+sudo fc-cache -fv
+```
+
 ## Install Emacs
 
 ```
