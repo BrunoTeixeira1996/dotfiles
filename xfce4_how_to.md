@@ -3,14 +3,14 @@
 
 ## Install sudo
 
-```
+```bash
 su -
 apt install sudo
 ```
 
 ## Add user to sudoers
 
-```
+```bash
 su -
 adduser brun0 sudo
 reboot
@@ -24,7 +24,7 @@ reboot
 
 ## Install Aptitude, synaptic and update
 
-```
+```bash
 apt intall aptitude
 aptitude install debian-archive-keyring
 aptitude install synaptic
@@ -34,7 +34,7 @@ apt update
 
 ## Install lightdm
 
-```
+```bash
 sudo apt-get install lightdm
 ```
 
@@ -42,25 +42,51 @@ sudo apt-get install lightdm
 
 * Since we are using debian 10 stable (buster) then we need to install xfce4.16 from backports
 
-```
+```bash
 aptitude install -t testing xfce4
 ```
 
 ## Install inconsolata
 
-```
+```bash
 sudo apt-get install ttf-inconsolata
 sudo fc-cache -fv
 ```
 
 ## Install Emacs
 
-```
+```bash
 apt install emacs
 Open emacs and close it to automatic create the .emacs.d folder
 cd doftfiles/emacs
 cp -r * ~/.emacs.d
 ```
+
+## Install autorandr
+
+```bash
+pip3 install autorandr
+```
+
+* Run the dual monitor script (external monitor on left)
+
+```bash
+#!/bin/sh
+xrandr --output HDMI-2 --mode 1600x900 --pos 0x0 --rotate normal --output HDMI-1 --off --output DP-1 --off --output eDP-1 --primary --mode 1920x1080 --pos 1600x0 --rotate normal --output DP-2 --off
+```
+
+* Save the configuration with autorandr
+
+```bash
+autorandr --save brun0-left-external-monitor
+```
+
+* Then to apply in the future, just run 
+
+```bash
+monitor
+```
+
 
 ## Configure bashrc
 
