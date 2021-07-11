@@ -149,7 +149,5 @@ alias backup='sudo /home/brun0/Desktop/brun0_Stuff/personal_backup.sh'
 alias ports='netstat -tulnap'
 # update everything
 alias update='sudo apt update && sudo apt upgrade' 
-# use sublime instead of nano
-alias nano='subl'
 # adjust with second monitor
 alias monitor='autorandr --load brun0-left-external-monitor'

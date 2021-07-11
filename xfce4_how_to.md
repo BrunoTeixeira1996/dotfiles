@@ -92,6 +92,14 @@ monitor
 
 * Just copy and paste .bashrc file from this repo to the host machine
 
+## Install and configure newsboat RSS Feed
+
+```bash
+sudo apt install newsboat
+```
+
+* And then copy and paste .newsboat folder
+
 
 ## Install basic utilities
 
@@ -115,6 +123,7 @@ monitor
 * eog
 * VLC
 * Chrome
+* uLancher
 
 ## Configure terminator
 
