@@ -35,7 +35,7 @@ apt update
 ## Install lightdm
 
 ```bash
-sudo apt-get install lightdm
+sudo aptitude install lightdm
 ```
 
 ## Configure bashrc
@@ -53,7 +53,7 @@ aptitude install -t testing xfce4
 ## Install inconsolata
 
 ```bash
-sudo apt-get install ttf-inconsolata
+sudo aptitude install ttf-inconsolata
 sudo fc-cache -fv
 ```
 
