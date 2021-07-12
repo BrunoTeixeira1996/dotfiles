@@ -32,6 +32,12 @@ apt upgrade
 apt update
 ```
 
+## Install Wifi Firmware
+
+```bash
+aptitude install firmware-realtek firmware-iwlwifi
+```
+
 ## Install lightdm
 
 ```bash
@@ -137,6 +143,7 @@ sudo apt install newsboat
 * VLC
 * Chrome
 * uLancher
+* cURL
 
 ## Configure terminator
 
