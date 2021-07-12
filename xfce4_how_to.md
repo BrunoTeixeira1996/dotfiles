@@ -38,6 +38,10 @@ apt update
 sudo apt-get install lightdm
 ```
 
+## Configure bashrc
+
+* Just copy and paste .bashrc file from this repo to the host machine
+
 ## Install xfce4.16 
 
 * Since we are using debian 10 stable (buster) then we need to install xfce4.16 from backports
@@ -51,6 +55,19 @@ aptitude install -t testing xfce4
 ```bash
 sudo apt-get install ttf-inconsolata
 sudo fc-cache -fv
+```
+
+## Install Numix theme
+
+```bash
+sudo aptitude install numix-gtk-theme numix-icon-theme
+```
+
+* Create a file named `settings.ini` in `~/.config/gtk-3.0/` using the following contents for a dark numix theme
+
+```bash
+[Settings]
+gtk-application-prefer-dark-theme=1
 ```
 
 ## Install Emacs
@@ -88,17 +105,13 @@ monitor
 ```
 
 
-## Configure bashrc
-
-* Just copy and paste .bashrc file from this repo to the host machine
-
 ## Install and configure newsboat RSS Feed
 
 ```bash
 sudo apt install newsboat
 ```
 
-* And then copy and paste .newsboat folder
+* And then copy and paste `.newsboat` folder
 
 
 ## Install basic utilities

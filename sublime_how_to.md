@@ -3,7 +3,7 @@
 
 ## Themes
 
-`Afterglow-blue-sublime-theme` for the UI
+`Numix` for the UI
 `Darkula` for the UI:Color Scheme
 
 ## Tools for latex in linux
@@ -31,14 +31,14 @@ sudo apt upgrade
 
 ```json
 {
-	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
-	"font_size": 14,
+	"color_scheme": "Packages/Darkula Color Scheme/darkula.tmTheme",
+	"font_size": 17,
 	"font_face" : "inconsolata",
 	"ignored_packages":
 	[
 		"Vintage",
 	],
-	"theme": "Afterglow-blue.sublime-theme",
+	"theme": "Numix Dark.sublime-theme",
 	"sidebar_no_icon": false,
 	"tabs_small": true,
 
@@ -50,3 +50,4 @@ sudo apt upgrade
 
 * Monokai
 * Darkula
+* Numix
