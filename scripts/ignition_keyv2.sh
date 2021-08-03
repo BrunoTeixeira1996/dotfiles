@@ -132,17 +132,18 @@ GREEN "Installing oracle virtual box ... \n"
 GREEN "Installing firefox and chrome ... \n"
 #TODO
 
-# install and configure remmina
-GREEN "Installing and configuring remmina ... \n"
-#TODO
+# install remmina
+GREEN "Installing remmina ... \n"
+apt install remmina
 
 # install obs
 GREEN "Installing obs ... \n"
-#TODO
+apt install obs-studio
 
 # install okular
 GREEN "Installing okular ... \n"
-#TODO
+apt install okular
+
 
 # install eog
 GREEN "Installing eog ... \n"
@@ -150,7 +151,8 @@ apt install eog
 
 # install vlc
 GREEN "Installing vlc ... \n"
-#TODO
+apt install vlc
+
 
 # install uLancher
 GREEN "Installing uLancher ... \n"
