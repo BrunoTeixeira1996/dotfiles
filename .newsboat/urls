@@ -1,5 +1,10 @@
+
 "query:Unread Articles:unread = \"yes\""
+
 https://www.dwarmstrong.org/feed.xml "~blog/Dwarmstrong"
+https://0xdf.gitlab.io/feed.xml "~infosec/0xdf"
+
+
 
 https://www.reddit.com/r/linux.rss "~reddit/Linux"
 https://www.reddit.com/r/vmware.rss "~reddit/Vmware"
@@ -16,4 +21,5 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UClcE-kVhqyiHCcjYwcpfj9w "~y
 https://www.youtube.com/feeds/videos.xml?channel_id=UCVeW9qkBjo3zosnqUbG7CFw "~youtube/JohnHammond"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC4JX40jDee_tINbkjycV4Sg "~youtube/TechWithTim"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCfzlCWGWYyIQ0aLC5w48gBQ "~youtube/Sentdex"
+
 https://www.youtube.com/feeds/videos.xml?channel_id=UCW6MNdOsqv2E9AjQkv9we7A "~youtube/PwnFunction"

@@ -144,6 +144,7 @@ sudo apt install newsboat
 * Chrome
 * uLancher
 * cURL
+* xclip
 
 ## Configure terminator
 
