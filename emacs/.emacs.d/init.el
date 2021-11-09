@@ -133,3 +133,5 @@
 ;; magit
 
 ;; something.... 
+
+;; now i am dev
