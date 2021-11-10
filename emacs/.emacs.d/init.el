@@ -121,17 +121,9 @@
 
 ;; for latex mode
 ;; sudo apt install texlive-formats-extra -> required
-(add-hook 'LaTeX-mode-hook 'linum-mode)
+;; to compile just do C c C c and type latex
 (eval-after-load "tex"
   '(progn
      (setq TeX-view-program-list '(("Evince" "evince --page-index=%(outpage) %o")))
      ;(add-to-list 'TeX-command-list '("View" "evince %g" TeX-run-command nil t :help "Run evince on your document"))
      (setq TeX-view-program-selection '((output-pdf "Evince")))))
-
-
-;; TODO
-;; magit
-
-;; something....
-
-;; brun0000
