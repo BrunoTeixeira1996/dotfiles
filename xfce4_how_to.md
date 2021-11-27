@@ -19,7 +19,7 @@ reboot
 ## Edit sources lists
 
 ```
-> Copy the etc/apt files and folders to /etc/apt
+Copy the /etc/apt files and folders to /etc/apt
 ```
 
 ## Install Aptitude, synaptic and update
@@ -110,7 +110,6 @@ autorandr --save brun0-left-external-monitor
 monitor
 ```
 
-
 ## Install and configure newsboat RSS Feed
 
 ```bash
@@ -145,6 +144,7 @@ sudo apt install newsboat
 * uLancher
 * cURL
 * xclip
+* tmux
 
 ## Configure terminator
 
@@ -178,3 +178,11 @@ sudo apt install newsboat
       parent = window0
 [plugins]
 ```
+
+## Configure tmux
+
+* Create a new file in `~/.tmux.conf` and paste configs from `.tmux.conf` file from this repo
+
+## Configure xfce4-terminal
+
+* Navigate to `~/.config/xfce4/terminal/terminalrc` and paste configs from `xfce4-terminal-configs` file from this repo
