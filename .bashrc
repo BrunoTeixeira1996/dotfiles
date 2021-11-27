@@ -163,3 +163,6 @@ alias update='sudo apt update && sudo apt upgrade'
 alias monitor='autorandr --load brun0-left-external-monitor'
 # alias to make xclip easier by copying to the clipboard
 alias xclip='xclip -selection clipboard'
+
+# Disables Ctrl-S block in the terminal
+stty -ixon
