@@ -41,7 +41,7 @@ adduser brun0 sudo
 
 # edit apt sourcelists
 GREEN "Editing apt sourcelists ... \n"
-#TODO
+
 
 
 # install wifi firmware
@@ -54,7 +54,7 @@ aptitude install lightdm
 
 # edit .bashrc
 GREEN "Editing .bashrc ... \n"
-#TODO
+
 
 # install font (incosolata)
 GREEN "Installing font (incosolata) ... \n"
@@ -63,7 +63,7 @@ fc-cache -fv
 
 # install and configure numix theme 
 GREEN "Installing and configuring numix theme ... \n"
-#TODO
+
 
 # install autorandr
 GREEN "Installing autorandr ... \n"
@@ -72,23 +72,23 @@ pip3 install autorandr
 
 # create the dual monitor script
 GREEN "Creating dual monitor script ... \n"
-#TODO
+
 
 # install and configure newsboat
 GREEN "Installing and configuring newsboat ... \n"
-#TODO
+
 
 # install and configure terminator
 GREEN "Installing and configuring terminator ... \n"
-#TODO
+
 
 # install thunderbird
 GREEN "Installing thunderbird ... \n"
-#TODO
+
 
 # install and configure wireguard
 GREEN "Installing and configuring wireguard ... \n"
-#TODO
+
 
 # install flameshot
 GREEN "Installing flameshot ... \n"
@@ -97,32 +97,32 @@ apt install flameshot
 
 # install zoom
 GREEN "Installing zoom ... \n"
-#TODO
+
 
 # install telegram
 GREEN "Installing telegram ... \n"
-#TODO
+
 
 
 # install xournalpp
 GREEN "Installing xournalpp ... \n"
-#TODO
+
 
 # install discord
 GREEN "Installing discord ... \n"
-#TODO
+
 
 # install slack
 GREEN "Installing slack ... \n"
-#TODO
+
 
 # install oracle virtual box
 GREEN "Installing oracle virtual box ... \n"
-#TODO
+
 
 # install firefox and chrome
 GREEN "Installing firefox and chrome ... \n"
-#TODO
+
 
 # install remmina
 GREEN "Installing remmina ... \n"
@@ -143,7 +143,7 @@ apt install vlc
 
 # install uLancher
 GREEN "Installing uLancher ... \n"
-#TODO
+
 
 # install cURL
 GREEN "Installing cURL ... \n"
