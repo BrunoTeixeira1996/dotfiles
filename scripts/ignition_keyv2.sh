@@ -6,12 +6,12 @@ RED=`tput bold && tput setaf 1`
 NC=`tput sgr0`
 
 function RED(){
-	echo -e "\n${RED}${1}${NC}"
+    echo -e "\n${RED}${1}${NC}"
 }
 
 
 function GREEN(){
-	echo -e "\n${GREEN}${1}${NC}"
+    echo -e "\n${GREEN}${1}${NC}"
 }
 
 #testing if root
@@ -104,16 +104,8 @@ GREEN "Installing telegram ... \n"
 #TODO
 
 
-# install and configure sublimetext
-GREEN "Installing and configuring sublimetext ... \n"
-#TODO
-
 # install xournalpp
 GREEN "Installing xournalpp ... \n"
-#TODO
-
-# install teamspeak
-GREEN "Installing teamspeak ... \n"
 #TODO
 
 # install discord
@@ -136,14 +128,9 @@ GREEN "Installing firefox and chrome ... \n"
 GREEN "Installing remmina ... \n"
 apt install remmina
 
-# install obs
-GREEN "Installing obs ... \n"
-apt install obs-studio
-
 # install okular
 GREEN "Installing okular ... \n"
 apt install okular
-
 
 # install eog
 GREEN "Installing eog ... \n"
@@ -165,3 +152,11 @@ apt install curl
 # install xclip
 GREEN "Installing xclip ... \n"
 apt install xlcip
+
+# TODO Hack Font
+# install fonts
+GREEN "Installing fonts ... \n"
+
+# TODO
+# install and configure tmux
+GREEN "Installing tmux ... \n"
