@@ -47,12 +47,12 @@ esac
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
-    # We have color support; assume it's compliant with Ecma-48
-    # (ISO/IEC-6429). (Lack of such support is extremely rare, and such
-    # a case would tend to support setf rather than setaf.)
-    color_prompt=yes
+	# We have color support; assume it's compliant with Ecma-48
+	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
+	# a case would tend to support setf rather than setaf.)
+	color_prompt=yes
     else
-    color_prompt=
+	color_prompt=
     fi
 fi
 
@@ -163,6 +163,8 @@ alias update='sudo apt update && sudo apt upgrade'
 alias monitor='autorandr --load brun0-left-external-monitor'
 # alias to make xclip easier by copying to the clipboard
 alias xclip='xclip -selection clipboard'
+alias thm-to-markdown='~/go/bin/thm-to-markdown'
+alias snitch='~/go/bin/snitch'
+alias doit='~/go/bin/doit'
 
-# Disables Ctrl-S block in the terminal
 stty -ixon
