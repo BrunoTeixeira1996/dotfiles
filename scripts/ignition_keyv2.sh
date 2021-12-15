@@ -3,6 +3,7 @@
 #defining colors
 GREEN=`tput bold && tput setaf 2`
 RED=`tput bold && tput setaf 1`
+YELLOW=`tput bold && tput setaf 3`
 NC=`tput sgr0`
 
 function RED(){
@@ -14,6 +15,10 @@ function GREEN(){
     echo -e "\n${GREEN}${1}${NC}"
 }
 
+function YELLOW(){
+    echo -e "\n${YELLOW}${1}${NC}"
+}
+
 #testing if root
 if [ $UID -ne 0 ]
 then
@@ -23,46 +28,75 @@ fi
 
 # set the repositories
 GREEN "Setting the repositories ... \n"
-apt install aptitude
-aptitude install debian-archive-keyring
-aptitude install synaptic apt-xapian-index gdebi
-apt upgrade
-apt update
+#apt install aptitude
+#aptitude install debian-archive-keyring
+#aptitude install synaptic apt-xapian-index gdebi
+#apt upgrade
+#apt update
 
 # install git and git clone dotfiles repo
 GREEN "Installing git and git clone dotfiles repo ... \n"
 apt install git
 git clone https://github.com/BrunoTeixeira1996/dotfiles.git
 
-# install sudo and add user to sudoers
-GREEN "Installing sudo and adding user to sudoers ... \n"
-apt install sudo
-adduser brun0 sudo
 
 # edit apt sourcelists
-GREEN "Editing apt sourcelists ... \n"
-
+GREEN "Editing apt sourceslists ... \n"
+rm -r /etc/apt/
+cp -r dotfiles/etc/apt /etc/
 
 
 # install wifi firmware
-GREEN "Installing wifi firmware ... \n"
-aptitude install firmware-realtek firmware-iwlwifi
+YELLOW "Reading to install wifi firmware ... \n"
+YELLOW "Is this a VM??? \n"
+read  anser
+if [[ $anser == "Y" || $anser == "y" ]]; then
+    echo "..."
+else
+     GREEN "Installing wifi firmware ... \n"
+     aptitude install firmware-realtek firmware-iwlwifi
+fi
 
-# install lightdm
-GREEN "Installing lightdm ... \n"
-aptitude install lightdm
+# installing and editing tmux
+GREEN "Installing tmux ... \n"
+apt install tmux
+GREEN "Editing .tmux.conf ... \n"
+rm /.tmux.conf
+cp dotfiles/.tmux.conf /.
+
 
 # edit .bashrc
 GREEN "Editing .bashrc ... \n"
+rm /.bashrc
+cp dotfiles/.bashrc /.
 
 
-# install font (incosolata)
-GREEN "Installing font (incosolata) ... \n"
-aptitude install ttf-inconsolata
+# edit .profile
+GREEN "Editing .profile ... \n"
+rm /.profile
+cp dotfiles/.profile /.
+
+# installing zsh and ohmyzsh
+GREEN "Installing zsh and ohmyzsh ... \n"
+sudo apt install zsh
+chsh -s $(which zsh)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+cd /.oh-my-zsh/custom/plugins
+git clone https://github.com/zsh-users/zsh-autosuggestions.git
+rm /.zshrc
+cp dotfiles/.zshrc /.
+
+# install font (hack)
+GREEN "Installing font (hack) ... \n"
+sudo apt-get install fonts-hack-ttf
 fc-cache -fv
 
 # install and configure numix theme 
 GREEN "Installing and configuring numix theme ... \n"
+sudo aptitude install numix-gtk-theme numix-icon-theme
+echo -e "[Settings] \ngtk-application-prefer-dark-theme=1" >> /.config/gtk-3.0/
+
+exit 1
 
 
 # install autorandr

@@ -1,5 +1,10 @@
 # Xfce4 How To
 
+## If installing on Oracle
+
+- To install VirtualBox Guest Additions in Debian just go to `/etc/fstab` and change `user,noauto` to `user,exec`
+
+- https://forums.virtualbox.org/viewtopic.php?t=58799
 
 ## Install sudo
 
@@ -38,17 +43,13 @@ apt update
 aptitude install firmware-realtek firmware-iwlwifi
 ```
 
-## Install lightdm
+## Install lightdm (optional)
 
 ```bash
 sudo aptitude install lightdm
 ```
 
-## Configure bashrc
-
-* Just copy and paste .bashrc file from this repo to the host machine
-
-## Install xfce4.16 
+## Install xfce4.16 (not used anymore)
 
 * Since we are using debian 10 stable (buster) then we need to install xfce4.16 from backports
 
@@ -56,11 +57,11 @@ sudo aptitude install lightdm
 aptitude install -t testing xfce4
 ```
 
-## Install inconsolata
+## Install fonts (Hack)
 
 ```bash
-sudo aptitude install ttf-inconsolata
-sudo fc-cache -fv
+apt install fonts-hack-ttf
+fc-cache -fv
 ```
 
 ## Install Numix theme
@@ -81,9 +82,29 @@ gtk-application-prefer-dark-theme=1
 ```bash
 apt install emacs
 Open emacs and close it to automatic create the .emacs.d folder
-cd doftfiles/emacs
+cd doftfiles/emacs/.emacs.d/
 cp -r * ~/.emacs.d
 ```
+
+## Install cURL
+
+```bash
+apt install curl
+```
+
+## Install tmux
+
+```bash
+apt install tmux
+```
+
+## Configure xfce4-terminal
+
+* Navigate to `~/.config/xfce4/terminal/terminalrc` and paste configs from `xfce4-terminal-configs` file from this repo
+
+## Configure bashrc, profile and tmux
+
+* Just copy and paste `.bashrc`, `.profile` and `.tmux.conf` file from this repo to the host machine
 
 ## Install ZSH and OhMyZsh
 
@@ -106,6 +127,8 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git
 ## Install autorandr
 
 ```bash
+apt install python3-pip
+apt install xclip
 pip3 install autorandr
 ```
 
@@ -131,40 +154,38 @@ monitor
 ## Install and configure newsboat RSS Feed
 
 ```bash
-sudo apt install newsboat
+apt install newsboat
 ```
-
-* And then copy and paste `.newsboat` folder
-
+* And then delete `.newsboat` folder and use the folder from this repo
 
 ## Install basic utilities
 
-* Git
-* Terminator
-* Thunderbird
-* Wireguard (and configure VPN)
-* FlameShot
-* Zoom
-* Telegram
-* SublimeText
-* Xournalpp
-* TeamSpeak
-* Discord
-* Slack
-* Oracle Virtual Box
-* Firefox
-* Remmina (and configure VMs)
-* Obs
-* Okular
-* eog
-* VLC
-* Chrome
-* uLancher
-* cURL
-* xclip
-* tmux
+* Git (`using`)
+* Terminator (not used anymore)
+* Tmux (`using`)
+* Thunderbird (`using`)
+* Wireguard (and configure VPN) (`using`)
+* FlameShot (`using`)
+* Zoom (`using`)
+* Telegram (`using`)
+* SublimeText (`using`)
+* Xournalpp (`using`)
+* Discord (`using`)
+* Slack (`using`)
+* Oracle Virtual Box (`using`)
+* Firefox (`using`)
+* Remmina (and configure VMs) (`using`)
+* Okular (`using`)
+* eog (`using`)
+* Chrome (`using`)
+* uLancher (`using`)
+* xclip (`using`)
 
-## Configure terminator
+
+
+-------------------------------------
+
+## Configure terminator (i dont use terminator anymore)
 
 * Just copy and paste this settings to the original `config` file stored in `~/.config/terminator`
 
@@ -196,11 +217,3 @@ sudo apt install newsboat
       parent = window0
 [plugins]
 ```
-
-## Configure tmux
-
-* Create a new file in `~/.tmux.conf` and paste configs from `.tmux.conf` file from this repo
-
-## Configure xfce4-terminal
-
-* Navigate to `~/.config/xfce4/terminal/terminalrc` and paste configs from `xfce4-terminal-configs` file from this repo
