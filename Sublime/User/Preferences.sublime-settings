@@ -1,0 +1,12 @@
+{
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"font_size": 13,
+	"font_face" : "Hack",
+	"theme": "Adaptive.sublime-theme",
+	"color_scheme": "Packages/User/Themes/Gruber-Darker.tmTheme",
+	"remember_open_files": false,
+	"hot_exit": false,
+}
