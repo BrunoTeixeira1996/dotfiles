@@ -88,24 +88,6 @@ cp -r * ~/.emacs.d
 
 * Just copy and paste `.bashrc`, `.profile` and `.tmux.conf` file from this repo to the host machine
 
-## Install ZSH and OhMyZsh
-
-```bash
-sudo apt install zsh
-chsh -s $(which zsh)
-```
-- logout and login again
-- open terminal and choose 0
-
-```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-cd ~/.oh-my-zsh/custom/plugins
-git clone https://github.com/zsh-users/zsh-autosuggestions.git
-```
-- edit `~/.zshrc` with the `.zshrc` file in this repo
-
-- restart zsh with `source ~/.zshrc`
-
 ## Install autorandr
 
 ```bash
