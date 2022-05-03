@@ -143,3 +143,4 @@ apt install newsboat
 - eog (`using`)
 - Chrome (`using`)
 - xclip (`using`)
+- tree (`using`)

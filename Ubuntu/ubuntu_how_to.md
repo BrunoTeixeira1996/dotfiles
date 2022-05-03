@@ -11,3 +11,4 @@
 - eog
 - pip
 - virtualenv
+- tree
