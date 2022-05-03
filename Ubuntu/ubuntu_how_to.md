@@ -12,3 +12,4 @@
 - pip
 - virtualenv
 - tree
+- mariadb
