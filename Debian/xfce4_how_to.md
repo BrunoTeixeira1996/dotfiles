@@ -51,12 +51,6 @@ aptitude install firmware-realtek
 aptitude install firmware-iwlwifi
 ```
 
-## Install lightdm
-
-```bash
-sudo aptitude install lightdm
-```
-
 ## Install fonts (Hack)
 
 ```bash
@@ -84,18 +78,6 @@ apt install emacs
 Open emacs and close it to automatic create the .emacs.d folder
 cd doftfiles/utils/.emacs.d/
 cp -r * ~/.emacs.d
-```
-
-## Install cURL
-
-```bash
-apt install curl
-```
-
-## Install tmux
-
-```bash
-apt install tmux
 ```
 
 ## Configure xfce4-terminal
@@ -160,6 +142,9 @@ apt install newsboat
 
 ## Install basic utilities
 
+- aptitude (`using`)
+- lightdm (`using`)
+- cURL (`using`)
 - Git (`using`)
 - Tmux (`using`)
 - Thunderbird (`using`)
