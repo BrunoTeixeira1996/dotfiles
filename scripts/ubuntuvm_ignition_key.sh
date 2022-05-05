@@ -31,14 +31,14 @@ GREEN "[======================]"
 
 # set the repositories
 GREEN "Installing aptitude ... \n"
-apt install aptitude -y
+apt install -y aptitude
 apt update
 apt upgrade
 
 # creating workspace folder
 GREEN "Creating workspace folder ... \n"
-mkdir ~/Desktop/workspace/
-cd ~/Desktop/workspace/
+mkdir /home/brun0/Desktop/workspace/
+cd /home/brun0/Desktop/workspace/
 
 # install git and git clone dotfiles repo
 GREEN "Installing git and git clone dotfiles repo ... \n"
@@ -49,13 +49,13 @@ git clone https://github.com/BrunoTeixeira1996/dotfiles.git
 # edit .bashrc
 GREEN "Editing .bashrc ... \n"
 rm ~/.bashrc
-cp dotfiles/.bashrc ~/.bashrc
+cp dotfiles/utils/.bashrc ~/.bashrc
 
 
 # edit .profile
 GREEN "Editing .profile ... \n"
 rm ~/.profile
-cp dotfiles/.profile ~/.profile
+cp dotfiles/utils/.profile ~/.profile
 
 
 GREEN "[Installing utilities]"
@@ -65,7 +65,7 @@ GREEN "[====================]"
 GREEN "Installing tmux ... \n"
 apt install -y tmux
 GREEN "Editing .tmux.conf ... \n"
-cp dotfiles/.tmux.conf ~/.tmux.conf
+cp dotfiles/utils/.tmux.conf ~/.tmux.conf
 
 
 # install cURL
@@ -78,6 +78,8 @@ apt install dirmngr gnupg apt-transport-https ca-certificates software-propertie
 curl -fsSL https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 add-apt-repository "deb https://download.sublimetext.com/ apt/stable/"
 apt install -y sublime-text
+apt autoremove -y
+#TODO -> Configure sublime text
 
 # install jq
 GREEN "Installing jq ... \n"
@@ -106,6 +108,20 @@ mysql_secure_installation
 
 GREEN "[Changing desktop and environment]"
 GREEN "[====================]"
-# change taskbar icon size
-# change background
+# set taskbar icon size
+GREEN "Set taskbar icon size ... \n"
+gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 20
+
+# set taskbar icons
+GREEN "Set taskbar icons ... \n"
+gsettings set org.gnome.shell favorite-apps "['firefox_firefox.desktop', 'org.gnome.Nautilus.desktop','org.gnome.Terminal.desktop', 'sublime_text.desktop']"
+
+# set ubuntu default colour black mode
+GREEN "Set default colour to black"
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+
 # change terminal colors and size
+# TODO
+
+# change background
+# TODO
