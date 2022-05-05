@@ -25,9 +25,9 @@ GREEN "[======================]"
 
 # set the repositories
 GREEN "Installing aptitude ... \n"
-apt install aptitude
-apt update
-apt upgrade
+sudo apt install aptitude
+sudo apt update
+sudo apt upgrade
 
 # creating workspace folder
 GREEN "Creating workspace folder ... \n"
@@ -36,7 +36,7 @@ cd /home/brun0/Desktop/workspace/
 
 # install git and git clone dotfiles repo
 GREEN "Installing git and git clone dotfiles repo ... \n"
-apt install git
+sudo apt install git
 git clone https://github.com/BrunoTeixeira1996/dotfiles.git
 
 
@@ -57,48 +57,48 @@ GREEN "[====================]"
 
 # installing and editing tmux
 GREEN "Installing tmux ... \n"
-apt install tmux
+sudo apt install tmux
 GREEN "Editing .tmux.conf ... \n"
 cp dotfiles/utils/.tmux.conf ~/.tmux.conf
 
 
 # install cURL
 GREEN "Installing cURL ... \n"
-apt install curl
+sudo apt install curl
 
 # install sublime
 GREEN "Installing sublime ... \n"
-apt install dirmngr gnupg apt-transport-https ca-certificates software-properties-common 
+sudo apt install dirmngr gnupg apt-transport-https ca-certificates software-properties-common 
 curl -fsSL https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-add-apt-repository "deb https://download.sublimetext.com/ apt/stable/"
-apt install sublime-text
-apt autoremove
+sudo add-apt-repository "deb https://download.sublimetext.com/ apt/stable/"
+sudo apt install sublime-text
+sudo apt autoremove
 subl
-kill -9 $(pidof sublime_text)
+sudo kill -9 $(pidof sublime_text)
 cp -r dotfiles/utils/Sublime/User/ /home/brun0/.config/sublime-text/Packages/
 
 # install jq
 GREEN "Installing jq ... \n"
-apt install jq
+sudo apt install jq
 
 # install xclip
 GREEN "Installing xclip ... \n"
-apt install xclip
+sudo apt install xclip
 
 # install pip
 GREEN "Installing pip ... \n"
-apt install python3-pip
+sudo apt install python3-pip
 
 # install virtualenv
 pip3 install virtualenv
 
 # install tree
 GREEN "Installing tree ... \n"
-apt install tree
+sudo apt install tree
 
 # install mariadb
 GREEN "Installing mariadb ... \n"
-apt install mariadb-server
+sudo apt install mariadb-server
 
 
 
