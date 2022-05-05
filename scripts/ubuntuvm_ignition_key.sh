@@ -78,7 +78,9 @@ apt install dirmngr gnupg apt-transport-https ca-certificates software-propertie
 curl -fsSL https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 add-apt-repository "deb https://download.sublimetext.com/ apt/stable/"
 apt install sublime-text
-apt autoremove 
+apt autoremove
+subl
+kill -9 $(pidof sublime_text)
 cp -r dotfiles/utils/Sublime/User/ /home/brun0/.config/sublime-text/Packages/
 
 # install jq
@@ -109,6 +111,7 @@ apt install mariadb-server
 GREEN "[Changing desktop and environment]"
 GREEN "[====================]"
 # set taskbar icon size
+apt install dbus-x11
 GREEN "Set taskbar icon size ... \n"
 gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 20
 
