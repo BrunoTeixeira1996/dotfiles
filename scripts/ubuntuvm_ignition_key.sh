@@ -103,7 +103,7 @@ apt install tree
 # install mariadb
 GREEN "Installing mariadb ... \n"
 apt install mariadb-server
-mysql_secure_installation
+
 
 
 GREEN "[Changing desktop and environment]"
@@ -138,3 +138,6 @@ gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profi
 GREEN "Set desktop background color ... \n"
 gsettings set org.gnome.desktop.background picture-uri ""
 gsettings set org.gnome.desktop.background primary-color '#181818'
+
+YELLOW "Dont forget to mysql_secure_installation for mariadb and create the user with privileges ... \n"
+YELLOW "Dont forget to setup ssh keys ... \n"
