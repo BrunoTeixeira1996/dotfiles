@@ -7,16 +7,16 @@ YELLOW=`tput bold && tput setaf 3`
 NC=`tput sgr0`
 
 function RED(){
-    echo -e "\n${RED}${1}${NC}"
+  echo -e "\n${RED}${1}${NC}"
 }
 
 
 function GREEN(){
-    echo -e "\n${GREEN}${1}${NC}"
+  echo -e "\n${GREEN}${1}${NC}"
 }
 
 function YELLOW(){
-    echo -e "\n${YELLOW}${1}${NC}"
+  echo -e "\n${YELLOW}${1}${NC}"
 }
 
 #testing if root
@@ -31,7 +31,7 @@ GREEN "[======================]"
 
 # set the repositories
 GREEN "Installing aptitude ... \n"
-apt install -y aptitude
+apt install aptitude
 apt update
 apt upgrade
 
@@ -42,7 +42,7 @@ cd /home/brun0/Desktop/workspace/
 
 # install git and git clone dotfiles repo
 GREEN "Installing git and git clone dotfiles repo ... \n"
-apt install -y git
+apt install git
 git clone https://github.com/BrunoTeixeira1996/dotfiles.git
 
 
@@ -63,46 +63,46 @@ GREEN "[====================]"
 
 # installing and editing tmux
 GREEN "Installing tmux ... \n"
-apt install -y tmux
+apt install tmux
 GREEN "Editing .tmux.conf ... \n"
 cp dotfiles/utils/.tmux.conf ~/.tmux.conf
 
 
 # install cURL
 GREEN "Installing cURL ... \n"
-apt install -y curl
+apt install curl
 
 # install sublime
 GREEN "Installing sublime ... \n"
-apt install dirmngr gnupg apt-transport-https ca-certificates software-properties-common -y
+apt install dirmngr gnupg apt-transport-https ca-certificates software-properties-common 
 curl -fsSL https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 add-apt-repository "deb https://download.sublimetext.com/ apt/stable/"
-apt install -y sublime-text
-apt autoremove -y
-#TODO -> Configure sublime text
+apt install sublime-text
+apt autoremove 
+cp -r dotfiles/utils/Sublime/User/ /home/brun0/.config/sublime-text/Packages/
 
 # install jq
 GREEN "Installing jq ... \n"
-apt install -y jq
+apt install jq
 
 # install xclip
 GREEN "Installing xclip ... \n"
-apt install -y xclip
+apt install xclip
 
 # install pip
 GREEN "Installing pip ... \n"
-apt install -y python3-pip
+apt install python3-pip
 
 # install virtualenv
 pip3 install virtualenv
 
 # install tree
 GREEN "Installing tree ... \n"
-apt install -y tree
+apt install tree
 
 # install mariadb
 GREEN "Installing mariadb ... \n"
-apt install -y mariadb-server
+apt install mariadb-server
 mysql_secure_installation
 
 
@@ -120,8 +120,21 @@ gsettings set org.gnome.shell favorite-apps "['firefox_firefox.desktop', 'org.gn
 GREEN "Set default colour to black"
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
-# change terminal colors and size
-# TODO
+# configure terminal
+GREEN "Changing terminal font size"
+gsettings set org.gnome.desktop.interface monospace-font-name 'Ubuntu Mono 13'
+
+GREEN "Changing terminal colors"
+GNOME_UUID=$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d \')
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$GNOME_UUID/ use-theme-colors false    
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$GNOME_UUID/ background-color 'rgb(24,24,24)'
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$GNOME_UUID/ foreground-color 'rgb(255,255,255)'
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$GNOME_UUID/ bold-is-bright true
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$GNOME_UUID/ audible-bell false
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$GNOME_UUID/ palette "['#2E3436', '#CC0000', '#4E9A06', '#C4A000', '#3465A4', '#75507B', '#06989A', '#D3D7CF', '#555753', '#EF2929', '#8AE234', '#FCE94F', '#729FCF', '#AD7FA8', '#34E2E2', '#EEEEEC']"
+
 
 # change background
-# TODO
+GREEN "Set desktop background color ... \n"
+gsettings set org.gnome.desktop.background picture-uri ""
+gsettings set org.gnome.desktop.background primary-color '#181818'
