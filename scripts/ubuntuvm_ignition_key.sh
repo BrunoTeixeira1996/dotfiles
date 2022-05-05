@@ -132,7 +132,8 @@ gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profi
 
 # change background
 GREEN "Set desktop background color ... \n"
-gsettings set org.gnome.desktop.background picture-uri ""
+gsettings set org.gnome.desktop.background picture-options 'none'
+#gsettings set org.gnome.desktop.background picture-uri ""
 gsettings set org.gnome.desktop.background primary-color '#181818'
 
 YELLOW "Dont forget to mysql_secure_installation for mariadb and create the user with privileges ... \n"
