@@ -19,12 +19,6 @@ function YELLOW(){
   echo -e "\n${YELLOW}${1}${NC}"
 }
 
-#testing if root
-if [ $UID -ne 0 ]
-then
-	RED "Run this has root" && echo
-	exit
-fi
 
 GREEN "[Editing configurations]"
 GREEN "[======================]"
@@ -111,7 +105,6 @@ apt install mariadb-server
 GREEN "[Changing desktop and environment]"
 GREEN "[====================]"
 # set taskbar icon size
-apt install dbus-x11
 GREEN "Set taskbar icon size ... \n"
 gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 20
 
