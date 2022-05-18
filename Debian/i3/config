@@ -108,7 +108,7 @@ bindsym $mod+a focus parent
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1:terminal"
 set $ws2 "2:editor"
-set $ws3 "3:browswer"
+set $ws3 "3:browser"
 set $ws4 "4:utils"
 set $ws5 "5"
 set $ws6 "6"
