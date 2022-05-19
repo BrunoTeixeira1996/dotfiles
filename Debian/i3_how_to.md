@@ -62,7 +62,7 @@ sudo apt install brave-browser
 - telegram
 - okular
 - filezilla
-- keepassxc
+- keepassx
 
 
 # References
