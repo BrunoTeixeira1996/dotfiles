@@ -144,3 +144,4 @@ apt install newsboat
 - Chrome (`using`)
 - xclip (`using`)
 - tree (`using`)
+- keepassx (`using`)
