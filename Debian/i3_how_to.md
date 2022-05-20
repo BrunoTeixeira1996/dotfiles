@@ -40,7 +40,7 @@ sudo apt install i3 xorg nitrogen tree eog curl jq xclip lxappearance chromium g
 
 # Install stuff
 
-- urxvt
+- urxvt (create .Xresources file and use the .Xresources file that exist in this repo)
 - Iosevka font and set that to terminal
 - emacs
 - sublime
@@ -53,6 +53,7 @@ sudo apt install i3 xorg nitrogen tree eog curl jq xclip lxappearance chromium g
 - okular
 - filezilla
 - keepassx
+- openvpn
 
 
 # References
