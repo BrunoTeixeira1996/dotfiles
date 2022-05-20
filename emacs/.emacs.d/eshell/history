@@ -1,0 +1,15 @@
+ls
+clear
+clear
+clear-scrollback 
+ls
+cd ..
+cd ..
+cd ..
+ls
+ls
+cd Desktop/
+ls
+clear
+clear-scrollback 
+ssh root@192.168.10.108

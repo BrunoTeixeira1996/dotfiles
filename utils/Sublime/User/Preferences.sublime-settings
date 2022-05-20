@@ -3,8 +3,8 @@
 	[
 		"Vintage",
 	],
-	"font_size": 13,
-	"font_face" : "Hack",
+	"font_size": 19,
+	"font_face" : "Iosevka",
 	"theme": "Adaptive.sublime-theme",
 	"color_scheme": "Packages/User/Themes/Gruber-Darker.tmTheme",
 	"remember_open_files": false,

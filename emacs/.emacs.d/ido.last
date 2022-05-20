@@ -1,0 +1,272 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/brun0/Desktop/estagio/semana8/" . "19_04_2022/")
+ ("/home/brun0/Desktop/brun0_Stuff/repos/discord_bot/" . "modules/")
+ ("/ssh:root@192.168.10.108:/" . "home/")
+ ("/ssh:root@192.168.10.108:" . "app/")
+ ("/home/brun0/Desktop/universidade/ETICA/Aula06/" . "relatorio/")
+ ("/home/brun0/Desktop/estagio/semana7/" . "13_04_2022/")
+ ("/home/brun0/Desktop/estagio/semana6/" . "08_04_2022/")
+ ("/home/brun0/Desktop/estagio/relatorio/" . "report-template/")
+ ("/home/brun0/Desktop/estagio/semana5/" . "31_03_2022/")
+ ("/home/brun0/Desktop/estagio/semana4/23_03_2022/" . "n8n_backup/")
+ ("/home/brun0/.emacs.d/" . "themes/")
+ ("/home/brun0/Desktop/brun0_Stuff/repos/99_problems/" . "01-28-lists/")
+ ("/home/brun0/Desktop/estagio/semana4/" . "25_03_2022/")
+ ("/home/brun0/Desktop/estagio/semana3/" . "18_03_2022/")
+ ("/home/brun0/Desktop/universidade/ETICA/Aula02/" . "relatorio/")
+ ("/home/brun0/Desktop/estagio/semana2/" . "11_03_2022/")
+ ("/home/brun0/Desktop/brun0_Stuff/repos/" . "discord_bot/")
+ ("/home/" . "brun0/")
+ ("/" . "home/")
+ ("/home/brun0/Desktop/universidade/ETICA/" . "Aula07/")
+ ("/home/brun0/Desktop/universidade/" . "ETICA/")
+ ("/home/brun0/Desktop/estagio/semana1/" . "04_03_2022/")
+ ("/home/brun0/Desktop/estagio/" . "semana8/")
+ ("/home/brun0/Desktop/brun0_Stuff/joao/" . "jpdi/")
+ ("/home/brun0/Desktop/brun0_Stuff/" . "repos/")
+ ("/home/brun0/Desktop/" . "brun0_Stuff/")
+ ("/home/brun0/" . "Desktop/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/brun0/Desktop/brun0_Stuff/repos/discord_bot/modules/"
+ "/home/brun0/Desktop/universidade/ETICA/Aula07/"
+ "/home/brun0/Desktop/estagio/semana8/19_04_2022/"
+ "/home/brun0/Desktop/estagio/semana7/13_04_2022/"
+ "/home/brun0/Desktop/brun0_Stuff/repos/discord_bot/"
+ "/home/brun0/.emacs.d/"
+ "/home/brun0/Desktop/estagio/relatorio/"
+ "/home/brun0/Desktop/estagio/"
+ "/ssh:root@192.168.10.108:/root/testing_logs/"
+ "/ssh:root@192.168.10.108:app/"
+ "/ssh:root@192.168.10.108:/home/"
+ "/ssh:root@192.168.10.108:/root/"
+ "/ssh:root@192.168.10.108:testing_logs/"
+ "/ssh:root@192.168.10.108:"
+ "/home/brun0/Desktop/"
+ "/home/brun0/Desktop/universidade/ETICA/Aula06/"
+ "/home/brun0/Desktop/estagio/semana7/12_04_2022/"
+ "/home/brun0/Desktop/estagio/semana7/11_04_2022/"
+ "/home/brun0/Desktop/universidade/ETICA/Aula06/relatorio/"
+ "/home/brun0/Desktop/estagio/semana6/08_04_2022/"
+ "/home/brun0/Desktop/estagio/semana6/07_04_2022/"
+ "/home/brun0/Desktop/estagio/semana6/06_04_2022/"
+ "/home/brun0/Desktop/estagio/semana6/05_04_2022/"
+ "/home/brun0/Desktop/estagio/semana6/04_04_2022/"
+ "/home/brun0/Desktop/estagio/semana5/31_03_2022/"
+ "/home/brun0/Desktop/universidade/ETICA/Aula05/"
+ "/home/brun0/Desktop/estagio/semana5/30_03_2022/"
+ "/home/brun0/Desktop/estagio/semana5/"
+ "/home/brun0/Desktop/estagio/semana5/29_03_2022/"
+ "/home/brun0/Desktop/estagio/relatorio/report-template/"
+ "/home/brun0/Desktop/estagio/semana5/28_03_2022/"
+ "/home/brun0/Desktop/estagio/semana4/25_03_2022/"
+ "/home/brun0/Desktop/estagio/semana4/24_03_2022/"
+ "/home/brun0/Desktop/estagio/semana4/23_03_2022/"
+ "/home/brun0/Desktop/brun0_Stuff/repos/99_problems/01-28-lists/"
+ "/home/brun0/.emacs.d/themes/"
+ "/home/brun0/Desktop/universidade/ETICA/Aula04/"
+ "/home/brun0/Desktop/universidade/"
+ "/home/brun0/Desktop/estagio/semana4/22_03_2022/"
+ "/home/brun0/Desktop/estagio/semana3/18_03_2022/"
+ "/home/brun0/Desktop/estagio/semana3/17_03_2022/"
+ "/home/brun0/Desktop/estagio/semana3/16_03_2022/"
+ "/home/brun0/Desktop/estagio/semana3/15_03_2022/"
+ "/home/brun0/Desktop/estagio/semana2/11_03_2022/"
+ "/home/brun0/Desktop/estagio/semana1/04_03_2022/"
+ "/home/brun0/Desktop/estagio/semana3/14_03_2022/"
+ "/home/brun0/Desktop/estagio/semana4/21_03_2022/"
+ "/home/brun0/Desktop/universidade/ETICA/Aula02/"
+ "/home/brun0/Desktop/universidade/ETICA/Aula03/"
+ "/home/brun0/Desktop/estagio/semana2/10_03_2022/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "news.py"
+ "notas.md"
+ "notes.org"
+ "main.py"
+ "init.el"
+ "todo.md"
+ "tes.py"
+ "test.py"
+ ".bashrc"
+ "relatorio.tex"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/brun0/Desktop/brun0_Stuff/repos/discord_bot/modules/" (25175 62978 131094 738000) "./" "../" "news.py" "__pycache__/")
+
+ ("/home/brun0/Desktop/brun0_Stuff/repos/discord_bot/" (25177 35404 366062 898000) "main.py" ".gitignore" "modules/" "env/" "./" "../" ".env" ".mypy_cache/" ".pre-commit-config.yaml" "todo.md" "logs/" ".git/" "setup.cfg")
+
+ ("/home/brun0/Desktop/" (25186 52777 735875 107000) "2021-11-ApoioAoRelatorio/" "Necronomicon/" "Telegram/" "Relatorio Tecnico.pdf" "Lista-de-Repos/" "isec.svg" "./" "../" "Apontamentos-ISEC/" "estagio/" "monitor.sh" "logo.png" "Linux_Pentablet_V1.2.13.1/" "universidade/" "Obsidian-0.13.23.AppImage" "brun0_Stuff/" "contrato estudio nº 3_segundo arrendamento.pdf" "2021-11-ApoioAoRelatorio.zip" "contrato estudio nº 3_segundo arrendamento_assinado.pdf")
+
+ ("/home/brun0/" (25189 51241 639106 456000) ".xfce4-session.verbose-log" ".local/" ".cache/" ".profile" ".bashrc" ".ICEauthority" "go/" ".putty/" "Templates/" ".wget-hsts" ".authinfo" ".gitconfig" "Documents/" "./" "Pictures/" "../" "Music/" "Downloads/" ".saves/" "snap/" ".python_history" "Public/" ".anydesk/" "VirtualBox VMs/" ".pki/" ".texlive2020/" ".xsession-errors.old" ".vmware/" ".xsession-errors" ".zshrc" "Desktop/" ".thunderbird/" ".gnupg/" ".oh-my-zsh/" ".dmrc" ".bash_logout" ".zoom/" ".zshrc.pre-oh-my-zsh" "Python-3.10.0/" ".bash_history" ".irssi/" ".emacs.d/" ".Xauthority" ".tmux.conf" ".ssh/" "Videos/" ".vscode/" ".config/" ".gnome/" "Python-3.10.0.tgz" "samba_share/" ".zsh_history" ".zcompdump-deb1an-5.8" ".mozilla/" "temp")
+
+ ("/home/brun0/Desktop/universidade/ETICA/Aula07/" (25184 14795 738275 365000) "./" "../" "notas.md")
+
+ ("/home/brun0/Desktop/universidade/ETICA/" (25184 14790 274281 349000) "Aula05/" "./" "../" "Aula02/" "Aula01/" "Aula07/" "Aula04/" "Aula06/" "Aula03/" "skeleton_report/")
+
+ ("/home/brun0/Desktop/estagio/semana8/19_04_2022/" (25182 48845 241308 320000) "./" "../" "notes.org")
+
+ ("/home/brun0/Desktop/estagio/semana8/" (25182 48845 241308 320000) "19_04_2022/" "./" "../")
+
+ ("/home/brun0/Desktop/estagio/" (25182 48840 453280 914000) ".gitignore" "semana5/" "./" "../" "semana6/" "semana4/" "semana7/" "semana8/" "documentos/" "semana2/" "relatorio/" "dados/" "semana3/" "semana1/" ".git/")
+
+ ("/home/brun0/Desktop/brun0_Stuff/" (25182 31875 48743 208000) "runcode/" "./" "../" "NOS_RIOTINTO.png" "documentos/" "repos/" "esxi_vms_backup/" "ESXi Stuff/" "PWK OSCP v2 @Hide01 @OffSecPack.pdf" "NOS_CACIA.png" "learning_go/" "fitness/" "CET/")
+
+ ("/home/brun0/.emacs.d/" (25175 19257 934166 63000) ".cache/" "url/" "eshell/" "themes/" "smex-items" "transient/" "./" "../" "auto-save-list/" "elpa/" "init.el" "tramp" "ac-comphist.dat" "ido.last" ".mc-lists.el")
+
+ ("/home/brun0/Desktop/brun0_Stuff/repos/" (25175 15638 889722 434000) "doit/" "Discord-Bot/" "AdventOfCode/" "thm-to-markdown/" "./" "../" "telegram_bot/" "notion/" "99_problems/" "discord_bot/" "doit_test/" "dotfiles/" "scripts_and_stuff/")
+
+ ("/home/brun0/Desktop/estagio/relatorio/" (25175 2117 560334 307000) "report_bruno/" "./" "../" "todo.md" "report_hugo/")
+
+ ("/home/brun0/Desktop/estagio/semana7/13_04_2022/" (25174 58653 150583 386000) "./" "../" "notes.org")
+
+ ("/home/brun0/Desktop/estagio/semana2/08_03_2022/" (25131 10974 243136 854000) "./" "../" "notes.md")
+
+ ("/home/brun0/Desktop/universidade/ETICA/Aula02/relatorio/" (25131 33574 129394 970000) "relatorio.log" "relatorio.bcf" "./" "../" "relatorio.out" "relatorio.tex" "relatorio.toc" "BrunoTeixeira_2019100036_palestra2.pdf" "relatorio.aux" "relatorio.run.xml" "DEIS.jpeg" "BrunoTeixeira_2019100036_palestra2.zip")
+
+ ("/home/brun0/Downloads/" (25174 41016 11628 207000) "ArqCherry.pdf" "RelatorioEstagio_RuiNeves_2018012803_f.pdf" "./" "../" "ArqDjango.pdf" "Telegram Desktop/" "ISEC_Presentation.zip" "Relatorio_Estagio___Bruno_Teixeira.pdf")
+
+ ("/home/brun0/Desktop/estagio/semana3/14_03_2022/" (25145 40494 710493 199000) "./" "../" "2022-03-14-Note-17-57.xopp" "notes.org")
+
+ ("/home/brun0/Desktop/estagio/semana3/15_03_2022/" (25171 4671 139896 12000) "#notes.org#" "./" "../" "notes.org")
+
+ ("/home/brun0/Desktop/estagio/semana4/25_03_2022/" (25150 379 127876 756000) "./" "../" "procedimento_labels_e_scripts.png" "ArtResilia.drawio" "notes.org")
+
+ ("/home/brun0/Desktop/estagio/semana5/29_03_2022/" (25155 19586 570072 549000) "./" "../" "notes.org")
+
+ ("/home/brun0/.emacs.d/eshell/" (25174 44455 387922 151000) "history" "./" "../" "lastdir")
+
+ ("/home/brun0/Desktop/estagio/semana5/30_03_2022/" (25156 39020 901954 39000) "2022-03-30-Note-17-27.xopp" "./" "../" "notes.org")
+
+ ("/home/brun0/Desktop/universidade/ETICA/Aula05/" (25156 41980 769955 420000) "./" "../" "notes.md")
+
+ ("/home/brun0/Desktop/estagio/semana5/31_03_2022/" (25162 46806 862553 221000) "n8n_backup/" "./" "../" "draft/" "notes.org")
+
+ ("/home/brun0/Desktop/estagio/semana6/08_04_2022/" (25168 22003 603330 86000) "./" "../" "notes.org")
+
+ ("/home/brun0/Desktop/universidade/ETICA/Aula06/relatorio/" (25174 41065 723476 816000) "BrunoTeixeira_2019100036_palestra5.zip" "./" "../" "BrunoTeixeira_2019100036_palestra5.pdf")
+
+ ("/home/brun0/.emacs.d/elpa/" (25174 43588 564488 398000) "magit-section-20220308.1849/" "python-mode-20211013.1620/" "use-package-20210207.1926/" "gruber-darker-theme-20210921.1408/" "helm-git-grep-20170614.1411/" "auctex-13.0.14.signed" "magit-20220308.1849/" "smex-20151212.2209/" "bind-key-20210210.1609/" "./" "with-editor-20220211.2034/" "transient-20220307.2129/" "../" "markdown-mode-20211017.1140/" "archives/" "auto-complete-20201213.1255/" "markdown-mode-20220212.728/" "gnupg/" "async-20220318.1342/" "auctex-13.0.14/" "org-bullets-20200317.1740/" "popup-20210625.400/" "helm-core-20220409.756/" "git-commit-20220222.1036/" "dash-20210826.1149/" "multiple-cursors-20211112.2223/" "helm-20220413.708/")
+
+ ("/home/brun0/.emacs.d/elpa/helm-git-grep-20170614.1411/" (25174 43589 16487 644000) "helm-git-grep.elc" "./" "../" "helm-git-grep-autoloads.el" "helm-git-grep-pkg.el" "helm-git-grep.el")
+
+ ("/home/brun0/Desktop/estagio/semana7/" (25174 37199 857712 643000) "11_04_2022/" "./" "../" "13_04_2022/" "12_04_2022/")
+
+ ("/home/brun0/Desktop/estagio/semana7/12_04_2022/" (25173 32454 439333 585000) "./" "../" "notes.org")
+
+ ("/home/brun0/Desktop/estagio/semana7/11_04_2022/" (25172 16695 556864 18000) "./" "../" "notes.org")
+
+ ("/home/brun0/Desktop/universidade/ETICA/Aula06/" (25173 20390 429217 226000) "./" "../" "relatorio/" "notas.md")
+
+ ("/home/brun0/Desktop/estagio/semana6/07_04_2022/" (25166 43063 764569 285000) "./" "../" "notes.org")
+
+ ("/home/brun0/Desktop/estagio/semana6/" (25168 21977 199257 171000) "04_04_2022/" "05_04_2022/" "./" "../" "08_04_2022/" "06_04_2022/" "07_04_2022/")
+
+ ("/home/brun0/Desktop/estagio/semana6/06_04_2022/" (25166 43057 28547 663000) "./" "../" "notes.org")
+
+ ("/home/brun0/Desktop/estagio/semana6/05_04_2022/" (25164 35701 962524 871000) "./" "../" "notes.org")
+
+ ("/home/brun0/Desktop/estagio/semana6/04_04_2022/" (25163 11541 923871 368000) "./" "../" "notes.org")
+
+ ("/home/brun0/Desktop/estagio/semana5/" (25157 29751 909928 942000) "./" "../" "proposta.md" "31_03_2022/" "28_03_2022/" "30_03_2022/" "29_03_2022/")
+
+ ("/home/brun0/Desktop/estagio/relatorio/report-template/" (25154 51467 487343 606000) "acronyms.tex" ".gitignore" "report.out" "report.acn" "report.blg" "report.bbl" "report.log" "report.aux" "references.bib" "./" "../" "report.toc" "report.pdf" "report.ist" "chapters/" "report.docx" "images/" "report.tex" "report.bcf" "report.lot" "report.lof" "appendices/" "report.synctex.gz" "report.run.xml")
+
+ ("/home/brun0/Desktop/estagio/semana5/28_03_2022/" (25153 59223 679787 486000) "n8n_backup/" "./" "../" "notes.org" "2022-03-28_10-25.png")
+
+ ("/home/brun0/Desktop/estagio/semana4/24_03_2022/" (25148 49937 150420 330000) "./" "../" "notes.org")
+
+ ("/home/brun0/Desktop/estagio/semana4/" (25149 40932 210114 82000) "25_03_2022/" "./" "../" "21_03_2022/" "24_03_2022/" "23_03_2022/" "22_03_2022/")
+
+ ("/home/brun0/Desktop/estagio/semana4/23_03_2022/" (25147 39584 219580 437000) "n8n_backup/" "./" "../" "notes.org")
+
+ ("/home/brun0/Desktop/estagio/semana4/23_03_2022/n8n_backup/" (25147 23337 992104 661000) "6.json" "7.json" "./" "../" "10.json" "11.json" "8.json" "3.json" "13.json" "5.json" "1.json")
+
+ ("/home/brun0/Desktop/brun0_Stuff/repos/99_problems/01-28-lists/" (25147 38088 645039 112000) "./" "../" ".mypy_cache/" "01.py")
+
+ ("/home/brun0/.emacs.d/themes/" (25147 37984 941055 116000) "jetbrains-darcula-theme.el" "./" "../")
+
+ ("/home/brun0/Desktop/universidade/ETICA/Aula04/" (25147 28538 671601 775000) "./" "../" "notes.md")
+
+ ("/home/brun0/Desktop/brun0_Stuff/repos/99_problems/" (25114 56267 370615 739000) "./" "../" "README.md" "01-28-lists/" ".git/" "LICENSE")
+
+ ("/home/brun0/Desktop/universidade/ETICA/Aula03/" (25138 19802 676704 718000) "./" "../" "notes.md")
+
+ ("/home/brun0/Desktop/estagio/semana4/22_03_2022/" (25146 7759 784179 512000) "Main_Workflow.json" "./" "Fraud_Workflow.json" "../" "Intrusion_Attempts_Workflow.json" "notes.org")
+
+ ("/home/brun0/Desktop/estagio/semana1/04_03_2022/" (25125 63272 249329 387000) "./" "../" "notes.md")
+
+ ("/home/brun0/Desktop/estagio/semana4/21_03_2022/" (25145 39815 879116 707000) "main_workflow.json" "./" "../" "notes.org")
+
+ ("/home/brun0/Desktop/estagio/semana3/18_03_2022/" (25140 56656 456757 680000) "./" "../" "notes.org")
+
+ ("/home/brun0/Desktop/estagio/semana3/16_03_2022/" (25138 19474 444011 871000) "./" "../" "notes.org_archive" "notes.org" "2022-03-16-Note-15-26.xopp")
+
+ ("/home/brun0/Desktop/estagio/semana3/17_03_2022/" (25139 30118 738062 701000) "./" "../" "notes.org")
+
+ ("/home/brun0/Desktop/estagio/semana3/" (25140 22577 197821 995000) "17_03_2022/" "16_03_2022/" "./" "../" "18_03_2022/" "14_03_2022/" "15_03_2022/")
+
+ ("/home/brun0/Desktop/universidade/ETICA/Aula02/" (25130 7371 154375 234000) "./" "../" "relatorio/" "notas.md")
+
+ ("/home/brun0/Desktop/estagio/semana2/11_03_2022/" (25137 47566 130272 122000) "#notes.org#" "./" "../" "Get_notified_when_new_Issue_is_created_in_Jira.json" "notes.org" "notes.md")
+
+ ("/home/brun0/Desktop/estagio/semana2/09_03_2022/" (25135 23332 325376 458000) "perguntas.pdf" "./" "../" "notes.md")
+
+ ("/home/brun0/Desktop/estagio/semana2/" (25131 9859 489073 18000) "07_03_2022/" "08_03_2022/" "./" "../" "10_03_2022/" "11_03_2022/" "09_03_2022/")
+
+ ("/home/brun0/Desktop/estagio/semana2/10_03_2022/" (25129 59046 714374 234000) "./" "../" "notes.md")
+
+ ("/home/brun0/Desktop/estagio/semana2/07_03_2022/" (25126 20808 810728 537000) "./" "../" "notes.md")
+
+ ("/home/brun0/Desktop/estagio/semana1/03_03_2022/" (25121 58152 389881 105000) "./" "../" "notes.md")
+
+ ("/home/brun0/Desktop/estagio/semana1/" (25121 58129 530425 9000) "04_03_2022/" "./" "../" "03_03_2022/" "02_03_2022/" "01_03_2022/")
+
+ ("/home/brun0/Desktop/estagio/semana1/02_03_2022/" (25120 36909 809236 615000) "Conceptual Diagram.json" "./" "../" "onboarding.md")
+
+ ("/home/brun0/Desktop/brun0_Stuff/repos/scripts/" (25120 36741 345226 913000) "./" "../" "diary.sh")
+
+ ("/home/brun0/Desktop/universidade/ETICA/Aula01/" (25119 45713 580374 392000) "./" "../" "notas.md")
+
+ ("/home/brun0/Desktop/universidade/ETICA/skeleton_report/" (25118 24434 71809 254000) "report.log" "./" "../" "report.tex" "imagens/")
+
+ ("/home/" (25115 43736 492496 972000) "rslsync/" "lost+found/" "./" "../" "brun0/")
+
+ ("/usr/" (25114 50297 545634 192000) "sbin/" "games/" "lib32/" "local/" "lib/" "src/" "include/" "share/" "bin/" "libx32/" "../" "libexec/" "./" "lib64/")
+
+ ("/usr/share/" (25118 17331 331840 240000) "adduser/" "git-core/" "openal/" "misc/" "apps/" "firefox-esr/" "javascript/" "xfwm4/" "pkgconfig/" "dpkg/" "man/" "gitweb/" "kpackage/" "apt-listchanges/" "gimp/" "reportbug/" "enchant-2/" "mysql-common/" "polkit-1/" "yelp-xsl/" "pstoedit/" "libc-bin/" "wallpapers/" "xdg-desktop-portal/" "gdm/" "aclocal/" "nano/" "plymouth/" "deepin/" "systemtap/" "rubygems-integration/" "hyphen/" "mythes/" "tabset/" "emacsen-common/" "mime-info/" "hal/" "fontconfig/" "backgrounds/" "kservices5/" "libdrm/" "tex-common/" "libaudio2/" "libexttextcat/" "gst-plugins-base/" "lintian/" "flameshot/" "aglfn/" "config.kcfg/" "man-db/" "vim/" "terminfo/" "okular/" "defaults/" "libmysofa/" "python/" "dns/" "sgml-base/" "sane/" "bug/" "initramfs-tools/" "xsane/" "zsh/" "sgml/" "caja/" "ibus/" "GConf/" "consoletrans/" "gtk-engines/" "icons/" "pavucontrol/" "xgreeters/" "bash-completion/" "liblangtag/" "pixmaps/" "dictionaries-common/" "locale/" "desktop-directories/" "poppler/" "hunspell/" "groff/" "dnsmasq-base/" "vulkan/" "alsa-card-profile/" "kf5/" "readline/" "xml-core/" "synaptic/" "aspell/" "drirc.d/" "gtk-doc/" "pkg-config-dpkghook" "grub/" "sphinx_rtd_theme/" "texmf/" "qlogging-categories5/" "debianutils/" "system-config-printer/" "metainfo/" "snmp/" "glib-2.0/" "fonts-droid-fallback/" "gnome-control-center/" "debhelper/" "media-player-info/" "installation-report/" "gtksourceview-3.0/" "colord/" "base-passwd/" "pulseaudio/" "java/" "kconf_update/" "gstreamer-1.0/" "desktop-base/" "console-setup/" "publicsuffix/" "gdb/" "common-licenses/" "keyrings/" "alsa/" "gvfs/" "parole/" "m17n/" "qt5/" "eog/" "tasksel/" "ca-certificates/" "lcdf-typetools/" "gcc/" "python3/" "avahi/" "application-registry/" "ipp-usb/" "plasma/" "code/" "emacs/" "pkg-config-crosswrapper" "images/" "fonts/" "zoneinfo/" "orca/" "ucf/" "ImageMagick-6/" "ispell/" "iptables/" "maven-repo/" "cmake/" "lightdm/" "mfx/" "djvu/" "ghostscript/" "apport/" "cups/" "gnome/" "PackageKit/" "color/" "gnupg/" "purpose/" "nodejs/" "perl-openssl-defaults/" "guile/" "systemd/" "build-essential/" "gettext/" "speech-dispatcher/" "applications/" "thumbnailers/" "i18n/" "liblouis/" "discover/" "appdata/" "dbus-1/" "pam/" "ModemManager/" "mobile-broadband-provider-info/" "distro-info/" "apparmor-features/" "themes/" "samba/" "snap/" "kservicetypes5/" "yelp/" "accountsservice/" "perl5/" "python-apt/" "glvnd/" "menu/" "libreoffice/" "xfburn/" "sensible-utils/" "texlive/" "pam-configs/" "pyshared/" "contractor/" "gnome-background-properties/" "kxmlgui5/" "tools/" "doc/" "ppp/" "vlc/" "appstream/" "unattended-upgrades/" "accounts/" "binfmts/" "libnumbertext/" "iso-codes/" "sounds/" "mime/" "perl/" "dict/" "info/" "thunderbird/" "sass/" "base-files/" "help/" "atril/" "os-prober/" "fonts-hack/" "p11-kit/" "ca-certificates-java/" "Thunar/" "aptitude/" "doc-base/" "knotifications5/" "libinput/" "mozilla/" "python-wheels/" "kdeconnect/" "sgml-data/" "usb_modeswitch/" "xfce4/" "xml/" "debconf/" "libthai/" "file/" "xsessions/" "gnome-shell/" "X11/" "consolefonts/" "im-config/" "fonts-font-awesome/" "libwacom/" "../" "./")
+
+ ("/usr/share/texlive/" (25118 13468 874494 601000) "LICENSE.TL" "release-texlive.txt" "README" "README.usergroups" "readme-html.dir/" "../" "./" "tlpkg/" "debian/" "index.html" "readme-txt.dir/" "doc.html" "texmf-dist/" "LICENSE.CTAN")
+
+ ("/usr/share/texlive/texmf-dist/" (25118 17335 719904 169000) "tex4ht/" "tex/" "ls-R" "web2c/" "xdvi/" "dvipdfmx/" "texdoc/" "makeindex/" "texdoctk/" "dvips/" "../" "scripts/" "./" "ttf2pk/" "bibtex/" "fonts/" "doc/" "mft/" "metapost/" "source/" "metafont/")
+
+ ("/usr/share/texlive/texmf-dist/tex/" (25118 17335 719904 169000) "lualatex/" "context/" "latex-dev/" "xelatex/" "../" "./" "support/" "plain/" "fontinst/" "generic/" "luatex/" "latex/")
+
+ ("/usr/share/texlive/texmf-dist/tex/generic/" (25118 24472 920027 136000) "commado/" "etexcmds/" "tex4ht/" "pst-fit/" "pst-coil/" "pst-grad/" "pst-qtree/" "config/" "pst-fr3d/" "stringenc/" "catchfile/" "yax/" "pst-fun/" "texapi/" "tex-locale/" "xypic/" "pst-bspline/" "apnum/" "kvdefinekeys/" "alphalph/" "pst-gr3d/" "pst-bar/" "pst-node/" "abbr/" "pst-pdgr/" "babel-english/" "poormanlog/" "shapepar/" "pst-perspective/" "oberdiek/" "infwarerr/" "pst-intersect/" "compare/" "pst-vehicle/" "hyphen/" "2up/" "ltxcmds/" "pstricks/" "context/" "swrule/" "pst-shell/" "lecturer/" "pst-geo/" "pgfplots/" "pst-spinner/" "pst-tree/" "pdftexcmds/" "termmenu/" "path/" "ofs/" "iftex/" "ruler/" "dratex/" "pst-turtle/" "langcode/" "fenixpar/" "localloc/" "pst-mirror/" "pst-ode/" "chemfig/" "scontents/" "dirtree/" "tabto-generic/" "borceux/" "tex-ps/" "xint/" "filemod/" "soul/" "pst-marble/" "pst-geometrictools/" "schemata/" "gettitlestring/" "pstricks-add/" "pst-solides3d/" "expkv-cs/" "pst-infixplot/" "ydoc/" "pdf-trans/" "atbegshi/" "pst-blur/" "textmerg/" "pst-knot/" "pst-text/" "gtl/" "epigram/" "pictex/" "enctex/" "dvips/" "formlett/" "random/" "pst-rubans/" "uniquecounter/" "poster-mac/" "pst-arrow/" "rlepsf/" "pst-gantt/" "embedfile/" "midnight/" "plainpkg/" "xlop/" "upca/" "c-pascal/" "tikzducks/" "magicnum/" "pst-dart/" "bitelist/" "pst-abspos/" "barr/" "pst-pulley/" "pst-jtree/" "trigonometry/" "pst-light3d/" "bigintcalc/" "intcalc/" "listofitems/" "letterspacing/" "mleftright/" "multido/" "pst-pad/" "abstyles/" "petri-nets/" "luatex85/" "babel-portuges/" "pst-tools/" "tex-ini-files/" "bibtex/" "systeme/" "eijkhout/" "pst-labo/" "pst-sigsys/" "pst-diffraction/" "pst-cox/" "xkeyval/" "knuth-lib/" "tikz-cd/" "librarian/" "bitset/" "pst-solarsystem/" "pst-optic/" "fntproof/" "pst-cie/" "markdown/" "pst-eucl/" "pst-asr/" "xcomment/" "soulutf8/" "pst-ob3d/" "pst-circ/" "pst-rputover/" "xstring/" "pst-tvz/" "pst-ghsb/" "dowith/" "pst-lens/" "pst-electricfield/" "mfpic/" "randomlist/" "pst-moire/" "simplekv/" "pst-antiprism/" "navigator/" "texdraw/" "docbytex/" "expkv-opt/" "pst-eps/" "mathdots/" "minifp/" "tracklang/" "multiexpand/" "pdfescape/" "insbox/" "hyphenex/" "pst-thick/" "pst-spectra/" "pgfornament/" "arrayjobx/" "hyph-utf8/" "namedef/" "pst-osci/" "pst-func/" "pst-3dplot/" "fltpoint/" "chronosys/" "nth/" "vaucanson-g/" "expkv/" "pst-stru/" "expkv-def/" "pst-poly/" "shade/" "circuitikz/" "outerhbox/" "olsak-misc/" "colortab/" "pst-ovl/" "pst-3d/" "pst-contourplot/" "gates/" "pst-math/" "pst-bezier/" "pst-slpe/" "autoaligne/" "pst-lsystem/" "enigma/" "thumbpdf/" "pst-plot/" "pst-feyn/" "pst-fractal/" "metapost/" "gobble/" "texdate/" "epsf/" "pdftex/" "babel/" "splitindex/" "pst-graphicx/" "colorprofiles/" "unicode-data/" "kvsetkeys/" "pst-fill/" "frame/" "kastrup/" "dcpic/" "modulus/" "pgf/" "hologo/" "ulem/" "pst-magneticfield/" "hlist/" "tokcycle/" "pst-barcode/" "catcodes/" "../" "./")
+
+ ("/usr/share/texlive/texmf-dist/tex/generic/babel/" (25118 13510 258864 68000) "catalan.sty" "irish.sty" "afrikaans.sty" "albanian.sty" "welsh.sty" "croatian.sty" "dutch.sty" "usorbian.sty" "txtbabel.def" "basque.sty" "lsorbian.sty" "british.sty" "bahasam.sty" "swedish.sty" "esperanto.sty" "romanian.sty" "turkish.sty" "switch.def" "ukraineb.sty" "babel-bidi-basic-r.lua" "germanb.sty" "czech.sty" "babel.sty" "babel-data-cjk.lua" "bahasa.sty" "icelandic.sty" "babel.def" "portuges.sty" "UKenglish.sty" "locale/" "USenglish.sty" "russianb.sty" "galician.sty" "../" "naustrian.sty" "./" "hyphen.cfg" "scottish.sty" "danish.sty" "nil.ldf" "luababel.def" "serbian.sty" "samin.sty" "blplain.tex" "breton.sty" "interlingua.sty" "spanish.sty" "bplain.tex" "austrian.sty" "italian.sty" "american.sty" "norsk.sty" "plain.def" "xebabel.def" "slovak.sty" "magyar.sty" "english.sty" "estonian.sty" "polish.sty" "babel-bidi-basic.lua" "finnish.sty" "slovene.sty" "bulgarian.sty" "greek.sty" "francais.sty" "hebrew.sty" "ngermanb.sty" "babel-data-bidi.lua" "latin.sty")
+
+ ("/home/brun0/Desktop/universidade/" (25118 12883 36728 420000) "./" "../" "ETICA/")
+
+ ("/home/brun0/Desktop/estagio/semana1/01_03_2022/" (25118 11968 636052 351000) "reuniao_manha.md" "./" "../")
+
+ ("/home/brun0/Desktop/estagio/semana1/01_02_2022/" (25117 62527 948740 522000) "reuniao_manha.md" "./" "../")
+
+ ("/home/brun0/Desktop/estagio/reunioes/" (25114 56301 970318 476000) "reuniao_24_jan" "./" "../")
+
+ ("/home/brun0/Desktop/brun0_Stuff/joao/" (25115 38758 230164 550000) ".gitignore" "jpdi/" "env/" "./" "../" ".mypy_cache/" ".pre-commit-config.yaml" ".git/" "setup.cfg")
+
+ ("/home/brun0/Desktop/brun0_Stuff/joao/jpdi/" (25115 38034 978490 675000) "output.json" "./" "../" "joao.sh" "joao.py" "output.xls")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

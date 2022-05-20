@@ -122,5 +122,5 @@ if ! shopt -oq posix; then
   fi
 fi
 
-source ~/.profile
+source ~/.bash_profile
 stty -ixon

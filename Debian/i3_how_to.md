@@ -36,22 +36,12 @@ sudo apt install i3 xorg nitrogen tree eog curl jq xclip lxappearance chromium g
 
 - Add wallpaper image from `nitrogen`
 
-# Copy the `config` and `i3status.conf` files from this repo inside `i3` folder
+# Copy the `config` and `i3blocks.conf` files from this repo inside `i3` folder
 
 # Install stuff
 
-- brave browser
-
-```bash
-sudo apt install apt-transport-https curl gnupg software-properties-common
-sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
-sudo apt update
-sudo apt install brave-browser
-```
-
-# TODO
-
+- urxvt
+- Iosevka font and set that to terminal
 - emacs
 - sublime
 - pip
