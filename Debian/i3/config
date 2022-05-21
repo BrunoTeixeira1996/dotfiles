@@ -207,7 +207,7 @@ bar {
 exec nitrogen --restore
 
 # Lockscreen
-bindsym $mod+x exec i3lock -c 181818
+bindsym $mod+x exec i3lock -c 181818 
 
 # Borders
 hide_edge_borders both
