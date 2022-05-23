@@ -188,6 +188,7 @@ client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
 client.background       #FFFFFF
 
 bar {
+  tray_output primary
   status_command i3blocks -c /home/brun0/.config/i3/i3blocks.conf
 #  status_command i3status -c /home/brun0/.config/i3/i3status.conf
   colors {
@@ -214,6 +215,8 @@ hide_edge_borders both
 
 # Execs for startups
 exec --no-startup-id i3-msg 'workspace $ws1; exec urxvt; workspace $ws2; exec emacs&; workspace $ws3; exec firefox; workspace $ws4; exec keepassx'
-exec --no-startup-id ~/.config/i3/scripts/screen_laptop.sh
-# TODO
-# find if it has second monitor
+#exec --no-startup-id ~/.config/i3/scripts/laptop-monitor.sh
+
+bindsym $mod+Shift+h exec "~/.config/i3/scripts/dual-monitor-benq-x1.sh"
+bindsym $mod+Shift+p exec "~/.config/i3/scripts/laptop-monitor.sh"
+bindsym $mod+m move workspace to output right
