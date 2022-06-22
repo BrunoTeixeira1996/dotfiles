@@ -51,6 +51,11 @@ aptitude install firmware-realtek
 aptitude install firmware-iwlwifi
 ```
 
+# If Intel Sound
+
+- Navigate to `https://packages.debian.org/bullseye/all/firmware-sof-signed/download` and download `http://ftp.us.debian.org/debian/pool/non-free/f/firmware-sof/firmware-sof-signed_1.7-1_all.deb` 
+- Then install the deb package using `sudo dpkg -i firm*.deb` , reboot and sound works
+
 ## Install fonts (Hack)
 
 ```bash

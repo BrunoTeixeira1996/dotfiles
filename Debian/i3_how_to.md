@@ -38,6 +38,11 @@ sudo apt install i3 xorg nitrogen tree eog curl jq xclip lxappearance chromium g
 
 # Copy the `config` and `i3blocks.conf` files from this repo inside `i3` folder
 
+# If Intel Sound
+
+- Navigate to `https://packages.debian.org/bullseye/all/firmware-sof-signed/download` and download `http://ftp.us.debian.org/debian/pool/non-free/f/firmware-sof/firmware-sof-signed_1.7-1_all.deb` 
+- Then install the deb package using `sudo dpkg -i firm*.deb` , reboot and sound works
+
 # Install stuff
 
 - urxvt

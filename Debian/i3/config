@@ -214,7 +214,7 @@ bindsym $mod+x exec i3lock -c 181818
 hide_edge_borders both
 
 # Execs for startups
-exec --no-startup-id i3-msg 'workspace $ws1; exec urxvt; workspace $ws2; exec emacs&; workspace $ws3; exec firefox; workspace $ws4; exec keepassx'
+exec --no-startup-id i3-msg 'workspace $ws1; exec urxvt; workspace $ws2; exec emacs; workspace $ws3; exec brave-browser; workspace $ws4; exec keepassx;'
 #exec --no-startup-id ~/.config/i3/scripts/laptop-monitor.sh
 
 bindsym $mod+Shift+h exec "~/.config/i3/scripts/dual-monitor-benq-x1.sh"
