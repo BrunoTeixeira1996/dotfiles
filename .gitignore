@@ -2,3 +2,5 @@
 .config/xfce4/**
 *~
 \#*#
+dotfiles.sublime-project
+dotfiles.sublime-workspace

@@ -1,4 +1,0 @@
-// These settings override both User and Default settings for the YAML syntax
-{
-		"color_scheme": "Packages/User/Themes/Gruber-Darker.tmTheme",
-}

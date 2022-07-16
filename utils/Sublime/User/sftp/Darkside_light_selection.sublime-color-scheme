@@ -2,11 +2,11 @@
     "rules": [
         {
             "scope": "constant.language.failure.sftp",
-            "foreground": "#ec5f66"
+            "foreground": "#eb4949"
         },
         {
             "scope": "constant.language.success.sftp",
-            "foreground": "#99c794"
+            "foreground": "#68c244"
         }
     ]
 }

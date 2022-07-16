@@ -5,13 +5,13 @@
 	],
 	"installed_packages":
 	[
-		"BetterFindBuffer",
-		"Git badges like VS Code",
-		"Grepmark",
+		"Anaconda",
+		"BracketHighlighter",
+		"FileIcons Mono",
 		"Package Control",
 		"PlainTasks",
 		"SFTP",
-		"Theme - SoDaReloaded",
-		"Theme - Tech49",
+		"SideBarEnhancements",
+		"Terminus",
 	],
 }
