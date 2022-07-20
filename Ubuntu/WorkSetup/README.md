@@ -11,18 +11,15 @@ adduser brun0 sudo
 reboot
 ```
 
-### Instal 
+### Install
 
 ```
-sudo apt install i3 xorg nitrogen tree eog git curl jq xclip lxappearance  git pulseaudio alsa-utils pavucontrol tmux
+sudo apt install tree eog git curl jq xclip git tmux
 reboot
 ```
 
-- Go to `/dotfiles/Debian/` and copy `i3` folder
-
 ## Core
 
-- i3
 - dbeaver
 - cURL
 - git
@@ -31,6 +28,7 @@ reboot
 - tmux
 - xclip
 - eog
+- virtualbox
 - pip
 - virtualenv
 - tree
@@ -47,3 +45,8 @@ reboot
 - filezilla
 - keepassx
 - openvpn
+
+## Configure
+
+- VPN
+- Certs
