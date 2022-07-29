@@ -3,10 +3,10 @@
 	[
 		"Vintage",
 	],
-	"font_size": 13,
+	"font_size": 16,
 	"font_face" : "Iosevka",
-	"theme": "Adaptive.sublime-theme",
-	"color_scheme": "Packages/User/Themes/Visual_Studio_Dark_Plus.tmTheme",
+	"theme": "Default Dark.sublime-theme",
+	"color_scheme": "Packages/Theme - One Dark/One Dark.tmTheme",
 	"remember_open_files": false,
 	"hot_exit": false,
 	"scroll_past_end": true,
@@ -15,5 +15,5 @@
 	"show_definitions": false,
 	"show_encoding": true,
 	"show_errors_inline": false,
-
+	"gtk_client_side_window_decorations": false,
 }
