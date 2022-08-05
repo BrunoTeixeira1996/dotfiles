@@ -7,16 +7,17 @@
   go_right = <Shift>Right
   split_horiz = <Primary>h
   split_vert = <Primary>v
+  close_term = <Primary>w
 [profiles]
   [[default]]
-    background_darkness = 1.0
-    font = Monospace 13
-    scrollback_infinite = True
-    use_system_font = False
     background_color = "#1e2127"
+    background_darkness = 1.0
     cursor_color = "#676c76"
+    font = Monospace 13
     foreground_color = "#5c6370"
+    scrollback_infinite = True
     palette = "#000000:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#abb2bf:#5c6370:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#fffefe"
+    use_system_font = False
     background_image = None
 [layouts]
   [[default]]
