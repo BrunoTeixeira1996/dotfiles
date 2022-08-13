@@ -1,0 +1,24 @@
+- name: apt-tools
+  become: true
+  vars:
+    packages:
+      - apt-transport-https
+      - terminator
+      - openvpn
+      - nmap
+      - curl
+      - wireshark
+      - unrar
+      - tmux
+      - thunderbird
+      - wireguard
+      - flameshot
+      - okular
+      - tree
+  tasks:
+    - name: Install apt-tools
+      apt:
+        name: "{{ item }}"
+        state: latest
+        update_cache: true
+      loop: "{{ packages }}"

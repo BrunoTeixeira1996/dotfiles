@@ -1,5 +1,5 @@
 ---
-- name: installing sublime-text
+- name: Installing sublime-text
   become: true
   tasks:
     - name: add pgp key

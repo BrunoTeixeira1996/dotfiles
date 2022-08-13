@@ -1,3 +1,4 @@
 ---
   - include: check-requirements.yml
-  - include: sublime.yml
+  - include: apt-tools.yml
+  #- include: sublime.yml
