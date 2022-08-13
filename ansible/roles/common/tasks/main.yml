@@ -1,5 +1,6 @@
 ---
   - include: check-requirements.yml
+  - include: tree.yml
   #- include: flameshot.yml
-  - include: apt-tools.yml
+  # - include: apt-tools.yml
   #- include: sublime.yml
