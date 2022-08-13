@@ -1,4 +1,7 @@
+---
 - name: Install flameshot
-  flameshot:
+  become: true
+  apt:
     name: flameshot
-    state: latest
+    state: present
+    update_cache: yes
