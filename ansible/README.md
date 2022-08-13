@@ -21,5 +21,6 @@ ansible-playbook plays/playbook.yml -i hosts.ini
 
 ## TODO
 
+- Automate config files in `tmux`, `terminator`
 - Change xfce4 visual with ansible
 - Make it work for PopOS!

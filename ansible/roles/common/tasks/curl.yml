@@ -1,7 +1,7 @@
 ---
-- name: Install tree
+- name: Install curl
   become: true
   apt:
-    name: tree
+    name: curl
     state: latest
     update_cache: yes

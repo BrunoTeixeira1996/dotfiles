@@ -1,7 +1,7 @@
 ---
-- name: Install tree
+- name: Install openvpn
   become: true
   apt:
-    name: tree
+    name: openvpn
     state: latest
     update_cache: yes

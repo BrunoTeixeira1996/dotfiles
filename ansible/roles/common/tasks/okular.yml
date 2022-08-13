@@ -1,7 +1,7 @@
 ---
-- name: Install tree
+- name: Install okular
   become: true
   apt:
-    name: tree
+    name: okular
     state: latest
     update_cache: yes

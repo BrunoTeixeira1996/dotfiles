@@ -1,7 +1,7 @@
 ---
-- name: Install tree
+- name: Install terminator
   become: true
   apt:
-    name: tree
+    name: terminator
     state: latest
     update_cache: yes

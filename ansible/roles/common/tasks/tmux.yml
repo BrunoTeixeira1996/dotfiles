@@ -1,7 +1,7 @@
 ---
-- name: Install tree
+- name: Install tmux
   become: true
   apt:
-    name: tree
+    name: tmux
     state: latest
     update_cache: yes

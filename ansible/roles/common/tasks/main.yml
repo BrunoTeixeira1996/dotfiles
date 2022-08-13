@@ -1,6 +1,14 @@
 ---
   - include: check-requirements.yml
+  - include: apt-transport-https.yml
+  - include: openvpn.yml
+  - include: nmap.yml
+  - include: curl.yml
+  - include: wireshark.yml
+  - include: wireguard.yml
+  - include: okular.yml
+  - include: thunderbird.yml
+  - include: tmux.yml
+  - include: terminator.yml
   - include: tree.yml
-  #- include: flameshot.yml
-  # - include: apt-tools.yml
-  #- include: sublime.yml
+  - include: flameshot.yml
