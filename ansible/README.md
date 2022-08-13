@@ -19,8 +19,30 @@ sudo apt-get -y install ansible
 ansible-playbook plays/playbook.yml -i hosts.ini
 ```
 
+- Next just configure:
+	- SSH Keys
+	- Github Keys
+	- Keepassxc db
+
 ## TODO
 
-- Automate config files in `tmux`, `terminator`
+- Automate installation for:
+	- virtualbox
+	- wifi
+	- zoom
+	- telegram
+	- brave
+	- keepassxc
+	- Iosevka font
+	- Filezilla
+	- NewsFlash
+	- Obsidian
+
+- Automate config files for:
+	- tmux
+	- terminator
+	- sublimetext
+	- NewsFlash
+
 - Change xfce4 visual with ansible
 - Make it work for PopOS!
