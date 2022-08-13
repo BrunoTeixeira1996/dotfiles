@@ -3,10 +3,10 @@
 	[
 		"Vintage",
 	],
-	"font_size": 15,
+	"font_size": 18,
 	"font_face" : "Iosevka",
-	"theme": "Default Dark.sublime-theme",
-	"color_scheme": "Packages/Theme - One Dark/One Dark.tmTheme",
+	"theme": "Adaptive.sublime-theme",
+	"color_scheme": "Monokai.sublime-color-scheme",
 	"remember_open_files": false,
 	"hot_exit": false,
 	"scroll_past_end": true,

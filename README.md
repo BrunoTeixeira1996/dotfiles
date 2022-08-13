@@ -1,5 +1,11 @@
+# What I use
+
 - I tend to use
-    - Debian for my laptop (i3)
-    - Xubuntu for my work laptop
-    - Ubuntu for vms
+    - Debian with xfce for my laptop
+    - PopOS for my work laptop
+    - Ubuntu server for vms
     - Windows for my desktop and gaming
+
+# How to automate with Ansible
+
+- Check `ansible` folder
