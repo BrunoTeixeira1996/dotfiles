@@ -3,5 +3,5 @@
   become: true
   apt:
     name: flameshot
-    state: present
+    state: latest
     update_cache: yes
