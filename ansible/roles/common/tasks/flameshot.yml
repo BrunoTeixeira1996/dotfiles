@@ -1,0 +1,4 @@
+- name: Install flameshot
+  flameshot:
+    name: flameshot
+    state: latest
