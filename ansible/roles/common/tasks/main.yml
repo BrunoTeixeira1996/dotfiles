@@ -1,2 +1,3 @@
 ---
   - include: check-requirements.yml
+  - include: sublime.yml
