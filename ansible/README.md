@@ -33,11 +33,12 @@ ansible-playbook plays/playbook.yml -i hosts.ini --fork 50
 
 ## TODO
 
+- Get args and see if its a installation for a vm or a pc
+
 - Automate installation for:
-	- virtualbox
+	- virtualbox [testing]
 	- Iosevka font
-	- NewsFlash
-	- Obsidian [testing]
+	- NewsFlash [testing]
 
 - Automate config files for:
 	- NewsFlash

@@ -1,6 +1,8 @@
 ---
   - include: check-requirements.yml
-  - include: obsidian.yml
+  - include: virtualbox.yml
+  - include: flatpak.yml
+  # - include: obsidian.yml
   #- include: wifi.yml
   #- include: brave.yml
   #- include: telegram.yml

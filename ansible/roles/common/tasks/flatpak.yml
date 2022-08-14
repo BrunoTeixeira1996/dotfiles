@@ -1,0 +1,12 @@
+---
+- name: Install flatpak
+  import_role:
+    name: devopstoolbox.flatpak
+  vars:
+    flatpak_method: system
+    flatpak_repos:
+      - https://dl.flathub.org/repo/flathub.flatpakrepo
+
+    # Packages to install
+    flatpak_packages:
+      - com.gitlab.newsflash
