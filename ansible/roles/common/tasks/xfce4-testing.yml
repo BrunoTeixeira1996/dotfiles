@@ -1,5 +1,5 @@
 - name: Get workspace names (4)
-  community.general.xfconf_info:
+  xfconf_info:
     channel: xfwm4
     property: /general/workspace_names
   register: result
