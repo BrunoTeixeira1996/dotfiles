@@ -1,5 +1,3 @@
-- name: Get workspace names (4)
-  xfconf_info:
-    channel: xfwm4
-    property: /general/workspace_names
+- name: Get list of all available channels
+  xfconf_info: {}
   register: result
