@@ -50,4 +50,5 @@ ansible-playbook plays/playbook.yml -i hosts.ini --skip-tags workstation --fork 
 	- Iosevka font
 
 - Change xfce4 visual with ansible
+	- `sudo apt install dbus-x11` is required
 - Make it work for PopOS!
