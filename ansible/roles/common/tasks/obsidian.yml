@@ -6,4 +6,3 @@
 
 - name: Install obsidian - Installing .deb package
   apt: deb="/home/{{ username }}/Downloads/obsidian.deb"
-  sudo: true
