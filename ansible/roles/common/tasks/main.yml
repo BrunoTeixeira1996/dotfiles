@@ -1,9 +1,11 @@
 ---
   - include: check-requirements.yml
-    tags: ["workstation, vm"]
+    tags:
+      always
 
   - include: apt-transport-https.yml
-    tags: ["workstation, vm"]
+    tags:
+      always
 
   - include: newsflash.yml
     tags:
@@ -26,7 +28,8 @@
       - workstation
 
   - include: brave.yml
-    tags: ["workstation, vm"]
+    tags:
+      always
 
   - include: telegram.yml
     tags:
@@ -41,19 +44,24 @@
       - workstation
 
   - include: openvpn.yml
-    tags: ["workstation, vm"]
+    tags:
+      always
 
   - include: nmap.yml
-    tags: ["workstation, vm"]
+    tags:
+      always
 
   - include: curl.yml
-    tags: ["workstation, vm"]
+    tags:
+      always
 
   - include: wireshark.yml
-    tags: ["workstation, vm"]
+    tags:
+      always
 
   - include: wireguard.yml
-    tags: ["workstation, vm"]
+    tags:
+      always
 
   - include: okular.yml
     tags:
@@ -64,16 +72,20 @@
       - workstation
 
   - include: tmux.yml
-    tags: ["workstation, vm"]
+    tags:
+      always
 
   - include: sublime.yml
-    tags: ["workstation, vm"]
+    tags:
+      always
 
   - include: terminator.yml
-    tags: ["workstation, vm"]
+    tags:
+      always
 
   - include: tree.yml
-    tags: ["workstation, vm"]
+    tags:
+      always
 
   - include: flameshot.yml
     tags:
