@@ -1,5 +1,6 @@
 ---
 - name: Set workspace names (1)
+  become_user: brun0
   xfconf:
     channel: xfwm4
     property: /general/workspace_names
