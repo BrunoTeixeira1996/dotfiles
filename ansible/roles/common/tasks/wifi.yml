@@ -1,0 +1,7 @@
+---
+- name: Install wifi firmware
+  become: true
+  apt:
+    name: firmware-iwlwifi
+    state: latest
+    update_cache: yes

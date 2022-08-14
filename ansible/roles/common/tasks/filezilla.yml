@@ -1,0 +1,7 @@
+---
+- name: Install filezilla
+  become: true
+  apt:
+    name: filezilla
+    state: latest
+    update_cache: yes

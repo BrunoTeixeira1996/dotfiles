@@ -1,5 +1,10 @@
 ---
   - include: check-requirements.yml
+  - include: wifi.yml
+  - include: brave.yml
+  - include: telegram.yml
+  - include: filezilla.yml
+  - include: keepassxc.yml
   # - include: apt-transport-https.yml
   # - include: openvpn.yml
   # - include: nmap.yml

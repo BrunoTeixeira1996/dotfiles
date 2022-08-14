@@ -1,0 +1,7 @@
+---
+- name: Install keepassxc
+  become: true
+  apt:
+    name: keepassxc
+    state: latest
+    update_cache: yes
