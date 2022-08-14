@@ -22,8 +22,8 @@
 
 - name: Install sublimetext - copy configs
   copy:
-    src: "/home/brun0/Desktop/dotfiles/utils/Sublime/User"
-    dest: "/home/{{ username }}/sublime-text/Packages"
+    src: "/home/{{ username }}/Desktop/dotfiles/utils/Sublime/User/"
+    dest: "/home/{{ username }}/.config/sublime-text/Packages/"
     owner: "{{ username }}"
     group: "{{ username }}"
     mode: 0700
