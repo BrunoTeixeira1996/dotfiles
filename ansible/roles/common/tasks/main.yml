@@ -3,9 +3,9 @@
     tags:
       always
 
-  - include: apt-transport-https.yml
-    tags:
-      always
+  # - include: apt-transport-https.yml
+  #   tags:
+  #     always
 
   - include: xfce4-testing.yml
     tags:
