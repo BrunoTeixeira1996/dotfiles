@@ -13,18 +13,31 @@ sudo apt-get -y install ansible
 
 - Install git and clone this repo
 
-- Execute a dry run:
+
+- Execute a dry run for worstation:
 
 ```bash
-ansible-playbook plays/playbook.yml -i hosts.ini --check --fork 50
+ansible-playbook plays/playbook.yml -i hosts.ini --tags "all,workstation" --check --fork 50
 ```
 
-
-- Execute ansible playbook:
+- Execute a dry run for vm:
 
 ```bash
-ansible-playbook plays/playbook.yml -i hosts.ini --fork 50
+ansible-playbook plays/playbook.yml -i hosts.ini --tags "all,vm" --check --fork 50
 ```
+
+- Execute ansible playbook for workstation:
+
+```bash
+ansible-playbook plays/playbook.yml -i hosts.ini --tags "all,workstation" --fork 50
+```
+
+- Execute ansible playbook for vm:
+
+```bash
+ansible-playbook plays/playbook.yml -i hosts.ini --tags "all,vm" --fork 50
+```
+
 
 - Next just configure:
 	- SSH Keys
@@ -32,8 +45,6 @@ ansible-playbook plays/playbook.yml -i hosts.ini --fork 50
 	- Keepassxc db
 
 ## TODO
-
-- Get args and see if its a installation for a vm or a pc
 
 - Automate installation for:
 	- Iosevka font

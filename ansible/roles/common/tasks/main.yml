@@ -1,32 +1,92 @@
 ---
   - include: check-requirements.yml
-  #- include: newsflash.yml
-  # - include: virtualbox.yml
-  # - include: flatpak.yml
+    tags:
+      - all
+
+  - include: apt-transport-https.yml
+    tags:
+      - all
+
+  - include: newsflash.yml
+    tags:
+      - workstation
+
+  - include: virtualbox.yml
+    tags:
+      - workstation
+
+  - include: flatpak.yml
+    tags:
+      - workstation
+
   - include: obsidian.yml
     tags:
-      - normal
+      - workstation
+
   - include: wifi.yml
     tags:
-      - vm
-  #- include: brave.yml
-  #- include: telegram.yml
-  #- include: filezilla.yml
-  #- include: keepassxc.yml
-  # - include: apt-transport-https.yml
-  # - include: openvpn.yml
-  # - include: nmap.yml
+      - workstation
+
+  - include: brave.yml
+    tags:
+      - all
+
+  - include: telegram.yml
+    tags:
+      - workstation
+
+  - include: filezilla.yml
+    tags:
+      - workstation
+
+  - include: keepassxc.yml
+    tags:
+      - workstation
+
+  - include: openvpn.yml
+    tags:
+      - all
+
+  - include: nmap.yml
+    tags:
+      - all
+
   - include: curl.yml
     tags:
-      - normal
-  # - include: wireshark.yml
-  # - include: wireguard.yml
-  # - include: okular.yml
-  # - include: thunderbird.yml
+      - all
+
+  - include: wireshark.yml
+    tags:
+      - all
+
+  - include: wireguard.yml
+    tags:
+      - all
+
+  - include: okular.yml
+    tags:
+      - workstation
+
+  - include: thunderbird.yml
+    tags:
+      - workstation
+
   - include: tmux.yml
     tags:
-      - normal
-  # - include: sublime.yml
-  # - include: terminator.yml
-  # - include: tree.yml
-  # - include: flameshot.yml
+      - all
+
+  - include: sublime.yml
+    tags:
+      - all
+
+  - include: terminator.yml
+    tags:
+      - all
+
+  - include: tree.yml
+    tags:
+      - all
+
+  - include: flameshot.yml
+    tags:
+      - workstation
