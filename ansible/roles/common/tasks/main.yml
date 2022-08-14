@@ -8,7 +8,8 @@
   # - include: wireguard.yml
   # - include: okular.yml
   # - include: thunderbird.yml
-  - include: tmux.yml
-  # - include: terminator.yml
+  #- include: tmux.yml
+  - include: sublime.yml
+  - include: terminator.yml
   # - include: tree.yml
   # - include: flameshot.yml

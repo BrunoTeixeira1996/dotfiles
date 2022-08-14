@@ -56,76 +56,10 @@ aptitude install firmware-iwlwifi
 - Navigate to `https://packages.debian.org/bullseye/all/firmware-sof-signed/download` and download `http://ftp.us.debian.org/debian/pool/non-free/f/firmware-sof/firmware-sof-signed_1.7-1_all.deb` 
 - Then install the deb package using `sudo dpkg -i firm*.deb` , reboot and sound works
 
-## Install fonts (Hack)
+## Configure tmux
 
-```bash
-apt install fonts-hack-ttf
-fc-cache -fv
-```
+* Just copy and paste `.tmux.conf` file from this repo to the host machine
 
-## Install Numix theme
-
-```bash
-sudo aptitude install numix-gtk-theme numix-icon-theme
-```
-
-* Create a file named `settings.ini` in `~/.config/gtk-3.0/` using the following contents for a dark numix theme
-
-```bash
-[Settings]
-gtk-application-prefer-dark-theme=1
-```
-
-## Install Emacs
-
-```bash
-apt install emacs
-Open emacs and close it to automatic create the .emacs.d folder
-cd doftfiles/utils/.emacs.d/
-cp -r * ~/.emacs.d
-```
-
-## Configure xfce4-terminal
-
-* Navigate to `~/.config/xfce4/terminal/terminalrc` and paste configs from `xfce4-terminal-configs` file from this repo
-
-## Configure bashrc, profile and tmux
-
-* Just copy and paste `.bashrc`, `.profile` and `.tmux.conf` file from this repo to the host machine
-
-## Install autorandr
-
-```bash
-apt install python3-pip
-apt install xclip
-pip3 install autorandr
-```
-
-- Run the dual monitor script (external monitor on left (1600x900))
-
-```bash
-#!/bin/sh
-xrandr --output HDMI-2 --mode 1600x900 --pos 0x0 --rotate normal --output HDMI-1 --off --output DP-1 --off --output eDP-1 --primary --mode 1920x1080 --pos 1600x0 --rotate normal --output DP-2 --off
-```
-
-- Save the configuration with autorandr
-
-```bash
-autorandr --save brun0-left-external-monitor
-```
-
-- Then to apply in the future, just run 
-
-```bash
-monitor
-```
-
-## Install and configure newsboat RSS Feed
-
-```bash
-apt install newsboat
-```
-- And then delete `.newsboat` folder and use the folder from `/utils/`
 
 ## Install basic utilities
 

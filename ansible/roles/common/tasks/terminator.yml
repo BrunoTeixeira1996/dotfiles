@@ -6,20 +6,10 @@
     state: latest
     update_cache: yes
 
-# - name: Install terminator - copy config file
-
-# - name: install zsh - copy .zshrc
-#   copy:
-#     src: "../files/.zshrc"
-#     dest: "/home/{{ username }}/.zshrc"
-#     owner: "{{ username }}"
-#     group: "{{ username }}"
-#     mode: 0660
-
-# - name: install zsh - copy .tmux.conf
-#   copy:
-#     src: "../files/.tmux.conf"
-#     dest: "/home/{{ username }}/.tmux.conf"
-#     owner: "{{ username }}"
-#     group: "{{ username }}"
-#     mode: 0660
+- name: Install terminator - copy terminator config
+  copy:
+    src: "../files/config"
+    dest: "/home/{{ username }}/.config/terminator"
+    owner: "{{ username }}"
+    group: "{{ username }}"
+    mode: 0644

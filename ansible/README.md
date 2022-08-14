@@ -39,7 +39,6 @@ ansible-playbook plays/playbook.yml -i hosts.ini
 	- Obsidian
 
 - Automate config files for:
-	- tmux
 	- terminator
 	- sublimetext
 	- NewsFlash

@@ -6,10 +6,10 @@
     state: latest
     update_cache: yes
 
-- name: install tmux - copy .tmux.conf
+- name: Install tmux - copy .tmux.conf
   copy:
     src: "../files/.tmux.conf"
     dest: "/home/{{ username }}/.tmux.conf"
     owner: "{{ username }}"
     group: "{{ username }}"
-    mode: 0660
+    mode: 0644
