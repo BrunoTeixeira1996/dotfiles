@@ -1,4 +1,7 @@
 ---
-- name: Get list of all available channels
-  community.general.xfconf_info: {}
-  register: result
+- name: Set workspace names (4)
+  xfconf:
+    channel: xfwm4
+    property: /general/workspace_names
+    value_type: string
+    value: ['Main', 'Work1', 'Work2', 'Tmp']
