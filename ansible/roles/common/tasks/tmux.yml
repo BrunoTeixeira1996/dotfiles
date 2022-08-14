@@ -8,7 +8,7 @@
 
 - name: install tmux - copy .tmux.conf
   copy:
-    src: "../../../../../utils/.tmux.conf"
+    src: "../files/.tmux.conf"
     dest: "/home/{{ username }}/.tmux.conf"
     owner: "{{ username }}"
     group: "{{ username }}"
