@@ -1,6 +1,6 @@
 ---
   - include: check-requirements.yml
-  - include: newsflash.yml
+  #- include: newsflash.yml
   # - include: virtualbox.yml
   # - include: flatpak.yml
   # - include: obsidian.yml
@@ -18,7 +18,7 @@
   # - include: okular.yml
   # - include: thunderbird.yml
   #- include: tmux.yml
-  # - include: sublime.yml
+  - include: sublime.yml
   # - include: terminator.yml
   # - include: tree.yml
   # - include: flameshot.yml

@@ -37,7 +37,6 @@ ansible-playbook plays/playbook.yml -i hosts.ini --fork 50
 
 - Automate installation for:
 	- Iosevka font
-	- NewsFlash [testing]
 
 - Change xfce4 visual with ansible
 - Make it work for PopOS!
