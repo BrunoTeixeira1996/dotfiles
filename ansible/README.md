@@ -17,13 +17,13 @@ sudo apt-get -y install ansible
 - Execute a dry run for worstation:
 
 ```bash
-ansible-playbook plays/playbook.yml -i hosts.ini --tags "all,workstation" --check --fork 50
+ansible-playbook plays/playbook.yml -i hosts.ini --tags "tagged" --check --fork 50
 ```
 
 - Execute a dry run for vm:
 
 ```bash
-ansible-playbook plays/playbook.yml -i hosts.ini --tags "all,vm" --check --fork 50
+ansible-playbook plays/playbook.yml -i hosts.ini --tags "untagged" --check --fork 50
 ```
 
 - Execute ansible playbook for workstation:
