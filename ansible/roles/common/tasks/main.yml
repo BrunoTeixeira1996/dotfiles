@@ -3,8 +3,12 @@
   #- include: newsflash.yml
   # - include: virtualbox.yml
   # - include: flatpak.yml
-  # - include: obsidian.yml
-  #- include: wifi.yml
+  - include: obsidian.yml
+    tags:
+      - normal
+  - include: wifi.yml
+    tags:
+      - vm
   #- include: brave.yml
   #- include: telegram.yml
   #- include: filezilla.yml
@@ -12,13 +16,17 @@
   # - include: apt-transport-https.yml
   # - include: openvpn.yml
   # - include: nmap.yml
-  # - include: curl.yml
+  - include: curl.yml
+    tags:
+      - normal
   # - include: wireshark.yml
   # - include: wireguard.yml
   # - include: okular.yml
   # - include: thunderbird.yml
-  #- include: tmux.yml
-  - include: sublime.yml
+  - include: tmux.yml
+    tags:
+      - normal
+  # - include: sublime.yml
   # - include: terminator.yml
   # - include: tree.yml
   # - include: flameshot.yml
