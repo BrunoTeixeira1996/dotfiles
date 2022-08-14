@@ -1,7 +1,7 @@
 ---
-- name: Set workspace names (4)
+- name: Change the DPI to "192"
   xfconf:
-    channel: xfwm4
-    property: /general/workspace_names
-    value_type: string
-    value: ['Main', 'Work1', 'Work2', 'Tmp']
+    channel: "xsettings"
+    property: "/Xft/DPI"
+    value_type: "int"
+    value: "192"
