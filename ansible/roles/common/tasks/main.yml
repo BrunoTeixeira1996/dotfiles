@@ -1,7 +1,8 @@
 ---
   - include: check-requirements.yml
-  - include: virtualbox.yml
-  - include: flatpak.yml
+  - include: newsflash.yml
+  # - include: virtualbox.yml
+  # - include: flatpak.yml
   # - include: obsidian.yml
   #- include: wifi.yml
   #- include: brave.yml

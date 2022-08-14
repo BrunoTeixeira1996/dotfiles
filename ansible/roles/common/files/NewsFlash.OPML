@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>NewsFlash OPML export</title>
+  </head>
+  <body>
+    <outline text="Linux" title="Linux">
+      <outline title="Daniel Wayne Armstrong" text="Daniel Wayne Armstrong" type="rss" xmlUrl="https://www.dwarmstrong.org/feed.xml" htmlUrl="https://www.dwarmstrong.org/" />
+    </outline>
+    <outline title="Infosec News" text="Infosec News">
+      <outline type="rss" xmlUrl="https://cyware.com/allnews/feed" text="Cyware News - Latest Cyber News" title="Cyware News - Latest Cyber News" htmlUrl="https://cyware.com/" />
+      <outline title="The Hacker News" type="rss" text="The Hacker News" xmlUrl="https://feeds.feedburner.com/TheHackersNews" htmlUrl="https://thehackernews.com/" />
+      <outline htmlUrl="https://threatpost.com/" title="Threatpost" type="rss" xmlUrl="https://threatpost.com/feed/" text="Threatpost" />
+      <outline htmlUrl="https://krebsonsecurity.com/" type="rss" text="Krebs on Security" xmlUrl="https://krebsonsecurity.com/feed/" title="Krebs on Security" />
+      <outline text="SecurityWeek RSS Feed" title="SecurityWeek RSS Feed" type="rss" xmlUrl="https://feeds.feedburner.com/securityweek" htmlUrl="https://www.securityweek.com/" />
+    </outline>
+    <outline text="Tec News" title="Tec News">
+      <outline text="Pplware" title="Pplware" htmlUrl="https://pplware.sapo.pt/" type="rss" xmlUrl="https://pplware.sapo.pt/feed/" />
+      <outline type="rss" xmlUrl="https://feeds.feedburner.com/abertoatedemadrugada" text="Aberto até de Madrugada" htmlUrl="https://abertoatedemadrugada.com/" title="Aberto até de Madrugada" />
+    </outline>
+    <outline title="Infosec" text="Infosec">
+      <outline text="0xdf hacks stuff" htmlUrl="https://0xdf.gitlab.io/" title="0xdf hacks stuff" xmlUrl="https://0xdf.gitlab.io/feed.xml" type="rss" />
+      <outline title="Troy Hunt&apos;s Blog" xmlUrl="https://feeds.feedburner.com/TroyHunt" htmlUrl="https://www.troyhunt.com/" type="rss" text="Troy Hunt&apos;s Blog" />
+    </outline>
+    <outline text="Youtube" title="Youtube">
+      <outline xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCxQKHvKbmSzGMvUrVtJYnUA" text="Learn Linux TV" title="Learn Linux TV" htmlUrl="https://www.youtube.com/channel/UCxQKHvKbmSzGMvUrVtJYnUA" type="rss" />
+      <outline type="rss" htmlUrl="https://www.youtube.com/channel/UClcE-kVhqyiHCcjYwcpfj9w" text="LiveOverflow" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UClcE-kVhqyiHCcjYwcpfj9w" title="LiveOverflow" />
+      <outline text="John Hammond" htmlUrl="https://www.youtube.com/channel/UCVeW9qkBjo3zosnqUbG7CFw" title="John Hammond" type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCVeW9qkBjo3zosnqUbG7CFw" />
+      <outline text="Tech With Tim" title="Tech With Tim" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC4JX40jDee_tINbkjycV4Sg" htmlUrl="https://www.youtube.com/channel/UC4JX40jDee_tINbkjycV4Sg" type="rss" />
+      <outline title="sentdex" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCfzlCWGWYyIQ0aLC5w48gBQ" type="rss" text="sentdex" htmlUrl="https://www.youtube.com/channel/UCfzlCWGWYyIQ0aLC5w48gBQ" />
+      <outline text="PwnFunction" title="PwnFunction" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCW6MNdOsqv2E9AjQkv9we7A" htmlUrl="https://www.youtube.com/channel/UCW6MNdOsqv2E9AjQkv9we7A" type="rss" />
+      <outline xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCHN1aYRP473xX6Z13H_mxMQ" type="rss" text="Chris Greer" title="Chris Greer" htmlUrl="https://www.youtube.com/channel/UCHN1aYRP473xX6Z13H_mxMQ" />
+    </outline>
+  </body>
+</opml>

@@ -36,12 +36,8 @@ ansible-playbook plays/playbook.yml -i hosts.ini --fork 50
 - Get args and see if its a installation for a vm or a pc
 
 - Automate installation for:
-	- virtualbox [testing]
 	- Iosevka font
 	- NewsFlash [testing]
-
-- Automate config files for:
-	- NewsFlash
 
 - Change xfce4 visual with ansible
 - Make it work for PopOS!
