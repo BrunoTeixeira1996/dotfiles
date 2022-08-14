@@ -51,4 +51,6 @@ ansible-playbook plays/playbook.yml -i hosts.ini --skip-tags workstation --fork 
 
 - Change xfce4 visual with ansible
 	- `sudo apt install dbus-x11` is required
+	- https://docs.ansible.com/ansible/latest/collections/community/general/xfconf_module.html
+
 - Make it work for PopOS!
