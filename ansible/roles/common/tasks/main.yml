@@ -7,86 +7,90 @@
     tags:
       always
 
-  - include: newsflash.yml
-    tags:
-      - workstation
-
-  - include: virtualbox.yml
-    tags:
-      - workstation
-
-  - include: flatpak.yml
-    tags:
-      - workstation
-
-  - include: obsidian.yml
-    tags:
-      - workstation
-
-  - include: wifi.yml
-    tags:
-      - workstation
-
-  - include: brave.yml
+  - include: xfce4-testing.yml
     tags:
       always
 
-  - include: telegram.yml
-    tags:
-      - workstation
+  # - include: newsflash.yml
+  #   tags:
+  #     - workstation
 
-  - include: filezilla.yml
-    tags:
-      - workstation
+  # - include: virtualbox.yml
+  #   tags:
+  #     - workstation
 
-  - include: keepassxc.yml
-    tags:
-      - workstation
+  # - include: flatpak.yml
+  #   tags:
+  #     - workstation
 
-  - include: openvpn.yml
-    tags:
-      always
+  # - include: obsidian.yml
+  #   tags:
+  #     - workstation
 
-  - include: nmap.yml
-    tags:
-      always
+  # - include: wifi.yml
+  #   tags:
+  #     - workstation
 
-  - include: curl.yml
-    tags:
-      always
+  # - include: brave.yml
+  #   tags:
+  #     always
 
-  - include: wireshark.yml
-    tags:
-      always
+  # - include: telegram.yml
+  #   tags:
+  #     - workstation
 
-  - include: wireguard.yml
-    tags:
-      always
+  # - include: filezilla.yml
+  #   tags:
+  #     - workstation
 
-  - include: okular.yml
-    tags:
-      - workstation
+  # - include: keepassxc.yml
+  #   tags:
+  #     - workstation
 
-  - include: thunderbird.yml
-    tags:
-      - workstation
+  # - include: openvpn.yml
+  #   tags:
+  #     always
 
-  - include: tmux.yml
-    tags:
-      always
+  # - include: nmap.yml
+  #   tags:
+  #     always
 
-  - include: sublime.yml
-    tags:
-      always
+  # - include: curl.yml
+  #   tags:
+  #     always
 
-  - include: terminator.yml
-    tags:
-      always
+  # - include: wireshark.yml
+  #   tags:
+  #     always
 
-  - include: tree.yml
-    tags:
-      always
+  # - include: wireguard.yml
+  #   tags:
+  #     always
 
-  - include: flameshot.yml
-    tags:
-      - workstation
+  # - include: okular.yml
+  #   tags:
+  #     - workstation
+
+  # - include: thunderbird.yml
+  #   tags:
+  #     - workstation
+
+  # - include: tmux.yml
+  #   tags:
+  #     always
+
+  # - include: sublime.yml
+  #   tags:
+  #     always
+
+  # - include: terminator.yml
+  #   tags:
+  #     always
+
+  # - include: tree.yml
+  #   tags:
+  #     always
+
+  # - include: flameshot.yml
+  #   tags:
+  #     - workstation

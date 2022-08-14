@@ -1,0 +1,7 @@
+- name: Set workspace names (1)
+  xfconf:
+    channel: xfwm4
+    property: /general/workspace_names
+    value_type: string
+    value: ['Main']
+    force_array: true
