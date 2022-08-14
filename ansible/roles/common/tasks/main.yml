@@ -1,10 +1,11 @@
 ---
   - include: check-requirements.yml
-  - include: wifi.yml
-  - include: brave.yml
-  - include: telegram.yml
-  - include: filezilla.yml
-  - include: keepassxc.yml
+  - include: obsidian.yml
+  #- include: wifi.yml
+  #- include: brave.yml
+  #- include: telegram.yml
+  #- include: filezilla.yml
+  #- include: keepassxc.yml
   # - include: apt-transport-https.yml
   # - include: openvpn.yml
   # - include: nmap.yml
@@ -14,7 +15,7 @@
   # - include: okular.yml
   # - include: thunderbird.yml
   #- include: tmux.yml
-  - include: sublime.yml
-  - include: terminator.yml
+  # - include: sublime.yml
+  # - include: terminator.yml
   # - include: tree.yml
   # - include: flameshot.yml

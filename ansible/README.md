@@ -35,14 +35,9 @@ ansible-playbook plays/playbook.yml -i hosts.ini --fork 50
 
 - Automate installation for:
 	- virtualbox
-	- wifi [testing]
-	- telegram [testing]
-	- brave [testing]
-	- keepassxc [testing]
 	- Iosevka font
-	- Filezilla [testing]
 	- NewsFlash
-	- Obsidian
+	- Obsidian [testing]
 
 - Automate config files for:
 	- NewsFlash
