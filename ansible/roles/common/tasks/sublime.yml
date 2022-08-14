@@ -22,7 +22,7 @@
 
 - name: Install sublimetext - copy configs
   copy:
-    src: "/dotfiles/utils/Sublime/User"
+    src: "/home/brun0/Desktop/dotfiles/utils/Sublime/User"
     dest: "/home/{{ username }}/sublime-text/Packages"
     owner: "{{ username }}"
     group: "{{ username }}"
