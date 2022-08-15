@@ -12,7 +12,7 @@
 
 - name: Copy file with owner and permissions
   copy:
-    src: /home/{{ username }}/iosevka.ttc
+    src: /home/{{ username }}/Downloads/iosevka.ttc
     dest: /usr/local/share/fonts/iosevka-font
     owner: brun0
     group: brun0
