@@ -44,15 +44,16 @@ ansible-playbook plays/playbook.yml -i hosts.ini --skip-tags workstation --fork 
 	- Github Keys
 	- Keepassxc db
 
+## Requirements
+
+- `sudo apt install dbus-x11` for xfconf with ansible
+
 ## TODO
 
 - Automate installation for:
 	- Iosevka font
 
 - Change xfce4 visual with ansible
-	- `sudo apt install dbus-x11` is required
 	- https://docs.ansible.com/ansible/latest/collections/community/general/xfconf_module.html
-	- Edit Panel 2 to add default icons
-	- Edit xfce4-appfinder shortcut to use `Super` key
 
 - Make it work for PopOS!
