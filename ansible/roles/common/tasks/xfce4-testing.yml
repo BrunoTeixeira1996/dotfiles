@@ -16,14 +16,17 @@
     value: "1"
 
 # xfconf-query -c xfce4-keyboard-shortcuts -p /commands/custom/Super_L -n -t string -s /commands/custom/Super_L
-- name: Set workspace names (1)
+- name: Create a new keybind
   xfconf:
     channel: xfce4-keyboard-shortcuts
-    property: /commands/custom/Super_G
+    property: /commands/custom/Super_L
     value_type: string
-    value: "/commands/custom/Super_G"
-
-
+    value: "/commands/custom/Super_L"
 
 # xfconf-query -c xfce4-keyboard-shortcuts -p /commands/custom/Super_L -s xfce4-appfinder
-
+- name: Assign keybind to xfce4-appfinder
+  xfconf:
+    channel: xfce4-keyboard-shortcuts
+    property: /commands/custom/Super_L
+    value_type: string
+    value: "xfce4-appfinder"
