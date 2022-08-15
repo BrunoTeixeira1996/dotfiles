@@ -46,6 +46,8 @@ sudo ansible-playbook plays/playbook.yml -i hosts.ini --skip-tags workstation --
 
 ## Requirements
 
+- `sudo apt remove libcurl4` for curl to work
+
 - `sudo apt install dbus-x11` for xfconf with ansible
 
 ## References
