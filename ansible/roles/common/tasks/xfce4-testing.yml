@@ -1,8 +1,16 @@
 ---
+# xfconf-query -c xsettings -p /Net/ThemeName -s  "Adwaita-dark
 - name: Change xfce4 theme to Adwaita-dark
-  become_user: brun0
   xfconf:
     channel: xsettings
     property: /Net/ThemeName
     value_type: string
     value: "Adwaita-dark"
+
+# xfconf-query -c xfce4-panel -p /panels/panel-2/autohide-behavior -s 1
+- name: Change panel 2 to inteliggently hide
+  xfconf:
+    channel: xfce4-panel
+    property: /panels/panel-2/autohide-behavior
+    value_type: string
+    value: "1"

@@ -52,9 +52,6 @@ ansible-playbook plays/playbook.yml -i hosts.ini --skip-tags workstation --fork 
 - Change xfce4 visual with ansible
 	- `sudo apt install dbus-x11` is required
 	- https://docs.ansible.com/ansible/latest/collections/community/general/xfconf_module.html
-	- Edit theme to Adwaita-Dark
-		- `xfconf-query -c xsettings -p /Net/ThemeName -s  "Adwaita-dark"`
-	- Edit Panel 2 to Inteliggently hide
 	- Edit Panel 2 to add default icons
 	- Edit xfce4-appfinder shortcut to use `Super` key
 
