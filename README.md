@@ -6,6 +6,6 @@
     - Ubuntu server for vms
     - Windows for my desktop and gaming
 
-# How to automate with Ansible
+# Automate with Ansible
 
 - Check `ansible` folder

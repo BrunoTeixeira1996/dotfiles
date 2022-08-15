@@ -1,15 +1,13 @@
-# Ubuntu How To
+# Ubuntu Server How To
 
 ## Install
 
 - cURL
 - git
-- sublime
 - jq
 - tmux
 - xclip
-- eog
 - pip
-- virtualenv
+- python3-venv
 - tree
 - mariadb

@@ -54,9 +54,12 @@ sudo ansible-playbook plays/playbook.yml -i hosts.ini --skip-tags workstation --
 
 ## TODO
 
+- Install python3 utils
+	- venv
+	- upgrade pip3
+
 - Make default icons for second panel for xfce4, for now i deactivate the second panel
 
-- Automate installation for:
-	- Iosevka font
+- Make it work for ubuntu vm
 
 - Make it work for PopOS!

@@ -1,4 +1,4 @@
-# Work Setup with Ubuntu
+# Work Setup with PopOS
 
 ## Setup
 
@@ -34,10 +34,7 @@ reboot
 - tree
 - mariadb
 - brave-browser
-- rxvt
-  - create `.Xresources` file and use the `.Xresources` file that exist in this repo
-  - copy `.urxvt` folder to `~`
-  - `sudo update-alternatives --config x-terminal-emulator` and choose urxvt terminal as default
+- terminator
 - Iosevka font
   - https://blog.programster.org/install-iosevka-fonts
 - flameshot
