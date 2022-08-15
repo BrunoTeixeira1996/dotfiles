@@ -48,12 +48,15 @@ ansible-playbook plays/playbook.yml -i hosts.ini --skip-tags workstation --fork 
 
 - `sudo apt install dbus-x11` for xfconf with ansible
 
+## References
+
+- https://docs.ansible.com/ansible/latest/collections/community/general/xfconf_module.html
+
 ## TODO
+
+- Make default icons for second panel for xfce4, for now i deactivate the second panel
 
 - Automate installation for:
 	- Iosevka font
-
-- Change xfce4 visual with ansible
-	- https://docs.ansible.com/ansible/latest/collections/community/general/xfconf_module.html
 
 - Make it work for PopOS!

@@ -1,0 +1,23 @@
+---
+- name: Download and Unarchive Iosevka font
+  unarchive:
+    src: https://github.com/be5invis/Iosevka/releases/download/v15.6.3/super-ttc-iosevka-15.6.3.zip
+    dest: /home/{{ username }}/Downloads
+    remote_src: yes
+
+- name: Create directory in /usr/local/share/fonts for Iosevka font
+  file:
+    path: /usr/local/share/fonts/iosevka-font
+    state: directory
+
+- name: Copy file with owner and permissions
+  copy:
+    src: /home/{{ username }}/iosevka.ttc
+    dest: /usr/local/share/fonts/iosevka-font
+    owner: brun0
+    group: brun0
+    mode: "0644"
+
+- name: Update cache
+  shell:
+    cmd: fc-cache -fv
