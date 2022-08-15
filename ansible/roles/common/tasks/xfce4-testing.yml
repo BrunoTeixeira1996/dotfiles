@@ -1,9 +1,8 @@
 ---
-- name: Set workspace names (1)
+- name: Change xfce4 theme to Adwaita-dark
   become_user: brun0
   xfconf:
-    channel: xfwm4
-    property: /general/workspace_names
+    channel: xsettings
+    property: /Net/ThemeName
     value_type: string
-    value: ['Main']
-    force_array: yes
+    value: "Adwaita-dark"
