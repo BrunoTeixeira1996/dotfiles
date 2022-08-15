@@ -7,7 +7,11 @@
   #   tags:
   #     always
 
-  - include: xfce4-testing.yml
+  # - include: xfce4-testing.yml
+  #   tags:
+  #     always
+
+  - include: iosevka.yml
     tags:
       always
 
