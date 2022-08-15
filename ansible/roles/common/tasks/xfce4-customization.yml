@@ -24,9 +24,9 @@
     value_type: int
     value: 1
 
-- name: Reload panels
-  shell:
-    cmd: xfce4-panel -r
+# - name: Reload panels
+#   shell:
+#     cmd: xfce4-panel -r
 
 # xfconf-query -c xfce4-keyboard-shortcuts -p /commands/custom/Super_L -n -t string -s /commands/custom/Super_L
 - name: Create a new keybind
