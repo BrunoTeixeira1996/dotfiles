@@ -1,4 +1,4 @@
 # Emacs
 
-- Choose init_terminal.el if working with emacs terminal
-- Choose init.el if working with emacs GUI
+- Choose terminal if working with emacs terminal
+- Choose gui if working with emacs GUI
