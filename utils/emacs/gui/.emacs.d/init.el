@@ -3,6 +3,9 @@
 (when (file-exists-p custom-file)
   (load custom-file))
 
+;; this way, emacs recognized bash alias
+(setq shell-file-name "bash")
+(setq shell-command-switch "-ic")
 
 ;; look and feel
 (setq inhibit-startup-message t) ;; disables startup page
@@ -14,7 +17,7 @@
 (set-frame-font "Iosevka-13")
 (global-display-line-numbers-mode) ;; shows line numbers
 (toggle-frame-maximized)
-(setq backup-directory-alist `(("." . "~/.emacs/backups"))) ;; saves garbage backups in .saves folder
+(setq backup-directory-alist `(("." . "~/.emacs.d/backups"))) ;; saves garbage backups in .saves folder
 (setq truncate-lines nil)
 (setq create-lockfiles nil) ;; prevent emacs for creating tem files starting with hashta
 
