@@ -11,13 +11,6 @@ adduser brun0 sudo
 reboot
 ```
 
-### Install
-
-```
-sudo apt install tree eog git curl jq xclip git tmux
-reboot
-```
-
 ## Core
 
 - dbeaver
@@ -42,8 +35,18 @@ reboot
 - filezilla
 - keepassx
 - openvpn
+- emacs
 
 ## Configure
 
 - VPN
 - Certs
+- Copy `.bashrc`
+- Use gui terminal config in this repo
+- Use config for terminator in this repo
+- Use config for sublime in this repo
+
+## .bashrc
+
+- `trans`
+  - transforms `.` from url to `[.]`
