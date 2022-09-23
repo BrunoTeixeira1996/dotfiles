@@ -86,6 +86,8 @@
 (advice-add 'move-text-up :after 'indent-region-advice)
 (advice-add 'move-text-down :after 'indent-region-advice)
 
+;; magit
+(use-package magit :ensure t)
 
 ;; rust mode
 (load-file "~/.emacs.d/config/setup-rust.el")

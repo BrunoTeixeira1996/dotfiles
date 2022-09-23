@@ -1,17 +1,18 @@
-(with-eval-after-load "lsp-rust"
-    (lsp-register-client
-     (make-lsp-client
-      :new-connection (lsp-tramp-connection
-                       (executable-find (car lsp-rust-analyzer-server-command)))
-      :major-modes '(rust-mode rustic-mode)
-      :priority (if (eq lsp-rust-server 'rust-analyzer) 1 -1)
-      :remote? t
-      :initialization-options 'lsp-rust-analyzer--make-init-options
-      :notification-handlers (ht<-alist lsp-rust-notification-handlers)
-      :action-handlers (ht<-alist lsp-rust-action-handlers)
-      :library-folders-fn (lambda (_workspace) lsp-rust-library-directories)
-      :ignore-messages nil
-      :server-id 'rust-analyzer-remote)))
+;; (with-eval-after-load "lsp-rust"
+;;     (lsp-register-client
+;;      (make-lsp-client
+;;       :new-connection (lsp-tramp-connection
+;;                        (executable-find (car lsp-rust-analyzer-server-command)))
+;;       :major-modes '(rust-mode rustic-mode)
+;;       :priority (if (eq lsp-rust-server 'rust-analyzer) 1 -1)
+;;       :remote? t
+;;       :initialization-options 'lsp-rust-analyzer--make-init-options
+;;       :notification-handlers (ht<-alist lsp-rust-notification-handlers)
+;;       :action-handlers (ht<-alist lsp-rust-action-handlers)
+;;       :library-folders-fn (lambda (_workspace) lsp-rust-library-directories)
+;;       :ignore-messages nil
+;;       :server-id 'rust-analyzer-remote)))
+
 (use-package rustic
   :ensure
   :bind (:map rustic-mode-map
@@ -25,11 +26,9 @@
   :commands lsp
   :custom
   (lsp-rust-analyzer-cargo-watch-command "clippy")
-  (lsp-eldoc-enable-hover t)
-  (lsp-idle-delay 0.6)
-  ;hints
-  ; https://emacs-lsp.github.io/lsp-mode/tutorials/how-to-turn-off/
-  (lsp-rust-analyzer-server-display-inlay-hints nil)
+  (lsp-eldoc-enable-hover nil)
+  (lsp-idle-delay 0.3)
+  (lsp-rust-analyzer-server-display-inlay-hints nil) 
   (lsp-rust-analyzer-display-lifetime-elision-hints-enable "skip_trivial")
   (lsp-rust-analyzer-display-chaining-hints nil)
   (lsp-headerline-breadcrumb-enable nil)
@@ -56,3 +55,6 @@
   (add-hook 'text-mode-hook 'yas-minor-mode))
 
 (use-package flycheck :ensure)
+
+(use-package company :ensure)
+(global-company-mode 1)
