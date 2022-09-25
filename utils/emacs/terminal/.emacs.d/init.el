@@ -31,10 +31,17 @@
   (package-install 'use-package))
 
 ;; theme
-(use-package vscode-dark-plus-theme
+(use-package gruber-darker-theme
   :ensure t
   :config
-  (load-theme 'vscode-dark-plus t))
+  (load-theme 'gruber-darker t))
+
+
+;; xclip  - copy from Gui to emacs terminal with Ctrl Shift v
+(use-package xclip
+  :ensure t
+  :config
+  (xclip-mode 1))
 
 ;; helm
 (use-package helm
@@ -53,14 +60,6 @@
   (global-set-key (kbd "C-c SPC") 'ace-jump-mode))
 
 
-;; auto-complete
-(use-package auto-complete
-  :ensure t
-  :init
-  (progn
-    (ac-config-default)
-    (global-auto-complete-mode t)))
-
 
 ;; multiple-cursors
 (use-package multiple-cursors
@@ -73,24 +72,61 @@
 ;; treemacs
 (use-package treemacs :ensure t)
 
-;; move-text ;; TODO -> does not work in terminal, try to fix this
-(use-package move-text :ensure t)
-(move-text-default-bindings)
-(defun indent-region-advice (&rest ignored)
-  (let ((deactivate deactivate-mark))
-    (if (region-active-p)
-        (indent-region (region-beginning) (region-end))
-      (indent-region (line-beginning-position) (line-end-position)))
-    (setq deactivate-mark deactivate)))
-						
-(advice-add 'move-text-up :after 'indent-region-advice)
-(advice-add 'move-text-down :after 'indent-region-advice)
-
 ;; magit
 (use-package magit :ensure t)
 
+;; which key
+(use-package which-key
+  :ensure t
+  :config
+  (which-key-mode))
+
+;; lsp
+(use-package lsp-mode
+  :ensure t
+  :bind (:map lsp-mode-map
+	      ("C-c d" . lsp-describe-thing-at-point)
+	      ("C-c a" . lsp-execute-code-action))
+  :config
+  (lsp-enable-which-key-integration t)
+  :custom
+  (lsp-headerline-breadcrumb-enable nil))
+
+;; company-mode
+(use-package company
+  :ensure t
+  :hook ((emacs-lisp-mode . (lambda ()
+			     (setq-local company-backends '(company-elisp))))
+	 (emacs-lisp-mode . company-mode))
+  :config
+  ;(company-keymap--unbind-quick-access company-active-map)
+  (setq company-idle-delay 0.1
+	company-minimum-prefix-length 1))
+
+
+;; go mode
+(use-package go-mode
+  :ensure t
+  :hook ((go-mode . lsp-deferred)
+	 (go-mode . company-mode))
+  :bind (:map go-mode-map
+	      ("<f6>" . gofmt))
+  :config
+  (require 'lsp-go)
+  (setq lsp-go-analyses
+	'((fieldalignment . t)
+	  (nilness        . t)
+	  (unusedwrite    . t)
+	  (unusedparams   . t)))
+  ;; go path
+  (add-to-list 'exec-path "~/go/bin")
+  (setq gofmt-command "goimports"))
+
+(global-set-key (kbd "<f5>") #'recompile)
+
+;;flycheck
+(use-package flycheck
+  :ensure t)
+
 ;; rust mode
-(load-file "~/.emacs.d/config/setup-rust.el")
-
-
-;; python mode ;; TODO -> make this with lsp
+;;(load-file "~/.emacs.d/config/setup-rust.el")
