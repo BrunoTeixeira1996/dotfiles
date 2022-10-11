@@ -35,10 +35,15 @@
 
 
 ;; theme
-(use-package vscode-dark-plus-theme
+;; (use-package vscode-dark-plus-theme
+;;   :ensure t
+;;   :config
+;;   (load-theme 'vscode-dark-plus t))
+
+(use-package gruber-darker-theme
   :ensure t
   :config
-  (load-theme 'vscode-dark-plus t))
+  (load-theme 'gruber-darker t))
 
 ;; shortcuts
 (windmove-default-keybindings) ;; Shift + arrows to change between windows
@@ -119,3 +124,41 @@
 ;; 	(setq python-indent-offset 4))
 ;;       (tabify (point-min)(point-max)) ;; comment this if you want to use spaces instead of tabs in python
 ;;       )
+
+
+;; org-mode
+(advice-add 'org-archive-subtree :after #'org-save-all-org-buffers)
+
+(setq org-todo-keywords
+      '(
+        (sequence "TODO(t)"  "STARTED(s)" "WAITING(w)" "|" "DONE(d)" "CANCELED(c)")
+        ))
+
+(setq org-todo-keyword-faces
+      '(("TODO" . (:foreground "IndianRed" :weight bold))
+	("STARTED" . (:foreground "coral" :weight bold))
+        ("WAITING" . (:foreground "GoldenRod" :weight bold))
+        ("DONE" . (:foreground "LimeGreen" :weight bold))
+        ))
+
+(setq org-tag-persistent-alist
+      '((:startgroup . nil)
+        ("ONBOARDING" . ?o)
+        ("WORK" . ?w)
+        ("ART2R" . ?r)
+	("DEFMEETING" . ?d)
+	("PROGRAMMING" .?p)
+        (:endgroup . nil)
+        )
+)
+
+;; WORK ON THIS AND SAVE THIS TO A orgmode.el file
+;; (setq org-tag-faces
+;;       '(
+;;         ("ONBOARDING" . (:foreground "IndianRed1" :weight bold))
+;; 	("WORK" . (:foreground "GoldenRod" :weight bold))
+;; 	("ART2R" . (:foreground "GoldenRod" :weight bold))
+;; 	("DEFMEETING" . (:foreground "GoldenRod" :weight bold))
+;; 	("PROGRAMMING" . (:foreground "LimeGreen" :weight bold))
+;;        )
+;; )
