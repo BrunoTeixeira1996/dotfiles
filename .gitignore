@@ -1,6 +1,8 @@
-.config/BraveSoftware/**
-.config/xfce4/**
 *~
 \#*#
 dotfiles.sublime-project
 dotfiles.sublime-workspace
+personal/xfce4/stow_folder/emacs/.emacs.d/ac-comphist.dat
+personal/xfce4/stow_folder/emacs/.emacs.d/custom.el
+personal/xfce4/stow_folder/emacs/.emacs.d/elpa
+personal/xfce4/stow_folder/emacs/.emacs.d/transient
