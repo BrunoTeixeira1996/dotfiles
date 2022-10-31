@@ -105,23 +105,24 @@ xfconf-query -c xfce4-keyboard-shortcuts -l -v | cut -d'/' -f4 | awk '{printf "%
 
 `xfce4-appfinder` to `Super` `RET` in `Keyboard` -> `Application Shortcuts`
 
-`Workspace 1` to `Super` `1` in `Window Manager` -> `Keyboard`
-`Workspace 2` to `Super` `2` in `Window Manager` -> `Keyboard`
-`Workspace 3` to `Super` `3` in `Window Manager` -> `Keyboard`
-`Workspace 4` to `Super` `4` in `Window Manager` -> `Keyboard`
-`Workspace 5` to `Super` `5` in `Window Manager` -> `Keyboard`
+```
+Workspace 1 to Super 1 in Window Manager -> Keyboard
+Workspace 2 to Super 2 in Window Manager -> Keyboard
+Workspace 3 to Super 3 in Window Manager -> Keyboard
+Workspace 4 to Super 4 in Window Manager -> Keyboard
+Workspace 5 to Super 5 in Window Manager -> Keyboard
 
-`Tile window to the top` to `Super` `UP` in `Window Manager` -> `Keyboard`
-`Tile window to the bottom` to `Super` `DOWN` in `Window Manager` -> `Keyboard`
-`Tile window to the left` to `Super` `LEFT` in `Window Manager` -> `Keyboard`
-`Tile window to the right` to `Super` `RIGHT` in `Window Manager` -> `Keyboard`
+Tile window to the top to Super UP in Window Manager -> Keyboard
+Tile window to the bottom to Super DOWN in Window Manager -> Keyboard
+Tile window to the left to Super LEFT in Window Manager -> Keyboard
+Tile window to the right to Super RIGHT in Window Manager -> Keyboard
 
-`Move window to workspace 1` to `Shift` `Super` `1` in `Window Manager` -> `Keyboard`
-`Move window to workspace 2` to `Shift` `Super` `2` in `Window Manager` -> `Keyboard`
-`Move window to workspace 3` to `Shift` `Super` `3` in `Window Manager` -> `Keyboard`
-`Move window to workspace 4` to `Shift` `Super` `4` in `Window Manager` -> `Keyboard`
-`Move window to workspace 5` to `Shift` `Super` `5` in `Window Manager` -> `Keyboard`
-
+Move window to workspace 1 to Shift Super 1 in Window Manager -> Keyboard
+Move window to workspace 2 to Shift Super 2 in Window Manager -> Keyboard
+Move window to workspace 3 to Shift Super 3 in Window Manager -> Keyboard
+Move window to workspace 4 to Shift Super 4 in Window Manager -> Keyboard
+Move window to workspace 5 to Shift Super 5 in Window Manager -> Keyboard
+```
 - And I change workspaces to show only numbers from `1` to `5`
 
 ## Theme
