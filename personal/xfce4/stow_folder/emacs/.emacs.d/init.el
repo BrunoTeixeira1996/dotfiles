@@ -112,10 +112,6 @@
 (use-package magit :ensure t)
 
 
-;; rust mode
-(load-file "~/.emacs.d/config/setup-rust.el")
-
-
 ;; python mode ;; TODO -> make this work
 ;; (add-hook 'python-mode-hook
 ;;       (lambda ()

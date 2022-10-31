@@ -90,7 +90,15 @@ sudo modprobe 88x2bu
 
 # Stow
 
-- TODO
+- Execute this one by one or execute `stow_script.sh` inside `stow_folder`
+
+```bash
+stow --target=/home/brun0/ emacs
+stow --target=/home/brun0/ tmux
+stow --target=/home/brun0/ git
+stow --target=/home/brun0/.config/sublime-text/Packages/ sublime
+stow --target=/home/brun0/.config/xfce4/terminal/ xfce4-terminal
+```
 
 
 # xfce4 keybinds and look
