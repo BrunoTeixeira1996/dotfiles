@@ -68,25 +68,24 @@ sudo modprobe 88x2bu
 
 ## Install basic utilities
 
-- aptitude
-- lightdm
-- cURL
-- Git
-- Tmux
-- Thunderbird
-- Wireguard (and configure VPN)
-- FlameShot
-- Telegram
-- Xournalpp
-- Discord
-- Firefox
-- Okular
-- eog
-- xclip
-- tree
-- keepassx
-- emacs
+- aptitude (install with apt)
+- lightdm (install with apt)
+- cURL (install with apt)
+- Git (install with apt)
+- Tmux (stow)
+- Thunderbird (install with apt)
+- FlameShot (install with apt)
+- Telegram (install with apt)
+- Xournalpp (install with apt)
+- Firefox (install with apt)
+- Okular (install with apt)
+- eog (install with apt)
+- xclip (install with apt)
+- tree (install with apt)
+- keepassxc (install with apt)
+- emacs (stow)
 - NewsFlash (config in `newsflash` folder)
+- Iosevka (https://blog.programster.org/install-iosevka-fonts)
 
 # Stow
 
