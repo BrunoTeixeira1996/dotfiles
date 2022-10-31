@@ -1,6 +1,0 @@
----
-- name: Install NewsFlash via flatpak
-  flatpak:
-    name: com.gitlab.newsflash
-    state: present
-    method: system

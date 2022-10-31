@@ -1,7 +1,0 @@
----
-- name: Install thunderbird
-  become: true
-  apt:
-    name: thunderbird
-    state: latest
-    update_cache: yes

@@ -1,7 +1,0 @@
----
-- name: Install tree
-  become: true
-  apt:
-    name: tree
-    state: latest
-    update_cache: yes

@@ -1,7 +1,0 @@
----
-# Ansible 2.3.1 or newer because we are using the block keyword
-- name: Check Requirements
-  assert:
-    that: "(ansible_version.major, ansible_version.minor, ansible_version.revision) >= (2, 3, 1)"
-    msg: "Install Ansible Version 2.3.1+. You have Ansible {{ ansible_version.string }}."
-  run_once: yes

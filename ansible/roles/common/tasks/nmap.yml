@@ -1,7 +1,0 @@
----
-- name: Install nmap
-  become: true
-  apt:
-    name: nmap
-    state: latest
-    update_cache: yes

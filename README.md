@@ -6,6 +6,12 @@
     - Ubuntu server for vms
     - Windows for my desktop and gaming
 
-# Automate with Ansible
 
-- Check `ansible` folder
+
+# Instal Debian with xfce
+
+- Follow `/personal/xfce4/` to use stow
+
+# Note
+
+- I am not currently using i3

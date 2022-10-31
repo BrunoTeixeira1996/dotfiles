@@ -1,7 +1,0 @@
----
-- name: Install wireshark
-  become: true
-  apt:
-    name: wireshark
-    state: latest
-    update_cache: yes
