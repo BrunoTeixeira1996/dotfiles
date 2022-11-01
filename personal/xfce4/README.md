@@ -86,6 +86,7 @@ sudo modprobe 88x2bu
 - emacs (stow)
 - NewsFlash (config in `newsflash` folder)
 - Iosevka (https://blog.programster.org/install-iosevka-fonts)
+- beekeeperstudio.io
 
 # Stow
 
