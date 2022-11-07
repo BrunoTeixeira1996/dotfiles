@@ -111,54 +111,78 @@
 ;; magit
 (use-package magit :ensure t)
 
+;; which key
+(use-package which-key
+  :ensure t
+  :config
+  (which-key-mode))
+
+;; lsp
+(use-package lsp-mode
+  :ensure t
+  :bind (:map lsp-mode-map
+              ("C-c d" . lsp-describe-thing-at-point)
+              ("C-c a" . lsp-execute-code-action))
+  :config
+  (lsp-enable-which-key-integration t)
+  :custom
+  (lsp-headerline-breadcrumb-enable nil))
+
+;; company-mode
+(use-package company
+  :ensure t
+  :hook ((emacs-lisp-mode . (lambda ()
+                             (setq-local company-backends '(company-elisp))))
+         (emacs-lisp-mode . company-mode))
+  :config
+  ;(company-keymap--unbind-quick-access company-active-map)
+  (setq company-idle-delay 0.1
+        company-minimum-prefix-length 1))
+
+;; untabify so it replaces tabs with spaces on save
+(defun untabify-everything ()
+  (untabify (point-min) (point-max)))
+(defun untabify-everything-on-save ()
+  (add-hook 'before-save-hook 'untabify-everything)
+  nil)
+
+;; go mode
+(use-package go-mode
+  :ensure t
+  :hook ((go-mode . lsp-deferred)
+         (go-mode . company-mode))
+  :bind (:map go-mode-map
+              ("<f6>" . gofmt))
+  :config
+  (add-hook 'go-mode-hook 'untabify-everything-on-save)
+  (require 'lsp-go)
+  (setq lsp-go-analyses
+        '((fieldalignment . t)
+          (nilness        . t)
+          (unusedwrite    . t)
+          (unusedparams   . t)))
+  ;; go path
+  (add-to-list 'exec-path "~/go/bin")
+  (setq gofmt-command "goimports"))
+
+(add-hook 'go-mode-hook (lambda () (setq tab-width 4)))
+(global-set-key (kbd "<f5>") #'recompile)
+
+;;flycheck
+(use-package flycheck
+  :ensure t)
+
+
+;; yasnippet
+(use-package yasnippet
+  :ensure
+  :config
+  (yas-reload-all)
+  (add-hook 'prog-mode-hook 'yas-minor-mode)
+  (add-hook 'text-mode-hook 'yas-minor-mode))
+
+
+
 
 ;; rust mode
-(load-file "~/.emacs.d/config/setup-rust.el")
-
-
-;; python mode ;; TODO -> make this work
-;; (add-hook 'python-mode-hook
-;;       (lambda ()
-;; 	(setq indent-tabs-mode t)
-;; 	(setq tab-width 4)
-;; 	(setq python-indent-offset 4))
-;;       (tabify (point-min)(point-max)) ;; comment this if you want to use spaces instead of tabs in python
-;;       )
-
-
-;; org-mode
-(advice-add 'org-archive-subtree :after #'org-save-all-org-buffers)
-
-(setq org-todo-keywords
-      '(
-        (sequence "TODO(t)"  "STARTED(s)" "WAITING(w)" "|" "DONE(d)" "CANCELED(c)")
-        ))
-
-(setq org-todo-keyword-faces
-      '(("TODO" . (:foreground "IndianRed" :weight bold))
-	("STARTED" . (:foreground "coral" :weight bold))
-        ("WAITING" . (:foreground "GoldenRod" :weight bold))
-        ("DONE" . (:foreground "LimeGreen" :weight bold))
-        ))
-
-(setq org-tag-persistent-alist
-      '((:startgroup . nil)
-        ("ONBOARDING" . ?o)
-        ("WORK" . ?w)
-        ("ART2R" . ?r)
-	("DEFMEETING" . ?d)
-	("PROGRAMMING" .?p)
-        (:endgroup . nil)
-        )
-)
-
-;; WORK ON THIS AND SAVE THIS TO A orgmode.el file
-;; (setq org-tag-faces
-;;       '(
-;;         ("ONBOARDING" . (:foreground "IndianRed1" :weight bold))
-;; 	("WORK" . (:foreground "GoldenRod" :weight bold))
-;; 	("ART2R" . (:foreground "GoldenRod" :weight bold))
-;; 	("DEFMEETING" . (:foreground "GoldenRod" :weight bold))
-;; 	("PROGRAMMING" . (:foreground "LimeGreen" :weight bold))
-;;        )
-;; )
+;;(load-file "~/.emacs.d/config/setup-rust.el")
