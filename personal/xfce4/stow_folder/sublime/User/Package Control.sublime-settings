@@ -5,13 +5,13 @@
 	],
 	"installed_packages":
 	[
-		"Anaconda",
-		"BracketHighlighter",
 		"FileIcons Mono",
 		"Package Control",
 		"PlainTasks",
 		"SFTP",
 		"SideBarEnhancements",
 		"Terminus",
+		"LSP",
+		"LSP-pyright",
 	],
 }
