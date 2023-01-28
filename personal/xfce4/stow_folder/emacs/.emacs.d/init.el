@@ -141,3 +141,4 @@
 	("WAITING" . (:foreground "GoldenRod" :weight bold))
 	("DONE" . (:foreground "LimeGreen" :weight bold))
 	))
+
