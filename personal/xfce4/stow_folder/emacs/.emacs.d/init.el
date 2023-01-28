@@ -14,7 +14,7 @@
 (scroll-bar-mode 0) ;; disables scroll bar mode
 (column-number-mode 1)
 (show-paren-mode 1)
-(set-frame-font "Iosevka-13")
+;;(set-frame-font "Inconsolata-13")
 (global-display-line-numbers-mode) ;; shows line numbers
 (toggle-frame-maximized)
 (setq backup-directory-alist `(("." . "~/.emacs.d/backups"))) ;; saves garbage backups in .saves folder
@@ -100,7 +100,7 @@
 (defun indent-region-advice (&rest ignored)
   (let ((deactivate deactivate-mark))
     (if (region-active-p)
-        (indent-region (region-beginning) (region-end))
+	(indent-region (region-beginning) (region-end))
       (indent-region (line-beginning-position) (line-end-position)))
     (setq deactivate-mark deactivate)))
 
@@ -117,14 +117,14 @@
   :mode ("README\\.md\\'" . gfm-mode)
   :init (setq markdown-command "multimarkdown"))
 
-;; python mode ;; TODO -> make this work
-;; (add-hook 'python-mode-hook
-;;       (lambda ()
-;; 	(setq indent-tabs-mode t)
-;; 	(setq tab-width 4)
-;; 	(setq python-indent-offset 4))
-;;       (tabify (point-min)(point-max)) ;; comment this if you want to use spaces instead of tabs in python
-;;       )
+;; python mode
+(add-hook 'python-mode-hook
+      (lambda ()
+	(setq indent-tabs-mode t)
+	(setq tab-width 4)
+	(setq python-indent-offset 4))
+      (tabify (point-min)(point-max)) ;; comment this if you want to use spaces instead of tabs in python
+      )
 
 
 ;; org-mode
@@ -132,34 +132,12 @@
 
 (setq org-todo-keywords
       '(
-        (sequence "TODO(t)"  "STARTED(s)" "WAITING(w)" "|" "DONE(d)" "CANCELED(c)")
-        ))
+	(sequence "TODO(t)"  "STARTED(s)" "WAITING(w)" "|" "DONE(d)" "CANCELED(c)")
+	))
 
 (setq org-todo-keyword-faces
       '(("TODO" . (:foreground "IndianRed" :weight bold))
 	("STARTED" . (:foreground "coral" :weight bold))
-        ("WAITING" . (:foreground "GoldenRod" :weight bold))
-        ("DONE" . (:foreground "LimeGreen" :weight bold))
-        ))
-
-(setq org-tag-persistent-alist
-      '((:startgroup . nil)
-        ("ONBOARDING" . ?o)
-        ("WORK" . ?w)
-        ("ART2R" . ?r)
-	("DEFMEETING" . ?d)
-	("PROGRAMMING" .?p)
-        (:endgroup . nil)
-        )
-)
-
-;; WORK ON THIS AND SAVE THIS TO A orgmode.el file
-;; (setq org-tag-faces
-;;       '(
-;;         ("ONBOARDING" . (:foreground "IndianRed1" :weight bold))
-;; 	("WORK" . (:foreground "GoldenRod" :weight bold))
-;; 	("ART2R" . (:foreground "GoldenRod" :weight bold))
-;; 	("DEFMEETING" . (:foreground "GoldenRod" :weight bold))
-;; 	("PROGRAMMING" . (:foreground "LimeGreen" :weight bold))
-;;        )
-;; )
+	("WAITING" . (:foreground "GoldenRod" :weight bold))
+	("DONE" . (:foreground "LimeGreen" :weight bold))
+	))
