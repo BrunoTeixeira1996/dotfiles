@@ -14,7 +14,7 @@
 (scroll-bar-mode 0) ;; disables scroll bar mode
 (column-number-mode 1)
 (show-paren-mode 1)
-;;(set-frame-font "Inconsolata-13")
+(set-frame-font "Monospace-12")
 (global-display-line-numbers-mode) ;; shows line numbers
 (toggle-frame-maximized)
 (setq backup-directory-alist `(("." . "~/.emacs.d/backups"))) ;; saves garbage backups in .saves folder
@@ -67,15 +67,6 @@
   (global-set-key (kbd "C-c SPC") 'ace-jump-mode))
 
 
-
-;; auto-complete
-(use-package auto-complete
-  :ensure t
-  :init
-  (progn
-    (ac-config-default)
-    (global-auto-complete-mode t)))
-
 ;; multiple-cursors
 (use-package multiple-cursors
   :ensure t
@@ -88,10 +79,6 @@
   (global-set-key (kbd "C-M-<") 'mc/skip-to-previous-like-this)
   (global-set-key (kbd "C-M->") 'mc/skip-to-next-like-this))
 
-
-
-;; treemacs
-(use-package treemacs :ensure t)
 
 
 ;; move-text
@@ -111,13 +98,8 @@
 ;; magit
 (use-package magit :ensure t)
 
-;; markdown mode
-(use-package markdown-mode
-  :ensure t
-  :mode ("README\\.md\\'" . gfm-mode)
-  :init (setq markdown-command "multimarkdown"))
 
-;; python mode
+;; ;; python mode ;; TODO -> make this work
 (add-hook 'python-mode-hook
       (lambda ()
 	(setq indent-tabs-mode t)
@@ -142,3 +124,75 @@
 	("DONE" . (:foreground "LimeGreen" :weight bold))
 	))
 
+(setq org-tag-persistent-alist
+      '((:startgroup . nil)
+	("ONBOARDING" . ?o)
+	("WORK" . ?w)
+	("ART2R" . ?r)
+	("DEFMEETING" . ?d)
+	("PROGRAMMING" .?p)
+	(:endgroup . nil)
+	)
+)
+
+
+(use-package org-bullets :ensure t)
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+
+;; markdown mode
+(use-package markdown-mode
+  :ensure t
+  :mode ("README\\.md\\'" . gfm-mode)
+  :init (setq markdown-command "multimarkdown"))
+
+(put 'upcase-region 'disabled nil)
+
+
+
+(use-package python
+  :ensure t
+  :config
+  ;; Remove guess indent python message
+  (setq python-indent-guess-indent-offset-verbose nil))
+
+
+(use-package lsp-mode
+  :ensure t
+  :commands (lsp lsp-deferred)
+  :hook ((python-mode) . lsp-deferred)
+  :demand t
+  :init
+  (setq lsp-keymap-prefix "C-c l")
+  :config
+  (setq lsp-auto-configure t))
+
+(use-package lsp-pyright
+  :ensure t
+  :hook (python-mode . (lambda () (require 'lsp-pyright)))
+  :init (when (executable-find "python3")
+	  (setq lsp-pyright-python-executable-cmd "python3")))
+
+(use-package flycheck
+  :ensure t)
+
+(use-package lsp-ui
+  :ensure t
+  :config
+  (setq lsp-ui-flycheck-enable t)
+  (setq lsp-headerline-breadcrumb-enable nil))
+
+
+;; Provide drop-down completion.
+(use-package company
+  :ensure t
+  :defer t
+  :custom
+  (company-dabbrev-other-buffers t)
+  (company-dabbrev-code-other-buffers t)
+  (company-minimum-prefix-length 2)
+  (company-dabbrev-downcase nil)
+  (company-dabbrev-ignore-case t)
+  (company-idle-delay 0.02)
+  (company-global-modes '(not eshell-mode shell-mode))
+    :hook ((text-mode . company-mode)
+	   (prog-mode . company-mode)))
