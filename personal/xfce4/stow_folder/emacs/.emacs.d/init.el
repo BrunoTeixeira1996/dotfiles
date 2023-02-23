@@ -94,7 +94,7 @@
 (use-package magit :ensure t)
 
 
-;; python mode
+;; ;; python mode
 (add-hook 'python-mode-hook
       (lambda ()
 	(setq indent-tabs-mode nil)
