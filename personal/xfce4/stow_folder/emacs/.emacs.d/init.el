@@ -94,14 +94,12 @@
 (use-package magit :ensure t)
 
 
-;; ;; python mode ;; TODO -> make this work
+;; python mode
 (add-hook 'python-mode-hook
       (lambda ()
-	(setq indent-tabs-mode t)
+	(setq indent-tabs-mode nil)
 	(setq tab-width 4)
-	(setq python-indent-offset 4))
-      (tabify (point-min)(point-max)) ;; comment this if you want to use spaces instead of tabs in python
-      )
+	(setq indent-line-function 'insert-tab)))
 
 
 ;; org-mode
@@ -144,11 +142,11 @@
 
 
 
-(use-package python
-  :ensure t
-  :config
-  ;; Remove guess indent python message
-  (setq python-indent-guess-indent-offset-verbose nil))
+;; (use-package python
+;;   :ensure t
+;;   :config
+;;   ;; Remove guess indent python message
+;;   (setq python-indent-guess-indent-offset-verbose nil))
 
 
 (use-package lsp-mode
