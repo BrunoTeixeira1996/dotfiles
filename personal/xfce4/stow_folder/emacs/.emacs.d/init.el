@@ -14,7 +14,7 @@
 (scroll-bar-mode 0) ;; disables scroll bar mode
 (column-number-mode 1)
 (show-paren-mode 1)
-(set-frame-font "Monospace-12")
+(set-frame-font "Monospace-14")
 (global-display-line-numbers-mode) ;; shows line numbers
 (toggle-frame-maximized)
 (setq backup-directory-alist `(("." . "~/.emacs.d/backups"))) ;; saves garbage backups in .saves folder
