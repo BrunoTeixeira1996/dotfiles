@@ -202,3 +202,6 @@ hide_edge_borders both
 #exec --no-startup-id ~/.config/i3/scripts/laptop-monitor.sh
 bindsym $mod+Shift+p exec "~/.config/i3/scripts/laptop-monitor.sh"
 bindsym $mod+m move workspace to output right
+
+# Title window with icon
+for_window [class=".*"] title_window_icon padding 3px
