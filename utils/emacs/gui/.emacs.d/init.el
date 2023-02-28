@@ -14,7 +14,7 @@
 (scroll-bar-mode 0) ;; disables scroll bar mode
 (column-number-mode 1)
 (show-paren-mode 1)
-(set-frame-font "Iosevka-13")
+(set-frame-font "Monospace-12")
 (global-display-line-numbers-mode) ;; shows line numbers
 (toggle-frame-maximized)
 (setq backup-directory-alist `(("." . "~/.emacs.d/backups"))) ;; saves garbage backups in .saves folder
@@ -49,16 +49,20 @@
 (windmove-default-keybindings) ;; Shift + arrows to change between windows
 
 
-;; helm
-(use-package helm
+;; ;; helm
+;; (use-package helm
+;;   :ensure t
+;;   :config
+;;   (helm-mode 1)
+;;   (global-set-key (kbd "C-x b") 'helm-buffers-list)
+;;   (global-set-key (kbd "M-x") 'helm-M-x)
+;;   (global-set-key (kbd "C-x C-f") 'helm-find-files)
+;;   (global-set-key (kbd "C-s") 'helm-occur))
+
+(use-package vertico
   :ensure t
   :config
-  (helm-mode 1)
-  (global-set-key (kbd "C-x b") 'helm-buffers-list)
-  (global-set-key (kbd "M-x") 'helm-M-x)
-  (global-set-key (kbd "C-x C-f") 'helm-find-files)
-  (global-set-key (kbd "C-s") 'helm-occur))
-
+  (vertico-mode))
 
 ;; ace-jump-mode to choose a char and jump to it
 (use-package ace-jump-mode
@@ -66,15 +70,6 @@
   :config
   (global-set-key (kbd "C-c SPC") 'ace-jump-mode))
 
-
-
-;; auto-complete
-(use-package auto-complete
-  :ensure t
-  :init
-  (progn
-    (ac-config-default)
-    (global-auto-complete-mode t)))
 
 ;; multiple-cursors
 (use-package multiple-cursors
@@ -90,17 +85,13 @@
 
 
 
-;; treemacs
-(use-package treemacs :ensure t)
-
-
 ;; move-text
 (use-package move-text :ensure)
 (move-text-default-bindings)
 (defun indent-region-advice (&rest ignored)
   (let ((deactivate deactivate-mark))
     (if (region-active-p)
-        (indent-region (region-beginning) (region-end))
+	(indent-region (region-beginning) (region-end))
       (indent-region (line-beginning-position) (line-end-position)))
     (setq deactivate-mark deactivate)))
 
@@ -112,53 +103,108 @@
 (use-package magit :ensure t)
 
 
-;; rust mode
-(load-file "~/.emacs.d/config/setup-rust.el")
-
-
-;; python mode ;; TODO -> make this work
-;; (add-hook 'python-mode-hook
-;;       (lambda ()
-;; 	(setq indent-tabs-mode t)
-;; 	(setq tab-width 4)
-;; 	(setq python-indent-offset 4))
-;;       (tabify (point-min)(point-max)) ;; comment this if you want to use spaces instead of tabs in python
-;;       )
-
+;; ;; python mode
+(add-hook 'python-mode-hook
+      (lambda ()
+	(setq indent-tabs-mode nil)
+	(setq tab-width 4)
+	(setq indent-line-function 'insert-tab)))
+;;	(setq python-indent-offset 2))
+;;
 
 ;; org-mode
 (advice-add 'org-archive-subtree :after #'org-save-all-org-buffers)
 
 (setq org-todo-keywords
       '(
-        (sequence "TODO(t)"  "STARTED(s)" "WAITING(w)" "|" "DONE(d)" "CANCELED(c)")
-        ))
+	(sequence "TODO(t)"  "STARTED(s)" "WAITING(w)" "|" "DONE(d)" "CANCELED(c)")
+	))
 
 (setq org-todo-keyword-faces
       '(("TODO" . (:foreground "IndianRed" :weight bold))
 	("STARTED" . (:foreground "coral" :weight bold))
-        ("WAITING" . (:foreground "GoldenRod" :weight bold))
-        ("DONE" . (:foreground "LimeGreen" :weight bold))
-        ))
+	("WAITING" . (:foreground "GoldenRod" :weight bold))
+	("DONE" . (:foreground "LimeGreen" :weight bold))
+	))
 
 (setq org-tag-persistent-alist
       '((:startgroup . nil)
-        ("ONBOARDING" . ?o)
-        ("WORK" . ?w)
-        ("ART2R" . ?r)
+	("ONBOARDING" . ?o)
+	("WORK" . ?w)
+	("ART2R" . ?r)
 	("DEFMEETING" . ?d)
 	("PROGRAMMING" .?p)
-        (:endgroup . nil)
-        )
+	(:endgroup . nil)
+	)
 )
 
-;; WORK ON THIS AND SAVE THIS TO A orgmode.el file
-;; (setq org-tag-faces
-;;       '(
-;;         ("ONBOARDING" . (:foreground "IndianRed1" :weight bold))
-;; 	("WORK" . (:foreground "GoldenRod" :weight bold))
-;; 	("ART2R" . (:foreground "GoldenRod" :weight bold))
-;; 	("DEFMEETING" . (:foreground "GoldenRod" :weight bold))
-;; 	("PROGRAMMING" . (:foreground "LimeGreen" :weight bold))
-;;        )
-;; )
+
+(use-package org-bullets :ensure t)
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+
+;; markdown mode
+(use-package markdown-mode
+  :ensure t
+  :mode ("README\\.md\\'" . gfm-mode)
+  :init (setq markdown-command "multimarkdown"))
+
+(put 'upcase-region 'disabled nil)
+
+
+
+;; (use-package python
+;;   :ensure t
+;;   :config
+;;   ;; Remove guess indent python message
+;;   (setq python-indent-guess-indent-offset-verbose nil))
+
+
+(use-package lsp-mode
+  :ensure t
+  :commands (lsp lsp-deferred)
+  :hook ((python-mode) . lsp-deferred)
+  :demand t
+  :init
+  (setq lsp-keymap-prefix "C-c l")
+  :config
+  (setq lsp-auto-configure t))
+
+(use-package lsp-pyright
+  :ensure t
+  :hook (python-mode . (lambda () (require 'lsp-pyright)))
+  :init (when (executable-find "python3")
+	  (setq lsp-pyright-python-executable-cmd "python3")))
+
+(use-package flycheck
+  :ensure t)
+
+(use-package lsp-ui
+  :ensure t
+  :config
+  (setq lsp-ui-flycheck-enable t)
+  (setq lsp-headerline-breadcrumb-enable nil))
+
+
+;; Provide drop-down completion.
+(use-package company
+  :ensure t
+  :defer t
+  :custom
+  (company-dabbrev-other-buffers t)
+  (company-dabbrev-code-other-buffers t)
+  (company-minimum-prefix-length 2)
+  (company-dabbrev-downcase nil)
+  (company-dabbrev-ignore-case t)
+  (company-idle-delay 0.02)
+  (company-global-modes '(not eshell-mode shell-mode))
+    :hook ((text-mode . company-mode)
+	   (prog-mode . company-mode)))
+
+;; Workaround to use backticks
+(global-set-key [S-dead-grave] "`")
+
+;; Whitespace mode
+(custom-set-variables
+ '(whitespace-style (quote (face tabs spaces trailing space-before-tab
+				 newline indentation empty space-after-tab
+				 space-mark tab-mark))))
