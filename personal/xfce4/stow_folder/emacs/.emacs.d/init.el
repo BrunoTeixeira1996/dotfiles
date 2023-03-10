@@ -189,3 +189,44 @@
   (company-global-modes '(not eshell-mode shell-mode))
     :hook ((text-mode . company-mode)
 	   (prog-mode . company-mode)))
+
+
+;; Workaround to use backticks
+(global-set-key [S-dead-grave] "`")
+
+;; Whitespace mode
+(custom-set-variables
+ '(whitespace-style (quote (face tabs spaces trailing space-before-tab
+				 newline indentation empty space-after-tab
+				 space-mark tab-mark))))
+
+
+
+;; untabify so it replaces tabs with spaces on save
+(defun untabify-everything ()
+  (untabify (point-min) (point-max)))
+(defun untabify-everything-on-save ()
+  (add-hook 'before-save-hook 'untabify-everything)
+  nil)
+
+;; go mode
+(use-package go-mode
+  :ensure t
+  :hook ((go-mode . lsp-deferred)
+         (go-mode . company-mode))
+  :bind (:map go-mode-map
+              ("<f6>" . gofmt))
+  :config
+  (add-hook 'go-mode-hook 'untabify-everything-on-save)
+  (require 'lsp-go)
+  (setq lsp-go-analyses
+        '((fieldalignment . t)
+          (nilness        . t)
+          (unusedwrite    . t)
+          (unusedparams   . t)))
+  ;; go path
+  (add-to-list 'exec-path "~/go/bin")
+  (setq gofmt-command "goimports"))
+
+(add-hook 'go-mode-hook (lambda () (setq tab-width 4)))
+(global-set-key (kbd "<f5>") #'recompile)
