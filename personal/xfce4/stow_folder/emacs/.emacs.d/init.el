@@ -34,6 +34,9 @@
   (package-install 'use-package))
 
 
+;; load modes
+(add-to-list 'load-path "~/Desktop/dotfiles/personal/xfce4/stow_folder/emacs/.emacs.d/modes")
+
 ;; theme
 ;; (use-package vscode-dark-plus-theme
 ;;   :ensure t
@@ -82,55 +85,15 @@
 (defun indent-region-advice (&rest ignored)
   (let ((deactivate deactivate-mark))
     (if (region-active-p)
-	(indent-region (region-beginning) (region-end))
+        (indent-region (region-beginning) (region-end))
       (indent-region (line-beginning-position) (line-end-position)))
     (setq deactivate-mark deactivate)))
 
 (advice-add 'move-text-up :after 'indent-region-advice)
 (advice-add 'move-text-down :after 'indent-region-advice)
 
-
 ;; magit
 (use-package magit :ensure t)
-
-
-;; ;; python mode
-(add-hook 'python-mode-hook
-      (lambda ()
-	(setq indent-tabs-mode nil)
-	(setq tab-width 4)
-	(setq indent-line-function 'insert-tab)))
-
-
-;; org-mode
-(advice-add 'org-archive-subtree :after #'org-save-all-org-buffers)
-
-(setq org-todo-keywords
-      '(
-	(sequence "TODO(t)"  "STARTED(s)" "WAITING(w)" "|" "DONE(d)" "CANCELED(c)")
-	))
-
-(setq org-todo-keyword-faces
-      '(("TODO" . (:foreground "IndianRed" :weight bold))
-	("STARTED" . (:foreground "coral" :weight bold))
-	("WAITING" . (:foreground "GoldenRod" :weight bold))
-	("DONE" . (:foreground "LimeGreen" :weight bold))
-	))
-
-(setq org-tag-persistent-alist
-      '((:startgroup . nil)
-	("ONBOARDING" . ?o)
-	("WORK" . ?w)
-	("ART2R" . ?r)
-	("DEFMEETING" . ?d)
-	("PROGRAMMING" .?p)
-	(:endgroup . nil)
-	)
-)
-
-
-(use-package org-bullets :ensure t)
-(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
 ;; markdown mode
 (use-package markdown-mode
@@ -140,40 +103,65 @@
 
 (put 'upcase-region 'disabled nil)
 
+;; org-mode
+(advice-add 'org-archive-subtree :after #'org-save-all-org-buffers)
+
+(setq org-todo-keywords
+      '(
+        (sequence "TODO(t)"  "STARTED(s)" "WAITING(w)" "|" "DONE(d)" "CANCELED(c)")
+        ))
+
+(setq org-todo-keyword-faces
+      '(("TODO" . (:foreground "IndianRed" :weight bold))
+        ("STARTED" . (:foreground "coral" :weight bold))
+        ("WAITING" . (:foreground "GoldenRod" :weight bold))
+        ("DONE" . (:foreground "LimeGreen" :weight bold))
+        ))
+
+(setq org-tag-persistent-alist
+      '((:startgroup . nil)
+        ("ONBOARDING" . ?o)
+        ("WORK" . ?w)
+        ("ART2R" . ?r)
+        ("DEFMEETING" . ?d)
+        ("PROGRAMMING" .?p)
+        (:endgroup . nil)
+        )
+)
 
 
-;; (use-package python
+(use-package org-bullets :ensure t)
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+
+;; Workaround to use backticks
+(global-set-key [S-dead-grave] "`")
+
+;; Whitespace mode
+(custom-set-variables
+ '(whitespace-style (quote (face tabs spaces trailing space-before-tab
+                                 newline indentation empty space-after-tab
+                                 space-mark tab-mark))))
+;; ;; go mode
+;; (use-package go-mode
 ;;   :ensure t
+;;   :hook ((go-mode . lsp-deferred)
+;;          (go-mode . company-mode))
+;;   :bind (:map go-mode-map
+;;               ("<f6>" . gofmt))
 ;;   :config
-;;   ;; Remove guess indent python message
-;;   (setq python-indent-guess-indent-offset-verbose nil))
+;;   (add-hook 'go-mode-hook 'untabify-everything-on-save)
+;;   (require 'lsp-go)
+;;   (setq lsp-go-analyses
+;;         '((fieldalignment . t)
+;;           (nilness        . t)
+;;           (unusedwrite    . t)
+;;           (unusedparams   . t)))
+;;   ;; go path
+;;   (add-to-list 'exec-path "~/go/bin")
+;;   (setq gofmt-command "goimports"))
 
-
-(use-package lsp-mode
-  :ensure t
-  :commands (lsp lsp-deferred)
-  :hook ((python-mode) . lsp-deferred)
-  :demand t
-  :init
-  (setq lsp-keymap-prefix "C-c l")
-  :config
-  (setq lsp-auto-configure t))
-
-(use-package lsp-pyright
-  :ensure t
-  :hook (python-mode . (lambda () (require 'lsp-pyright)))
-  :init (when (executable-find "python3")
-	  (setq lsp-pyright-python-executable-cmd "python3")))
-
-(use-package flycheck
-  :ensure t)
-
-(use-package lsp-ui
-  :ensure t
-  :config
-  (setq lsp-ui-flycheck-enable t)
-  (setq lsp-headerline-breadcrumb-enable nil))
-
+;; (add-hook 'go-mode-hook (lambda () (setq tab-width 4)))
+;; (global-set-key (kbd "<f5>") #'recompile)
 
 ;; Provide drop-down completion.
 (use-package company
@@ -190,43 +178,15 @@
     :hook ((text-mode . company-mode)
 	   (prog-mode . company-mode)))
 
+;; Go-related settings.
+(load "brun0-go")
 
-;; Workaround to use backticks
-(global-set-key [S-dead-grave] "`")
+;; Python-related settings.
+(load "brun0-python")
 
-;; Whitespace mode
-(custom-set-variables
- '(whitespace-style (quote (face tabs spaces trailing space-before-tab
-				 newline indentation empty space-after-tab
-				 space-mark tab-mark))))
-
-
-
-;; untabify so it replaces tabs with spaces on save
-(defun untabify-everything ()
-  (untabify (point-min) (point-max)))
-(defun untabify-everything-on-save ()
-  (add-hook 'before-save-hook 'untabify-everything)
-  nil)
-
-;; go mode
-(use-package go-mode
+;; eglot is a language server protocol (LSP) package for Emacs
+(use-package eglot
   :ensure t
-  :hook ((go-mode . lsp-deferred)
-         (go-mode . company-mode))
-  :bind (:map go-mode-map
-              ("<f6>" . gofmt))
-  :config
-  (add-hook 'go-mode-hook 'untabify-everything-on-save)
-  (require 'lsp-go)
-  (setq lsp-go-analyses
-        '((fieldalignment . t)
-          (nilness        . t)
-          (unusedwrite    . t)
-          (unusedparams   . t)))
-  ;; go path
-  (add-to-list 'exec-path "~/go/bin")
-  (setq gofmt-command "goimports"))
-
-(add-hook 'go-mode-hook (lambda () (setq tab-width 4)))
-(global-set-key (kbd "<f5>") #'recompile)
+  :hook
+  (go-mode . eglot-ensure)
+  (python-mode . eglot-ensure))
