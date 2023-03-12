@@ -10,3 +10,7 @@ personal/xfce4/stow_folder/emacs/.emacs.d/transient
 /stow_folder/emacs/.emacs.d/eln-cache/
 /stow_folder/emacs/.emacs.d/elpa/
 /stow_folder/emacs/.emacs.d/transient/
+/stow_folder/emacs/.emacs.d/.cache/a
+/stow_folder/emacs/.emacs.d/auto-save-list/
+.lsp-session*
+stow_folder/emacs/.emacs.d/.lsp-session*
