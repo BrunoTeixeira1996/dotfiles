@@ -1,4 +1,4 @@
-# Xfce4 How To
+# README
 
 ## If installing on Oracle
 
@@ -76,7 +76,6 @@ sudo modprobe 88x2bu
 - Thunderbird (install with apt)
 - FlameShot (install with apt)
 - Telegram (install with apt)
-- Xournalpp (install with apt)
 - Firefox (install with apt)
 - Okular (install with apt)
 - eog (install with apt)
@@ -85,7 +84,6 @@ sudo modprobe 88x2bu
 - keepassxc (install with apt)
 - emacs (stow)
 - NewsFlash (config in `newsflash` folder)
-- Iosevka (https://blog.programster.org/install-iosevka-fonts)
 - beekeeperstudio.io
 
 # Stow
@@ -98,8 +96,8 @@ stow --target=/home/brun0/ tmux
 stow --target=/home/brun0/ git
 stow --target=/home/brun0/.config/sublime-text/Packages/ sublime
 stow --target=/home/brun0/.config/xfce4/terminal/ xfce4-terminal
+stow --target=/home/brun0/.config/i3 i3
 ```
-
 
 # xfce4 keybinds and look
 
@@ -109,7 +107,7 @@ stow --target=/home/brun0/.config/xfce4/terminal/ xfce4-terminal
 xfconf-query -c xfce4-keyboard-shortcuts -l -v | cut -d'/' -f4 | awk '{printf "%30s", $2; print "\t" $1}' | sort | uniq
 ```
 
-## Keybinds I use
+## Keybinds I use for xfce4 to be the same as i3wm
 
 `xfce4-appfinder` to `Super` `RET` in `Keyboard` -> `Application Shortcuts`
 

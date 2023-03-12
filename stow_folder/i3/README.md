@@ -45,11 +45,6 @@ sudo apt install i3 xorg nitrogen tree eog curl jq xclip lxappearance chromium g
 
 # Install stuff
 
-- urxvt (`deprecated`)
-  - create .Xresources file and use the .Xresources file that exist in this repo
-  - Copy the .urxvt folder to ~
-  - `sudo update-alternatives --config x-terminal-emulator` and choose urxvt terminal as default
-- Iosevka font
 - emacs (`config folder exists in this repo`)
 - sublime (`config folder exists in this repo`)
 - pip
@@ -62,7 +57,6 @@ sudo apt install i3 xorg nitrogen tree eog curl jq xclip lxappearance chromium g
 - filezilla
 - keepassx
 - openvpn
-
 
 # References
 
