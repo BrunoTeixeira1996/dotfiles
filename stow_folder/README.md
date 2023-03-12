@@ -1,10 +1,6 @@
 # README
 
-## If installing on Oracle
-
-- To install VirtualBox Guest Additions in Debian just go to `/etc/fstab` and change `user,noauto` to `user,exec`
-
-- https://forums.virtualbox.org/viewtopic.php?t=58799
+# For xfce4
 
 ## Install sudo
 
@@ -86,20 +82,7 @@ sudo modprobe 88x2bu
 - NewsFlash (config in `newsflash` folder)
 - beekeeperstudio.io
 
-# Stow
-
-- Execute this one by one or execute `stow_script.sh` inside `stow_folder`
-
-```bash
-stow --target=/home/brun0/ emacs
-stow --target=/home/brun0/ tmux
-stow --target=/home/brun0/ git
-stow --target=/home/brun0/.config/sublime-text/Packages/ sublime
-stow --target=/home/brun0/.config/xfce4/terminal/ xfce4-terminal
-stow --target=/home/brun0/.config/i3 i3
-```
-
-# xfce4 keybinds and look
+## xfce4 keybinds and look
 
 - This gets xfce4 keyboard shortcuts
 
@@ -107,7 +90,7 @@ stow --target=/home/brun0/.config/i3 i3
 xfconf-query -c xfce4-keyboard-shortcuts -l -v | cut -d'/' -f4 | awk '{printf "%30s", $2; print "\t" $1}' | sort | uniq
 ```
 
-## Keybinds I use for xfce4 to be the same as i3wm
+### Keybinds I use for xfce4 to be the same as i3wm
 
 `xfce4-appfinder` to `Super` `RET` in `Keyboard` -> `Application Shortcuts`
 
@@ -131,6 +114,19 @@ Move window to workspace 5 to Shift Super 5 in Window Manager -> Keyboard
 ```
 - And I change workspaces to show only numbers from `1` to `5`
 
-## Theme
+### Theme
 
 - Adwaita-dark
+
+# Stow
+
+- Execute this one by one or execute `stow_script.sh` inside `stow_folder`
+
+```bash
+stow --target=/home/brun0/ emacs
+stow --target=/home/brun0/ tmux
+stow --target=/home/brun0/ git
+stow --target=/home/brun0/.config/sublime-text/Packages/ sublime
+stow --target=/home/brun0/.config/xfce4/terminal/ xfce4-terminal
+stow --target=/home/brun0/.config/i3 i3
+```
