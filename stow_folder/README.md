@@ -1,7 +1,5 @@
 # README
 
-# For xfce4
-
 ## Install sudo
 
 ```bash
@@ -62,22 +60,31 @@ sudo modprobe 88x2bu
 #Restart the pc and insert the wifi adapter
 ```
 
+## Installing i3
+```bash
+sudo apt install i3 xorg nitrogen lxappearance pulseaudio alsa-utils pavucontrol pasystray
+```
+- Then reboot
+- After reboot, choose i3 instead of xfce4 and choose `Win` for mod key
+- Go to `lxappearance` (using mod+d) and choose the theme
+- Add wallpaper image from `nitrogen`
+
 ## Install basic utilities
 
-- aptitude (install with apt)
-- lightdm (install with apt)
-- cURL (install with apt)
-- Git (install with apt)
+- aptitude
+- lightdm
+- cURL
+- Git
 - Tmux (stow)
-- Thunderbird (install with apt)
-- FlameShot (install with apt)
-- Telegram (install with apt)
-- Firefox (install with apt)
-- Okular (install with apt)
-- eog (install with apt)
-- xclip (install with apt)
-- tree (install with apt)
-- keepassxc (install with apt)
+- Thunderbird
+- FlameShot
+- Telegram
+- Firefox
+- Okular
+- eog
+- xclip
+- tree
+- keepassxc
 - emacs (stow)
 - NewsFlash (config in `newsflash` folder)
 - beekeeperstudio.io

@@ -35,7 +35,7 @@
 
 
 ;; load modes
-(add-to-list 'load-path "~/Desktop/dotfiles/personal/xfce4/stow_folder/emacs/.emacs.d/modes")
+(add-to-list 'load-path "~/Desktop/dotfiles/stow_folder/emacs/.emacs.d/modes")
 
 ;; theme
 ;; (use-package vscode-dark-plus-theme

@@ -199,3 +199,6 @@ for_window [class=".*"] title_window_icon padding 3px
 # Just use Mod + right mouse
 # To move a window with mouse
 # Just use Mod + left mouse
+
+# Start pasystray for volume
+exec /usr/bin/pasystray
