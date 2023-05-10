@@ -1,0 +1,16 @@
+#!/bin/sh
+
+case "$1" in
+	lock) i3lock --color 181818 ;;
+	reboot|poweroff) while [ "$select" != "no" ] && [ "$select" != "yes" ]
+						do
+						select=$(printf 'no\nyes' | dmenu -nb '#222222' -nf '#BBBBBB' -sb '#005577' -sf '#f3f4f5' -p "Are you sure you want to $1?")
+						[ -z "$select" ] && exit 0
+						done
+					[ "$select" = "no" ] && exit 0
+					systemctl "$1" ;;
+	*) echo "Usage: $0 {lock|reboot|poweroff}"
+	exit 2
+esac
+
+exit 0
