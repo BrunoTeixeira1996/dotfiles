@@ -80,14 +80,13 @@ sudo apt install i3 xorg nitrogen lxappearance pulseaudio alsa-utils pavucontrol
 - FlameShot
 - Telegram
 - Firefox
+- Chromium
 - Okular
 - eog
 - xclip
 - tree
 - keepassxc
 - emacs (stow)
-- NewsFlash (config in `newsflash` folder)
-- beekeeperstudio.io
 
 ## xfce4 keybinds and look
 
