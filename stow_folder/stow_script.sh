@@ -1,3 +1,4 @@
+stow --target=/home/brun0/ bash
 stow --target=/home/brun0/ emacs
 stow --target=/home/brun0/ tmux
 stow --target=/home/brun0/ git
