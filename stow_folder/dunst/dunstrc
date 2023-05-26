@@ -26,15 +26,16 @@
     frame_width = 1
     max_icon_size = 30
 
+
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#000000"
+    background = "#222222"
     foreground = "#888888"
     timeout = 5
 
 [urgency_normal]
-    background = "#000000"
+    background = "#285577"
     foreground = "#ffffff"
     timeout = 5
 
