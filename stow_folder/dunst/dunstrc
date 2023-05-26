@@ -23,7 +23,8 @@
     icon_position = left
     format = "%s\n%b"
     mouse_right_click = do_action
-    frame_width = 5
+    frame_width = 1
+    max_icon_size = 30
 
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
