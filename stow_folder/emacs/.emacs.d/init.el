@@ -15,13 +15,18 @@
 (column-number-mode 1)
 (show-paren-mode 1)
 (add-to-list 'default-frame-alist '(font . "Monospace-13")) ;; adding this makes emacsclient use this font too
-;;(set-frame-font "Monospace-14")
+;;(set-frame-font "Monospace-13")
 (global-display-line-numbers-mode) ;; shows line numbers
 (toggle-frame-maximized)
 (setq backup-directory-alist `(("." . "~/.emacs.d/backups"))) ;; saves garbage backups in .saves folder
 (setq truncate-lines nil)
 (setq create-lockfiles nil) ;; prevent emacs for creating tem files starting with hashta
 
+;;keep cursor at same position when scrolling
+(setq scroll-preserve-screen-position 1)
+;;scroll window up/down by one line
+(global-set-key (kbd "M-n") (kbd "C-u 1 C-v"))
+(global-set-key (kbd "M-p") (kbd "C-u 1 M-v"))
 
 ;; add melpa repo
 (require 'package)
@@ -34,30 +39,48 @@
   (package-refresh-contents)
   (package-install 'use-package))
 
-
 ;; load modes
 (add-to-list 'load-path "~/Desktop/dotfiles/stow_folder/emacs/.emacs.d/modes")
 
 ;; theme
-;; (use-package vscode-dark-plus-theme
+
+;; (use-package gruber-darker-theme
 ;;   :ensure t
 ;;   :config
-;;   (load-theme 'vscode-dark-plus t))
+;;   (load-theme 'gruber-darker t))
 
-(use-package gruber-darker-theme
+(use-package zenburn-theme
   :ensure t
   :config
-  (load-theme 'gruber-darker t))
+  (load-theme 'zenburn t))
+(setq zenburn-override-colors-alist
+      '(("zenburn-bg" . "#191919")))
+(load-theme 'zenburn t)
+
+;; scale headings in org-mode
+(setq zenburn-scale-org-headlines t)
+;; scale headings in outline-mode
+(setq zenburn-scale-outline-headlines t)
+
 
 ;; shortcuts
-(windmove-default-keybindings) ;; Shift + arrows to change between windows
+(windmove-default-keybindings) ;; Shift  arrows to change between windows
 
-;; vertico
+
+;; ;; helm
+;; (use-package helm
+;;   :ensure t
+;;   :config
+;;   (helm-mode 1)
+;;   (global-set-key (kbd "C-x b") 'helm-buffers-list)
+;;   (global-set-key (kbd "M-x") 'helm-M-x)
+;;   (global-set-key (kbd "C-x C-f") 'helm-find-files)
+;;   (global-set-key (kbd "C-s") 'helm-occur))
+
 (use-package vertico
   :ensure t
   :config
   (vertico-mode))
-
 
 ;; ace-jump-mode to choose a char and jump to it
 (use-package ace-jump-mode
@@ -93,16 +116,10 @@
 (advice-add 'move-text-up :after 'indent-region-advice)
 (advice-add 'move-text-down :after 'indent-region-advice)
 
+
 ;; magit
 (use-package magit :ensure t)
 
-;; markdown mode
-(use-package markdown-mode
-  :ensure t
-  :mode ("README\\.md\\'" . gfm-mode)
-  :init (setq markdown-command "multimarkdown"))
-
-(put 'upcase-region 'disabled nil)
 
 ;; org-mode
 (advice-add 'org-archive-subtree :after #'org-save-all-org-buffers)
@@ -134,6 +151,15 @@
 (use-package org-bullets :ensure t)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
+;; markdown mode
+(use-package markdown-mode
+  :ensure t
+  :mode ("README\\.md\\'" . gfm-mode)
+  :init (setq markdown-command "multimarkdown"))
+
+(put 'upcase-region 'disabled nil)
+
+
 ;; Workaround to use backticks
 (global-set-key [S-dead-grave] "`")
 
@@ -142,27 +168,7 @@
  '(whitespace-style (quote (face tabs spaces trailing space-before-tab
                                  newline indentation empty space-after-tab
                                  space-mark tab-mark))))
-;; ;; go mode
-;; (use-package go-mode
-;;   :ensure t
-;;   :hook ((go-mode . lsp-deferred)
-;;          (go-mode . company-mode))
-;;   :bind (:map go-mode-map
-;;               ("<f6>" . gofmt))
-;;   :config
-;;   (add-hook 'go-mode-hook 'untabify-everything-on-save)
-;;   (require 'lsp-go)
-;;   (setq lsp-go-analyses
-;;         '((fieldalignment . t)
-;;           (nilness        . t)
-;;           (unusedwrite    . t)
-;;           (unusedparams   . t)))
-;;   ;; go path
-;;   (add-to-list 'exec-path "~/go/bin")
-;;   (setq gofmt-command "goimports"))
 
-;; (add-hook 'go-mode-hook (lambda () (setq tab-width 4)))
-;; (global-set-key (kbd "<f5>") #'recompile)
 
 ;; Provide drop-down completion.
 (use-package company
@@ -177,7 +183,7 @@
   (company-idle-delay 0.02)
   (company-global-modes '(not eshell-mode shell-mode))
     :hook ((text-mode . company-mode)
-	   (prog-mode . company-mode)))
+           (prog-mode . company-mode)))
 
 ;; Go-related settings.
 (load "brun0-go")
