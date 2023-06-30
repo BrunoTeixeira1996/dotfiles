@@ -43,44 +43,59 @@
 (add-to-list 'load-path "~/Desktop/dotfiles/stow_folder/emacs/.emacs.d/modes")
 
 ;; theme
-
-;; (use-package gruber-darker-theme
-;;   :ensure t
-;;   :config
-;;   (load-theme 'gruber-darker t))
-
-(use-package zenburn-theme
+(use-package gruber-darker-theme
   :ensure t
   :config
-  (load-theme 'zenburn t))
-(setq zenburn-override-colors-alist
-      '(("zenburn-bg" . "#191919")))
-(load-theme 'zenburn t)
+  (load-theme 'gruber-darker t))
 
-;; scale headings in org-mode
-(setq zenburn-scale-org-headlines t)
-;; scale headings in outline-mode
-(setq zenburn-scale-outline-headlines t)
+;; (use-package zenburn-theme
+;;   :ensure t
+;;   :config
+;;   (load-theme 'zenburn t))
+;; (setq zenburn-override-colors-alist
+;;       '(("zenburn-bg" . "#191919")))
+;; (load-theme 'zenburn t)
+
+;; ;; scale headings in org-mode
+;; (setq zenburn-scale-org-headlines t)
+;; ;; scale headings in outline-mode
+;; (setq zenburn-scale-outline-headlines t)
 
 
 ;; shortcuts
 (windmove-default-keybindings) ;; Shift  arrows to change between windows
 
+;; stolen from https://github.com/stapelberg/configfiles/
+;; starting here
+(defun bruno-lazy-ido-enable ()
+  "since ido is loaded with Emacs, use-package cannot defer"
+  (ido-mode t)
+  ;; Disable searching in other directories when there are no matches
+  ;; (more annoying than helpful).
+  (setq ido-auto-merge-work-directories-length -1)
 
-;; ;; helm
-;; (use-package helm
-;;   :ensure t
-;;   :config
-;;   (helm-mode 1)
-;;   (global-set-key (kbd "C-x b") 'helm-buffers-list)
-;;   (global-set-key (kbd "M-x") 'helm-M-x)
-;;   (global-set-key (kbd "C-x C-f") 'helm-find-files)
-;;   (global-set-key (kbd "C-s") 'helm-occur))
+  (if (require 'ido-sort-mtime nil t)
 
-(use-package vertico
-  :ensure t
-  :config
-  (vertico-mode))
+      (ido-sort-mtime-mode t)))
+
+(defun bruno-lazy-ido-switch-buffer ()
+  "ibuffer wrapper"
+  (interactive)
+  (bruno-lazy-ido-enable)
+  (call-interactively 'ido-switch-buffer))
+
+(defun bruno-lazy-ido-find-file ()
+  "find-file wrapper"
+  (interactive)
+  (bruno-lazy-ido-enable)
+  (call-interactively 'ido-find-file))
+
+(use-package ido
+  :ensure nil ; built-in
+  :bind (("C-x b" . bruno-lazy-ido-switch-buffer)
+	 ("C-x C-f" . bruno-lazy-ido-find-file)))
+
+;; until here
 
 ;; ace-jump-mode to choose a char and jump to it
 (use-package ace-jump-mode
