@@ -3,9 +3,10 @@
 ## work/personal laptop
 
 - Backups gokrazy instance to external hard-drive that is plugged in proxmox
+  - `gokr_backup_config.sh` inside this repo in `gokrazy_scripts`
 
 ```console
-00 11 * * FRI /home/brun0/Desktop/personal/dotfiles/backup_gokrazy.sh
+00 11 * * FRI /home/brun0/Desktop/personal/dotfiles/gokrazy_scripts/gokr_backup_config.sh
 ```
 
 ## proxmox
@@ -15,12 +16,11 @@
 
 ```console
 0 0 * * 0 /mnt/pve/external/scripts_proxmox/leak_backup.sh
-0 0 * * 0 /mnt/pve/external/gokrazy_backup/gok-backup.sh
 ```
 
-- Backups `waiw` module that resides in `/perm/home/waiw` (gokrazy appliance)
-  - `gok-backup.sh` is in this repo
+- Backups modules that resides in `/perm/home` (for now backups `waiw` module only)
+  - `gok_backup_perm.sh` is inside this repo in `gokrazy_scripts`
 
 ```console
-0 0 * * 0 /mnt/pve/external/gokrazy_backup/gok-backup.sh
+0 0 * * 0 /mnt/pve/external/gokrazy_backup/gok_backup_perm.sh
 ```
