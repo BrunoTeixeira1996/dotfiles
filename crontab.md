@@ -11,13 +11,15 @@
 ## proxmox
 
 - Backups leaks and compresses to prevent losing data
+  - `leak_backup.sh` is inside `proxmox_scripts` in this repo
 
 ```console
-0 0 * * 0 /storagepool/backups/leak_backup/backup_leak.sh
-0 0 * * 0 find /storagepool/backups/leak_backup/ -name '*.tar.gz' -mtime +15 -exec rm {} \;
+0 0 * * 0 /mnt/pve/external/scripts_proxmox/leak_backup.sh
+0 0 * * 0 /mnt/pve/external/gokrazy_backup/gok-backup.sh
 ```
 
 - Backups `waiw` module that resides in `/perm/home/waiw` (gokrazy appliance)
+  - `gok-backup.sh` is in this repo
 
 ```console
 0 0 * * 0 /mnt/pve/external/gokrazy_backup/gok-backup.sh
