@@ -2,16 +2,17 @@
 
 ## Proxmox
 
-- Gokrazy `/perm` partition (`gokr_backup_perm.sh` inside this repo in `backup_scripts`) save in external hard drive and in `/storagepool/backups/gokrazy_backup` (hdd in proxmox)
-
-- Backup telegram bot leaks (`leak_backup.sh` inside this repo in `backup_scripts`) save in external hard drive and in `/storagepool/backups/leaks_backup` (hdd in proxmox)
-
-- Backup Syncthing (`syncthing_backup.sh` inside this repo in `backup_scripts`) save in external hard drive and in `/storagepool/backups/syncthing_backup` (hdd in proxmox)
+- Backup
+  -  Gokrazy `/perm` partition (`gokr_backup_perm.sh` inside this repo in `backup_scripts`) save in external hard drive and in `/storagepool/backups/gokrazy_backup` (hdd in proxmox)
+  - Backup telegram bot leaks (`leak_backup.sh` inside this repo in `backup_scripts`) save in external hard drive and in `/storagepool/backups/leaks_backup` (hdd in proxmox)
+  - Backup Syncthing (`syncthing_backup.sh` inside this repo in `backup_scripts`) save in external hard drive and in `/storagepool/backups/syncthing_backup` (hdd in proxmox)
+  - Backup postgresql (`postgresql_backup.sh` inside this repo in `backup_scripts`) save in external hard drive and in `/storagepool/backups/postgresql_backup` (hdd in proxmox)
 
 ```console
 0 0 * * 0 /mnt/pve/external/backup_scripts/gokr_backup_perm.sh
 0 0 * * 0 /mnt/pve/external/backup_scripts/leak_backup.sh
 0 0 * * 0 /mnt/pve/external/backup_scripts/syncthing_backup.sh
+0 0 * * 0 /mnt/pve/external/backup_scripts/postgresql_backup.sh
 ```
 
 ## work/personal laptop
