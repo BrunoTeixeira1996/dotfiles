@@ -8,9 +8,13 @@
 - Backup telegram bot leaks (`leak_backup.sh` inside this repo in `backup_scripts`)
   - save in external hard drive and in `/storagepool/backups/leaks_backup` (hdd in proxmox)
 
+- Backup Syncthing (`syncthing_backup.sh` inside this repo in `backup_scripts`)
+  - save in external hard drive and in `/storagepool/backups/syncthing_backup` (hdd in proxmox)
+
 ```console
 0 0 * * 0 /mnt/pve/external/gokrazy_backup/gokr_backup_perm.sh
 0 0 * * 0 /mnt/pve/external/scripts_proxmox/leak_backup.sh
+0 0 * * 0 /mnt/pve/external/scripts_proxmox/syncthing_backup.sh
 ```
 
 ## work/personal laptop
