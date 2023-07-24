@@ -11,10 +11,10 @@
 - Follow `/stow_folder/README.md` to use stow
 
 
-# Backups
+# Backup
 
 I use the [gbackup](https://github.com/BrunoTeixeira1996/gbackup) to backup and monitor all backups. Adding to this I have a cronjob running on my personal/work laptop that sends the `gokrazy` config folder to my external hard drive plugged in proxmox.
 
 ``` bash
-00 11 * * FRI /home/brun0/Desktop/personal/dotfiles/gokrazy_scripts/gokr_backup_config.sh
+00 11 * * FRI /home/brun0/Desktop/personal/dotfiles/backup_scripts/gokr_backup_config.sh
 ```
