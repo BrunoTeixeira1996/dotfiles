@@ -1,0 +1,20 @@
+{
+    "mapping": {
+        "1,56,1": [
+            "Super_L",
+            "keyboard"
+        ],
+        "1,125,1": [
+            "Alt_L",
+            "keyboard"
+        ],
+        "1,126,1": [
+            "ISO_Level3_Shift",
+            "keyboard"
+        ],
+        "1,100,1": [
+            "Super_R",
+            "keyboard"
+        ]
+    }
+}
