@@ -127,10 +127,22 @@ export PATH=$PATH:/usr/local/go/bin
 
 
 # for emacs
-alias emacs="env XMODIFIERS= emacs"
-
 if ! ps -e -o args | grep -q '^emacs --daemon$'; then
 emacs --daemon
 fi
 
-alias em="emacsclient -n -c"
+# alias
+alias e="emacsclient -n -c"
+alias ll='ls -hl'
+alias l='ll'
+alias j='journalctl --full -e'
+# Find files in current folder
+f() {
+    q="*$1*"
+    find . -iname $q
+}
+alias s='sudo'
+
+# map less and greater to the correct format in keychron 8
+xmodmap -e "keycode 53 = x X x X greater greater"
+xmodmap -e "keycode 52 = z Z z Z less less"
