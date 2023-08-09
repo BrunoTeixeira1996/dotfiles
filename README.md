@@ -20,4 +20,4 @@ I use the [gbackup](https://github.com/BrunoTeixeira1996/gbackup) to backup and 
 
 # Keymap for keychron
 
-Since I use keychron I need to map some keys. So use the `keychron-k8-preset.json` to map windows keys and alt keys and then use `.bashrc` to fix the less and equal signs
+Since I use keychron I need to map some keys. So use the `keychron-k8-preset.json` to map windows keys and alt keys (or just change the left side button from Mac to Windows) and then use `.bashrc` to fix the less and equal signs
