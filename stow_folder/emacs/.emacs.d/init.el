@@ -14,7 +14,7 @@
 (scroll-bar-mode 0) ;; disables scroll bar mode
 (column-number-mode 1)
 (show-paren-mode 1)
-(add-to-list 'default-frame-alist '(font . "Noto Sans Mono-13")) ;; adding this makes emacsclient use this font too
+(add-to-list 'default-frame-alist '(font . "Noto Sans Mono-17")) ;; adding this makes emacsclient use this font too
 ;;(set-frame-font "Monospace-13")
 (global-display-line-numbers-mode) ;; shows line numbers
 (toggle-frame-maximized)
@@ -47,11 +47,9 @@
 ;;   :ensure t
 ;;   :config
 ;;   (load-theme 'gruber-darker t))
+;; Better than the default.
+(load-theme 'tango-dark t)
 
-;; (use-package jetbrains-darcula-theme
-;;   :ensure t
-;;   :config
-;;   (load-theme 'jetbrains-darcula t))
 
 ;; shortcuts
 (windmove-default-keybindings) ;; Shift  arrows to change between windows
@@ -88,11 +86,11 @@
 
 ;; smex
 (use-package smex
-  :ensure t
-  :defer t
-  :init (or (boundp 'smex-cache)
+ :ensure t
+ :defer t
+ :init (or (boundp 'smex-cache)
 	    (smex-initialize))
-  :bind ("M-x" . smex))
+ :bind ("M-x" . smex))
 
 ;; ace-jump-mode to choose a char and jump to it
 (use-package ace-jump-mode
