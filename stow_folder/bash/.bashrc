@@ -121,7 +121,7 @@ PS1='\[\e]0;\u@\h: \w\a\]\[\033[1;92m\]\u@\h\[\033[m\]:\[\033[1;94m\]\w\[\033[m\
 
 
 
-export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 #export PATH=$PATH:/usr/local/bin/micronucleus
 #export PATH=$PATH:/usr/local/lib/tinygo/bin
 
