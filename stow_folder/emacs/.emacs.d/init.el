@@ -14,7 +14,7 @@
 (scroll-bar-mode 0) ;; disables scroll bar mode
 (column-number-mode 1)
 (show-paren-mode 1)
-(add-to-list 'default-frame-alist '(font . "Noto Sans Mono-17")) ;; adding this makes emacsclient use this font too
+(add-to-list 'default-frame-alist '(font . "Noto Sans Mono-13")) ;; adding this makes emacsclient use this font too
 ;;(set-frame-font "Monospace-13")
 (global-display-line-numbers-mode) ;; shows line numbers
 (toggle-frame-maximized)
@@ -40,7 +40,7 @@
   (package-install 'use-package))
 
 ;; load modes
-(add-to-list 'load-path "~/Desktop/dotfiles/stow_folder/emacs/.emacs.d/modes")
+(add-to-list 'load-path "~/Desktop/personal/dotfiles/stow_folder/emacs/.emacs.d/modes")
 
 ;; theme
 ;; (use-package gruber-darker-theme
