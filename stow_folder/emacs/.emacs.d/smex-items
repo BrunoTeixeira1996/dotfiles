@@ -1,16 +1,21 @@
 
 ;; ----- smex-history -----
 (
+ list-packages
+ revert-buffer
+ package-install
+ magit
+ man
  eval-region
  cd
- 5x5
- arp
- dbx
- dig
- erc
 )
 
 ;; ----- smex-data -----
 (
  (eval-region . 2)
+ (man . 1)
+ (magit . 1)
+ (package-install . 2)
+ (revert-buffer . 1)
+ (list-packages . 1)
 )

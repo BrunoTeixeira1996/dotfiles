@@ -1,0 +1,53 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/brun0/Desktop/" . "work/")
+ ("/home/brun0/Desktop/personal/dotfiles/stow_folder/" . "git/")
+ ("/home/brun0/" . "Desktop/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/brun0/Desktop/work/"
+ "/home/brun0/Desktop/personal/dotfiles/"
+ "/home/brun0/"
+ "/home/brun0/Desktop/personal/dotfiles/stow_folder/git/"
+ "/home/brun0/.emacs.d/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "newproj.org"
+ "nessus.org"
+ "todo.org"
+ "README.md"
+ ".gitconfig"
+ "init.el"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/brun0/Desktop/work/" (25864 12492 727253 754000) "reports_to_read/" "projects/" "todo.org" "./" "nessus.org" "../" "newsign.html")
+
+ ("/home/brun0/" (25864 3069 240001 347000) "Music/" ".cache/" "Desktop/" ".bashrc" ".face" ".face.icon" ".xsession-errors" ".pki/" "Public/" ".profile" ".config/" ".bash_logout" "go/" ".wget-hsts" "Sync/" ".ICEauthority" "Pictures/" "Videos/" ".Xauthority" ".tmux.conf" "Downloads/" ".xsession-errors.old" "Templates/" ".emacs.d/" "./" ".mozilla/" ".ssh/" ".dmrc" ".gnupg/" "Documents/" ".bash_history" ".local/" ".gitconfig" "../" ".thunderbird/" ".gnome/")
+
+ ("/home/brun0/Desktop/" (25856 38407 445633 755000) "shared_folder/" "./" "work/" "personal/" "../")
+
+ ("/home/brun0/Desktop/personal/" (25856 37383 491299 60000) "./" "dotfiles/" "../")
+
+ ("/home/brun0/Desktop/personal/dotfiles/" (25856 37390 455208 153000) "backup_scripts/" ".git/" "etc/" "README.md" "./" "stow_folder/" "backups.md" ".gitignore" "../" "keychron-k8-preset.json")
+
+ ("/home/brun0/Desktop/personal/dotfiles/stow_folder/git/" (25856 37390 455208 153000) "./" ".gitconfig" "../")
+
+ ("/home/brun0/Desktop/personal/dotfiles/stow_folder/" (25856 37390 455208 153000) "xfce4-terminal/" "stow_script.sh" "git/" "emacs/" "README.md" "bash/" "sublime/" "./" "dunst/" "fonts.conf" "tmux/" "../" "i3/")
+
+ ("/home/brun0/Desktop/personal/dotfiles/stow_folder/emacs/" (25856 37390 455208 153000) ".emacs.d/" "./" "../")
+
+ ("/home/brun0/Desktop/personal/dotfiles/stow_folder/emacs/.emacs.d/" (25856 37648 463810 754000) "modes/" "smex-items" "./" "custom.el" "elpa/" "eln-cache/" "backups/" "../" "init.el")
+
+ ("/home/brun0/.emacs.d/" (25856 37648 463810 754000) "modes/" "smex-items" "./" "custom.el" "elpa/" "eln-cache/" "backups/" "../" "init.el")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
