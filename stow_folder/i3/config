@@ -194,7 +194,7 @@ bindsym $mod+Shift+p exec "~/.config/i3/scripts/laptop-monitor.sh"
 bindsym $mod+m move workspace to output right
 
 # Title window with icon
-for_window [class=".*"] title_window_icon padding 3px
+for_window [class=".*"] title_window_icon padding 3px layout tabbed
 
 # To resize a window with mouse
 # Just use Mod + right mouse
@@ -229,3 +229,6 @@ exec --no-startup-id xsetroot -solid "#181818"
 
 # autorandr to choose the correct monitor profile
 exec_always --no-startup-id autorandr --change
+
+# for work
+bindsym $mod+Tab exec --no-startup-id GTK_IM_MODULE=ibus SWT_GTK3=1 GDK_SCALE=1 GDK_DPI_SCALE=1 GDK_SYNCHRONIZE=1 PATH=$HOME/go/bin:$PATH wsmgr
