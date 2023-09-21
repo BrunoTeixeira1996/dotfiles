@@ -57,6 +57,15 @@ sudo apt install i3 xorg nitrogen tree eog curl jq xclip lxappearance chromium g
 - filezilla
 - keepassx
 - openvpn
+- wsmgr
+
+## wsmgr
+
+``` bash
+$ mkdir -p ~/.config/wsmgr-for-i3/work
+$ ln -s /usr/bin/thunderbird ~/.config/wsmgr-for-i3/work
+$ ln -s /usr/bin/telegram-desktop ~/.config/wsmgr-for-i3/work
+```
 
 # References
 
