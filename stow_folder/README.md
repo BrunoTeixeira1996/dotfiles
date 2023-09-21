@@ -67,7 +67,9 @@ sudo apt install i3 xorg nitrogen lxappearance pulseaudio alsa-utils pavucontrol
 - Then reboot
 - After reboot, choose i3 instead of xfce4 and choose `Win` for mod key
 - Go to `lxappearance` (using mod+d) and choose the theme
-- Add wallpaper image from `nitrogen`
+- Add obsidian and teams to show in dmenu
+  - `sudo ln -s /snap/bin/teams-for-linux /usr/bin/teams-for-linux`
+  - `sudo ln -s /opt/obsidian/Obsidian-1.4.12.AppImage /usr/bin/obsidian`
 
 ## Install basic utilities
 
