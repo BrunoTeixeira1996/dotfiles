@@ -36,3 +36,23 @@ Host github.com
 	TCPKeepAlive yes
 	IdentitiesOnly yes
 ```
+
+# Notes Sync
+
+I use orgmode for note taking so it's important that everything is saved. For this I have a dropxbox instance with my notes and a [program](https://github.com/BrunoTeixeira1996/dotfiles/blob/main/notes_sync.sh) to sync from Dropxbox to Syncthing.
+This process is important because [Syncthing is one of the backup targets](https://github.com/BrunoTeixeira1996/gbackup).
+Then I created a service in systemd so I could have this running in the background even after a reboot.
+
+``` bash
+[Unit]
+Description=Sync Dropbox with Syncthing
+
+[Service]
+User=brun0
+ExecStart=/bin/bash /home/brun0/Desktop/personal/dotfiles/notes_sync.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+```
+
