@@ -18,4 +18,5 @@ stow_folder/emacs/.emacs.d/.lsp-session*
 /stow_folder/emacs/.emacs.d/tramp
 /stow_folder/emacs/.emacs.d/.mc-lists.el
 /stow_folder/emacs/.emacs.d/projectile-bookmarks.eld
-/smex-items
+/stow_folder/emacs/.emacs.d/smex-items
+/stow_folder/emacs/.emacs.d/ido.last
