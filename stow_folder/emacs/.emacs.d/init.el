@@ -21,6 +21,8 @@
 (setq backup-directory-alist `(("." . "~/.emacs.d/backups"))) ;; saves garbage backups in .saves folder
 (setq truncate-lines nil)
 (setq create-lockfiles nil) ;; prevent emacs for creating tem files starting with hashta
+(global-auto-revert-mode t) ;; auto revert buffer when file change
+
 
 ;;keep cursor at same position when scrolling
 (setq scroll-preserve-screen-position 1)
