@@ -212,3 +212,9 @@
   :hook
   (go-mode . eglot-ensure)
   (python-mode . eglot-ensure))
+
+
+;; undo-tree
+(use-package undo-tree
+  :ensure t)
+(global-undo-tree-mode)
