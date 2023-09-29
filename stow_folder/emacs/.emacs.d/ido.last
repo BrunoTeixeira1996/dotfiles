@@ -2,15 +2,53 @@
 
 ;; ----- ido-last-directory-list -----
 (
- ("/home/brun0/Desktop/" . "work/")
- ("/home/brun0/Desktop/personal/dotfiles/stow_folder/" . "git/")
+ ("/home/brun0/Desktop/personal/rssole/cmd/" . "rssole/")
+ ("/home/brun0/Desktop/personal/rssole/internal/rssole/" . "templates/")
+ ("/home/brun0/Desktop/personal/rssole/internal/" . "rssole/")
+ ("/home/brun0/Desktop/personal/rssole/" . "internal/")
+ ("/home/brun0/Desktop/personal/gnote/internal/" . "templates/")
+ ("/home/brun0/Desktop/personal/gnote/cmd/" . "gnote/")
+ ("/home/brun0/Desktop/personal/gnote/" . "cmd/")
+ ("/home/brun0/Desktop/personal/grafana_dashboard_tweak/internal/" . "operations/")
+ ("/home/brun0/.emacs.d/" . "modes/")
+ ("/home/brun0/Desktop/personal/grafana_dashboard_tweak/cmd/" . "gdt/")
+ ("/home/brun0/Desktop/personal/grafana_dashboard_tweak/" . "internal/")
+ ("/home/brun0/Desktop/personal/dotfiles/" . "stow_folder/")
+ ("/home/brun0/.config/" . "i3/")
+ ("/home/brun0/Desktop/personal/dotfiles/stow_folder/i3/" . "scripts/")
+ ("/home/brun0/Desktop/work/project_templates/web/" . "checklist/")
+ ("/home/brun0/Desktop/work/project_templates/" . "web/")
+ ("/home/brun0/Desktop/work/" . "project_templates/")
+ ("/home/brun0/Desktop/personal/" . "rssole/")
+ ("/home/brun0/Desktop/" . "personal/")
+ ("/home/brun0/Desktop/personal/dotfiles/stow_folder/" . "i3/")
  ("/home/brun0/" . "Desktop/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/home/brun0/Desktop/work/"
+ "/home/brun0/Desktop/personal/gnote/internal/templates/"
+ "/home/brun0/Desktop/personal/gnote/cmd/gnote/"
+ "/home/brun0/Desktop/personal/rssole/internal/rssole/templates/"
+ "/home/brun0/Desktop/personal/rssole/internal/rssole/"
+ "/home/brun0/Desktop/personal/gnote/templates/"
+ "/home/brun0/Desktop/personal/gnote/internal/models/"
+ "/home/brun0/Desktop/personal/gnote/internal/methods/"
+ "/home/brun0/Desktop/personal/gnote/internal/handles/"
+ "/home/brun0/Desktop/personal/grafana_dashboard_tweak/"
+ "/home/brun0/Desktop/personal/grafana_dashboard_tweak/internal/operations/"
+ "/home/brun0/Desktop/personal/grafana_dashboard_tweak/internal/request/"
+ "/home/brun0/Desktop/personal/grafana_dashboard_tweak/cmd/gdt/"
+ "/home/brun0/.emacs.d/modes/"
+ "/home/brun0/.config/i3/"
+ "/home/brun0/Desktop/personal/dotfiles/stow_folder/i3/"
+ "/home/brun0/Desktop/personal/dotfiles/stow_folder/"
  "/home/brun0/Desktop/personal/dotfiles/"
+ "/home/brun0/.screenlayout/"
+ "/home/brun0/Desktop/personal/dotfiles/stow_folder/i3/scripts/"
+ "/home/brun0/Desktop/work/templates/internal/checklist/"
+ "/home/brun0/Desktop/work/"
+ "/home/brun0/Desktop/work/project_templates/web/checklist/"
  "/home/brun0/"
  "/home/brun0/Desktop/personal/dotfiles/stow_folder/git/"
  "/home/brun0/.emacs.d/"
@@ -18,35 +56,101 @@
 
 ;; ----- ido-work-file-list -----
 (
- "newproj.org"
- "nessus.org"
- "todo.org"
+ "base.html"
+ "base.go.html"
+ "main.go"
+ "index.html"
+ "rssole.go"
+ "models.go"
+ "methods.go"
+ "handles.go"
  "README.md"
- ".gitconfig"
- "init.el"
+ "operations.go"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/brun0/Desktop/work/" (25864 12492 727253 754000) "reports_to_read/" "projects/" "todo.org" "./" "nessus.org" "../" "newsign.html")
+ ("/home/brun0/Desktop/personal/gnote/internal/templates/" (25877 42047 377443 213000) "index.html" "./" "base.html" "../" "base.go.html")
 
- ("/home/brun0/" (25864 3069 240001 347000) "Music/" ".cache/" "Desktop/" ".bashrc" ".face" ".face.icon" ".xsession-errors" ".pki/" "Public/" ".profile" ".config/" ".bash_logout" "go/" ".wget-hsts" "Sync/" ".ICEauthority" "Pictures/" "Videos/" ".Xauthority" ".tmux.conf" "Downloads/" ".xsession-errors.old" "Templates/" ".emacs.d/" "./" ".mozilla/" ".ssh/" ".dmrc" ".gnupg/" "Documents/" ".bash_history" ".local/" ".gitconfig" "../" ".thunderbird/" ".gnome/")
+ ("/home/brun0/Desktop/personal/gnote/" (25877 41747 587166 733000) "go.mod" "go.sum" "cmd/" "README.md" "internal/" "./" "../")
 
- ("/home/brun0/Desktop/" (25856 38407 445633 755000) "shared_folder/" "./" "work/" "personal/" "../")
+ ("/home/brun0/Desktop/personal/gnote/internal/" (25877 41755 391009 865000) "handles/" "models/" "templates/" "./" "assets/" "../")
 
- ("/home/brun0/Desktop/personal/" (25856 37383 491299 60000) "./" "dotfiles/" "../")
+ ("/home/brun0/Desktop/personal/rssole/cmd/rssole/" (25877 40161 313958 543000) "./" "main.go" "../")
+
+ ("/home/brun0/Desktop/personal/rssole/cmd/" (25877 40161 313958 543000) "rssole/" "./" "../")
+
+ ("/home/brun0/Desktop/personal/gnote/cmd/gnote/" (25877 40793 738902 657000) "./" "main.go" "../")
+
+ ("/home/brun0/Desktop/personal/rssole/internal/rssole/templates/" (25877 40161 317958 500000) "feedlist.go.html" "item.go.html" "components/" "items.go.html" "./" "crudfeed.go.html" "../" "base.go.html")
+
+ ("/home/brun0/Desktop/personal/rssole/internal/rssole/" (25877 40161 317958 500000) "endpoints.go" "endpoints_test.go" "feeds.go" "isread_test.go" "item.go" "rssole.go" "scrape_test.go" "feeds_test.go" "templates/" "./" "item_test.go" "isread.go" "scrape.go" "feed_test.go" "feed.go" "libs/" "../" "lastmodified.go")
+
+ ("/home/brun0/Desktop/personal/rssole/internal/" (25877 40161 313958 543000) "rssole/" "./" "../")
+
+ ("/home/brun0/Desktop/personal/rssole/" (25877 40161 313958 543000) ".github/" ".git/" "LICENSE" "badge.svg" "go.mod" "go.sum" "cmd/" "README.md" "feeds.json" "internal/" "./" ".golangci.yaml" "Makefile" "CONTRIBUTING.md" ".gitignore" "../" "badge.svg.template" ".goreleaser.yaml")
+
+ ("/home/brun0/Desktop/personal/" (25877 40158 549988 228000) "gbackup/" "notes/" "rssole/" "./" "dotfiles/" "../" "gnote/")
+
+ ("/home/brun0/Desktop/personal/gnote/templates/" (25877 38639 834262 692000) "./" "base.html" "../")
+
+ ("/home/brun0/Desktop/personal/gnote/internal/methods/" (25877 38381 5679 952000) "methods.go" "./" "../")
+
+ ("/home/brun0/Desktop/personal/gnote/internal/models/" (25877 38318 382505 344000) "./" "models.go" "../")
+
+ ("/home/brun0/Desktop/personal/gnote/internal/handles/" (25877 38265 415202 924000) "./" "../" "handles.go")
+
+ ("/home/brun0/Desktop/personal/gnote/cmd/" (25877 37711 278453 327000) "./" "../" "gnote/")
+
+ ("/home/brun0/Desktop/personal/grafana_dashboard_tweak/internal/operations/" (25877 32445 872720 260000) "operations.go" "./" "../")
+
+ ("/home/brun0/Desktop/personal/grafana_dashboard_tweak/internal/" (25877 24762 633310 922000) "request/" "./" "operations/" "../")
+
+ ("/home/brun0/Desktop/personal/grafana_dashboard_tweak/cmd/gdt/" (25877 24531 388259 374000) "./" "main.go" "../")
+
+ ("/home/brun0/Desktop/personal/grafana_dashboard_tweak/" (25877 22071 669099 486000) ".git/" "go.mod" "cmd/" "README.md" "internal/" "./" "../")
+
+ ("/home/brun0/Desktop/personal/grafana_dashboard_tweak/internal/request/" (25877 21510 972846 595000) "./" "request.go" "../")
+
+ ("/home/brun0/" (25869 21546 468000 761000) "Music/" ".cache/" "Desktop/" ".bashrc" ".face" ".face.icon" ".xsession-errors" ".pki/" "Public/" ".profile" ".config/" ".screenlayout/" ".bash_logout" "go/" ".wget-hsts" "Sync/" "snap/" ".ICEauthority" "Pictures/" "Videos/" ".Xauthority" ".tmux.conf" "Downloads/" ".xsession-errors.old" "Templates/" ".icons/" ".gtkrc-2.0" ".emacs.d/" "./" ".mozilla/" ".ssh/" ".dmrc" ".gnupg/" "Documents/" ".bash_history" ".authinfo" ".local/" ".gitconfig" "../" ".thunderbird/" ".gnome/")
+
+ ("/home/brun0/.emacs.d/modes/" (25856 37390 455208 153000) "brun0-go.el" "./" "../" "brun0-python.el")
+
+ ("/home/brun0/.emacs.d/" (25868 24494 861386 522000) "ido.last" "transient/" "modes/" ".mc-lists.el" "tramp" "#ido.last#" "smex-items" "./" "custom.el" "elpa/" "eln-cache/" "backups/" "../" "auto-save-list/" "init.el")
+
+ ("/home/brun0/Desktop/personal/grafana_dashboard_tweak/cmd/" (25868 29295 307148 187000) "gdt/" "./" "../")
+
+ ("/home/brun0/.config/" (25868 9342 618508 613000) "FortiClient/" "wsmgr-for-i3/" "autorandr/" "user-dirs.dirs" "VirtualBox/" "pulse/" "obsidian/" "QtProject.conf" "Mousepad/" "nemo/" "libvirt/" "gtk-3.0/" "keepassxc/" "dconf/" "syncthing/" "xarchiver/" "xfce4/" "./" "systemd/" "ristretto/" "sublime-text/" "libreoffice/" "mimeapps.list" "Thunar/" "../" "google-chrome/" "i3/" "user-dirs.locale" "menus/")
+
+ ("/home/brun0/Desktop/personal/dotfiles/stow_folder/" (25868 7699 750832 776000) "xfce4-terminal/" "stow_script.sh" "git/" "emacs/" "README.md" "bash/" "sublime/" "./" "dunst/" "fonts.conf" "tmux/" "../" "i3/")
+
+ ("/home/brun0/Desktop/personal/dotfiles/stow_folder/i3/" (25868 5471 600162 610000) "README.md" "./" "scripts/" "i3status.conf" "config" "../")
+
+ ("/home/brun0/.config/i3/" (25868 3285 540172 920000) "./" "scripts/" "i3status.conf" "config" "../")
+
+ ("/home/brun0/.screenlayout/" (25868 4532 674854 197000) "work.sh" "work-office.sh" "./" "../")
+
+ ("/home/brun0/Desktop/" (25867 7669 218180 19000) "shared_folder/" "./" "work/" "Necronomicon/" "personal/" "../")
+
+ ("/home/brun0/Desktop/personal/dotfiles/stow_folder/i3/scripts/" (25868 3890 692112 627000) "laptop-monitor.sh" "powerm" "dual-monitor-benq-x1.sh" "work-home.sh" "./" "screen_laptop.sh" "../")
+
+ ("/home/brun0/Desktop/work/templates/internal/checklist/" (25867 6233 171009 118000) "1_physical.md" "3_servers_and_services.md" "5_user_access_control.md" "./" "2_segregation_and_network_infrastructure.md" "4_active_directory.md" "../")
+
+ ("/home/brun0/Desktop/work/" (25867 1142 652891 950000) "reports_to_read/" "projects/" "templates/" "todo.org" "./" "nessus.org" "../" "newsign.html")
+
+ ("/home/brun0/Desktop/work/project_templates/web/checklist/" (25866 64868 707152 947000) "5_session_management.md" "4_authentication.md" "7_error_handling.md" "8_cryptography.md" "2_configuration_and_deployment_management.md" "./" "9_business_logic.md" "1_information_gathering.md" "3_identity_management.md" "../" "6_input_validation.md")
+
+ ("/home/brun0/Desktop/work/project_templates/" (25866 64202 742971 847000) "web/" "./" "../")
+
+ ("/home/brun0/Desktop/work/project_templates/web/" (25866 64227 614630 731000) "checklist/" "./" "../")
 
  ("/home/brun0/Desktop/personal/dotfiles/" (25856 37390 455208 153000) "backup_scripts/" ".git/" "etc/" "README.md" "./" "stow_folder/" "backups.md" ".gitignore" "../" "keychron-k8-preset.json")
 
  ("/home/brun0/Desktop/personal/dotfiles/stow_folder/git/" (25856 37390 455208 153000) "./" ".gitconfig" "../")
 
- ("/home/brun0/Desktop/personal/dotfiles/stow_folder/" (25856 37390 455208 153000) "xfce4-terminal/" "stow_script.sh" "git/" "emacs/" "README.md" "bash/" "sublime/" "./" "dunst/" "fonts.conf" "tmux/" "../" "i3/")
-
  ("/home/brun0/Desktop/personal/dotfiles/stow_folder/emacs/" (25856 37390 455208 153000) ".emacs.d/" "./" "../")
 
  ("/home/brun0/Desktop/personal/dotfiles/stow_folder/emacs/.emacs.d/" (25856 37648 463810 754000) "modes/" "smex-items" "./" "custom.el" "elpa/" "eln-cache/" "backups/" "../" "init.el")
-
- ("/home/brun0/.emacs.d/" (25856 37648 463810 754000) "modes/" "smex-items" "./" "custom.el" "elpa/" "eln-cache/" "backups/" "../" "init.el")
 )
 
 ;; ----- ido-unc-hosts-cache -----

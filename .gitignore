@@ -15,3 +15,5 @@ personal/xfce4/stow_folder/emacs/.emacs.d/transient
 .lsp-session*
 stow_folder/emacs/.emacs.d/.lsp-session*
 /stow_folder/emacs/.emacs.d/.cache*
+/stow_folder/emacs/.emacs.d/tramp
+/stow_folder/emacs/.emacs.d/.mc-lists.el

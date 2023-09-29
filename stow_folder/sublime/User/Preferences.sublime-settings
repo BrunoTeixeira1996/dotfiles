@@ -3,7 +3,7 @@
 	[
 		"Vintage",
 	],
-	"font_size": 18,
+	"font_size": 16,
 	"font_face" : "Iosevka",
 	"theme": "Adaptive.sublime-theme",
 	"color_scheme": "Monokai.sublime-color-scheme",
