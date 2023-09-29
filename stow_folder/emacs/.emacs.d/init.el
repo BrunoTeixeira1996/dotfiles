@@ -150,14 +150,16 @@
 
 (setq org-tag-persistent-alist
       '((:startgroup . nil)
-        ("ONBOARDING" . ?o)
         ("WORK" . ?w)
-        ("ART2R" . ?r)
-        ("DEFMEETING" . ?d)
+        ("PROJECTS" . ?d)
         ("PROGRAMMING" .?p)
         (:endgroup . nil)
         )
 )
+(setq org-startup-with-inline-images t)
+(setq org-log-done 'time)
+
+
 
 
 (use-package org-bullets :ensure t)
