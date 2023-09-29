@@ -45,12 +45,12 @@
 (add-to-list 'load-path "~/Desktop/personal/dotfiles/stow_folder/emacs/.emacs.d/modes")
 
 ;; theme
-;; (use-package gruber-darker-theme
-;;   :ensure t
-;;   :config
-;;   (load-theme 'gruber-darker t))
+(use-package gruber-darker-theme
+  :ensure t
+  :config
+  (load-theme 'gruber-darker t))
 ;; Better than the default.
-(load-theme 'tango-dark t)
+;;(load-theme 'tango-dark t)
 
 
 ;; shortcuts
@@ -153,6 +153,7 @@
         ("WORK" . ?w)
         ("PROJECTS" . ?d)
         ("PROGRAMMING" .?p)
+	("EMACS" . ?e)
         (:endgroup . nil)
         )
 )
