@@ -134,6 +134,7 @@
 
 
 ;; org-mode
+(setq org-startup-indented t)
 (advice-add 'org-archive-subtree :after #'org-save-all-org-buffers)
 
 (setq org-todo-keywords
