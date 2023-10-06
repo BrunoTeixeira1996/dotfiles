@@ -52,3 +52,10 @@ Restart=always
 WantedBy=multi-user.target
 ```
 
+# Adding AppImages into dmenu
+
+Use a symbolic link and point that to the `/usr/bin` location
+
+``` bash
+sudo ln -s /opt/obsidian/Obsidian-1.4.12.AppImage /usr/bin/obsidian
+```
