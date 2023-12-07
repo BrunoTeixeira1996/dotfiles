@@ -216,3 +216,65 @@
   :ensure t)
 (global-undo-tree-mode)
 (setq undo-tree-auto-save-history nil)
+
+;; compilation
+;; Don’t ask to save files before compilation, just save them.
+(setq compilation-ask-about-save nil)
+
+;; Don’t ask to kill currently running compilation, just kill it.
+(setq compilation-always-kill t)
+
+;; https://github.com/bmag/emacs-purpose (“window-purpose” on MELPA) allows
+;; dedicating a window to a certain purpose (e.g. compilation, magit, edit,
+;; …) using C-c , d.
+;;
+;; When happy with a layout, save using:
+;; M-x purpose-save-window-layout NAME RET TAB RET
+;; …and load using:
+;; M-x purpose-load-window-layout NAME
+(use-package window-purpose
+  :defer t
+  :ensure t
+  :config
+  (progn
+    ;; Prefer opening new buffers in the same Emacs window.
+    ;;
+    ;; I don’t want this to happen when not working with
+    ;; purpose mode in my layout, as it results in magit
+    ;; windows not popping up anymore. Instead, they just
+    ;; replace the current window. To make matters worse,
+    ;; the COMMITMSG buffer ends up being buried under
+    ;; the diff buffer, which is really confusing.
+    (setq pop-up-windows nil)
+
+    ;; make M-x man open manpages in the same Emacs window
+    (setq Man-notify-method 'pushy)
+
+    (add-to-list 'purpose-user-mode-purposes '(compilation-mode . compile))
+    (add-to-list 'purpose-user-mode-purposes '(dired-mode . edit))
+    (define-key purpose-mode-map (kbd "C-x b") nil)
+    (define-key purpose-mode-map (kbd "C-x C-f") nil)
+    (purpose-compile-user-configuration) ;; activate changes
+    ))
+
+;; https://github.com/bmag/emacs-purpose (“window-purpose” on MELPA) allows
+;; dedicating a window to a certain purpose (e.g. compilation, magit, edit,
+;; …) using C-c , d.
+;;
+;; When happy with a layout, save using:
+;; M-x purpose-save-window-layout NAME RET TAB RET
+;; …and load using:
+;; M-x purpose-load-window-layout NAME
+(defun brun0-purpose ()
+  "loads purpose and restores my typical window layout"
+  (interactive)
+    (progn
+      (purpose-mode)
+      (message "loading window layout")
+      (purpose-load-window-layout "brun0")))
+
+;; Open M-x compile buffers to the right instead of at the bottom (default).
+(add-to-list
+ 'display-buffer-alist
+ '("*compilation*" (display-buffer-reuse-window display-buffer-in-direction)
+   (direction . right)))
