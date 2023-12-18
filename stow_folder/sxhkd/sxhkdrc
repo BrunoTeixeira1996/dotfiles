@@ -1,0 +1,14 @@
+super + Escape
+      pkill -USR1 -x sxhkd
+
+super + Return
+      rofi -show drun
+
+super + t
+      xfce4-terminal
+      
+super + shift + w
+      /usr/bin/emacsclient -n -c ~/Dropbox/notes/work.org
+
+super + shift + s
+      xfce4-terminal --default-working-directory=/home/brun0/Desktop/shared_folder
