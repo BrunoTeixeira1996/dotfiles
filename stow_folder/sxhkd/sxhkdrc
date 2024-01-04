@@ -5,7 +5,7 @@ super + Return
       rofi -show drun
 
 super + t
-      xfce4-terminal
+      kitty
       
 super + shift + w
       /usr/bin/emacsclient -n -c ~/Dropbox/notes/work.org
