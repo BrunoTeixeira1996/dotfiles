@@ -187,7 +187,7 @@ bar {
 bindsym $mod+x exec i3lock -c 181818 
 
 # Borders
-hide_edge_borders both
+#hide_edge_borders both
 
 # Execs for startups
 #exec --no-startup-id ~/.config/i3/scripts/laptop-monitor.sh
