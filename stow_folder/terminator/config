@@ -1,5 +1,9 @@
 [global_config]
 [keybindings]
+  split_horiz = <Primary>h
+  split_vert = <Primary>v
+  close_term = <Alt>q
+  close_window = <Primary><Shift>q
 [profiles]
   [[default]]
     scroll_on_keystroke = False
