@@ -26,4 +26,35 @@
       type = Terminal
       parent = window0
       profile = default
+      command = ""
+  [[wp]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:28
+      maximised = False
+      fullscreen = False
+      size = 1916, 1021
+      title = brun0@x1: ~
+      last_active_window = True
+    [[[child1]]]
+      type = Notebook
+      parent = child0
+      order = 0
+      labels = w, p
+      last_active_term = 38e357d3-42ee-4164-a972-50d54389f484, f00e442f-0628-4fc6-8b0f-f9bd998c1aee
+      active_page = 1
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = default
+      uuid = 38e357d3-42ee-4164-a972-50d54389f484
+    [[[terminal3]]]
+      type = Terminal
+      parent = child1
+      order = 1
+      profile = default
+      uuid = f00e442f-0628-4fc6-8b0f-f9bd998c1aee
 [plugins]
