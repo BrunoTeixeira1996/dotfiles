@@ -5,7 +5,7 @@ super + Return
       rofi -show drun
 
 super + t
-      kitty
+      terminator
       
 super + shift + w
       /usr/bin/emacsclient -n -c ~/Dropbox/notes/work.org
