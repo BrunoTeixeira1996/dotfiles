@@ -6,6 +6,9 @@ super + Return
 
 super + t
       terminator
+
+super + shift + t
+	terminator --layout=wp
       
 super + shift + w
       /usr/bin/emacsclient -n -c ~/Dropbox/notes/work.org
