@@ -1,10 +1,12 @@
 {
 	"ignored_packages":
 	[
+		"LSP",
+		"LSP-pyright",
 		"Vintage",
 	],
-	"font_size": 16,
-	"font_face" : "Iosevka",
+	"font_size": 14,
+	"font_face" : "Noto Sans Mono",
 	"theme": "Adaptive.sublime-theme",
 	"color_scheme": "Monokai.sublime-color-scheme",
 	"remember_open_files": false,
@@ -19,4 +21,5 @@
 	"translate_tabs_to_spaces": false,
 	"convert_tabspaces_on_save": false,
 	/*"word_wrap": "false"*/
+	"index_files": false,
 }
