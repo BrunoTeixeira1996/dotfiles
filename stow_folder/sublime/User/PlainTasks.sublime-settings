@@ -1,1 +1,4 @@
-{ "color_scheme": "Packages/User/Themes/Visual_Studio_Dark_Plus.tmTheme" }
+{ "color_scheme": "Packages/PlainTasks/tasks-monokai.hidden-tmTheme" }
+
+    //   Packages/PlainTasks/tasks-eighties-colored.hidden-tmTheme
+    //   Packages/PlainTasks/tasks-monokai.hidden-tmTheme
