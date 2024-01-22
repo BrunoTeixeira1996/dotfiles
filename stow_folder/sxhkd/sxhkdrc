@@ -11,7 +11,7 @@ super + shift + t
 	terminator --layout=wp
       
 super + shift + w
-      /usr/bin/emacsclient -n -c ~/Dropbox/notes/work.org
+      subl ~/Dropbox/notes/work2024.todo
 
 super + shift + s
       xfce4-terminal --default-working-directory=/home/brun0/Desktop/shared_folder
