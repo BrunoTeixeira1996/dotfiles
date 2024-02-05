@@ -136,6 +136,8 @@ alias e="emacsclient -n -c"
 alias ll='ls -hl'
 alias l='ll'
 alias j='journalctl --full -e'
+alias ipa='ip -c a'
+alias grn="grep -rn"
 # Find files in current folder
 f() {
     q="*$1*"
@@ -146,3 +148,5 @@ alias s='sudo'
 # map less and greater to the correct format in keychron 8
 xmodmap -e "keycode 53 = x X x X greater greater"
 xmodmap -e "keycode 52 = z Z z Z less less"
+
+
