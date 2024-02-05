@@ -138,6 +138,8 @@ alias l='ll'
 alias j='journalctl --full -e'
 alias ipa='ip -c a'
 alias grn="grep -rn"
+# sudo fuser -n udp -k 53 -> this will kill port 53 listening and then responder works
+alias responder="source /home/brun0/Desktop/tools/Responder/env/bin/activate && sudo /home/brun0/Desktop/tools/Responder/env/bin/python3 /home/brun0/Desktop/tools/Responder/Responder.py"
 # Find files in current folder
 f() {
     q="*$1*"
@@ -150,3 +152,7 @@ xmodmap -e "keycode 53 = x X x X greater greater"
 xmodmap -e "keycode 52 = z Z z Z less less"
 
 
+. "$HOME/.cargo/env"
+
+# Created by `pipx` on 2024-02-05 22:59:01
+export PATH="$PATH:/home/brun0/.local/bin"
