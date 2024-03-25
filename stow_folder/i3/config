@@ -109,10 +109,10 @@ bindsym $mod+a focus parent
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1:chat"
-set $ws2 "2:terminal"
-set $ws3 "3:vm"
-set $ws4 "4:browser"
-set $ws5 "5"
+set $ws2 "2:term"
+set $ws3 "3:work"
+set $ws4 "4:vm"
+set $ws5 "5:personal"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
@@ -192,10 +192,23 @@ bindsym $mod+x exec i3lock -c 181818
 # Execs for startups
 #exec --no-startup-id ~/.config/i3/scripts/laptop-monitor.sh
 bindsym $mod+Shift+p exec "~/.config/i3/scripts/laptop-monitor.sh"
+bindsym $mod+Shift+o exec "~/.config/i3/scripts/work-home.sh"
 bindsym $mod+m move workspace to output right
 
 # Title window with icon
 for_window [class=".*"] title_window_icon padding 3px
+
+# Assign programs to correct workspace
+assign [class="thunderbird-default"] $ws1
+assign [class="TelegramDesktop"] $ws1
+assign [class="Firefox-esr"] $ws1
+assign [class="keepassxc"] $ws1
+assign [class="Terminator"] $ws2
+assign [class="Emacs"] $ws2
+assign [class="google-chrome"] $ws3
+assign [class="install4j-burp-StartBurp"] $ws3
+assign [class="VirtualBox Manager"] $ws4
+
 
 # To resize a window with mouse
 # Just use Mod + right mouse
