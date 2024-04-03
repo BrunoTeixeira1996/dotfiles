@@ -1,0 +1,93 @@
+# Work laptop
+
+- stow
+- i3
+- xfce
+- sublime
+- terminator
+- aptitude
+- lightdm
+- curl
+- git
+- tmux
+- thunderbird
+- flameshot
+- telegram
+- firefox
+- chrome
+- eog
+- xclip
+- tree
+- keepassxc
+- emacs
+- autorandr
+- btop
+- openfortivpn
+- nemo
+- rofi
+- sxhkd
+- syncthing
+- virtualbox
+	- windows11
+	- kali
+- blueman
+- docker
+- dropbox
+- dunst
+- filezilla
+- obsidian
+- pulse audio
+- pavucontrol
+- python3
+- rsync
+- rubygems
+- samba
+- sqlite3
+- squashfs
+- xfreerdp
+- zsh
+- ohmyzsh
+- snap
+	- teams
+
+## Security
+
+- wireshark
+- hashcat
+- john the ripper
+- smbmap
+- smbclient
+- whatweb
+- wpscan
+- whois
+- burpsuite pro
+- bloodhound python
+- responder
+- noPac
+- rusthound
+- sqlmap
+- swaks
+- go
+	- assetfinder
+	- ffuf
+	- gobuster
+	- godef
+	- godoc
+	- go-global-update
+	- goimports
+	- gopls
+	- kerbrute
+	- nuclei
+	- waybackurls
+	- wsmgr
+	- wsmgr-cwd
+- pipx
+	- autorecon
+	- bloodhound
+	- crackmapexec
+	- donpapi
+	- impacket
+	- manspider
+	- mitm6
+	- netexec
+	- pypykatz
