@@ -32,7 +32,6 @@
 	- kali
 - blueman
 - docker
-- dropbox
 - dunst
 - filezilla
 - obsidian
