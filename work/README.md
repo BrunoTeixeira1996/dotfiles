@@ -90,3 +90,14 @@
 	- mitm6
 	- netexec
 	- pypykatz
+	
+
+## SSH
+
+- config
+	- ssh to marquesa
+	- github
+	- bot
+	- proxmox
+	- kali
+	
