@@ -1,14 +1,8 @@
 {
-	"ignored_packages":
-	[
-		"LSP",
-		"LSP-pyright",
-		"Vintage",
-	],
-	"font_size": 17,
+	"font_size": 13,
 	"font_face" : "DejaVu Sans Mono",
 	"theme": "Adaptive.sublime-theme",
-	"color_scheme": "Packages/Material Monokai/MaterialMonokaiDark.tmTheme",
+	"color_scheme": "Packages/Theme - Cyanide/Cyanide - Mint - Black.tmTheme",
 	"remember_open_files": false,
 	"hot_exit": false,
 	"scroll_past_end": true,
@@ -22,4 +16,8 @@
 	"word_wrap": true,
 	"index_files": false,
     "caret_style": "smooth",
+	"ignored_packages":
+	[
+		"Vintage",
+	],
 }

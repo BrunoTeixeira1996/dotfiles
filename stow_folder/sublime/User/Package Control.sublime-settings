@@ -2,21 +2,23 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
-		"LSP",
-		"LSP-pyright",
 	],
 	"installed_packages":
 	[
 		"FileIcons Mono",
 		"LSP",
+		"LSP-gopls",
 		"LSP-pyright",
 		"Markdown Images",
 		"MarkdownEditing",
 		"Material Monokai",
+		"OrigamiEmacs",
 		"Package Control",
 		"PlainTasks",
+		"Pretty JSON",
 		"SFTP",
 		"SideBarEnhancements",
 		"Terminus",
+		"Theme - Cyanide",
 	],
 }
