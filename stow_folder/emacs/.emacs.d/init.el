@@ -1,3 +1,6 @@
+;; prevent comp warnings
+(setq native-comp-async-report-warnings-errors 'silent)
+
 ;; prevent M-x to write in this file
 (setq custom-file (concat user-emacs-directory "custom.el"))
 (when (file-exists-p custom-file)
