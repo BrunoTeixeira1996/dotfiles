@@ -199,7 +199,7 @@ bindsym $mod+Shift+o exec "~/.config/i3/scripts/work-home.sh"
 bindsym $mod+m move workspace to output right
 
 # Title window with icon
-for_window [class=".*"] title_window_icon padding 3px
+for_window [all] title_window_icon padding 3px
 
 # Assign programs to correct workspace
 assign [class="thunderbird-default"] $ws1
