@@ -133,3 +133,8 @@ xmodmap -e "keycode 52 = z Z z Z less less"
 (( ${+ZSH_HIGHLIGHT_STYLES} )) || typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[path]=none
 ZSH_HIGHLIGHT_STYLES[path_prefix]=none
+
+
+if ! ps -e -o args | grep -q '^emacs --daemon$'; then
+    emacs --daemon
+fi
