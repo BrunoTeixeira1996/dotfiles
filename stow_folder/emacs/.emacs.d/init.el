@@ -213,12 +213,6 @@
   (python-mode . eglot-ensure))
 
 
-;; undo-tree
-(use-package undo-tree
-  :ensure t)
-(global-undo-tree-mode)
-(setq undo-tree-auto-save-history nil)
-
 ;; compilation
 ;; Don’t ask to save files before compilation, just save them.
 (setq compilation-ask-about-save nil)
