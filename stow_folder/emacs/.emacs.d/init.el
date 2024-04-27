@@ -1,3 +1,6 @@
+;; increase mode line face attribute
+(set-face-attribute 'mode-line nil  :height 150)
+
 ;; prevent comp warnings
 (setq native-comp-async-report-warnings-errors 'silent)
 
