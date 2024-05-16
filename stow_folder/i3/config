@@ -20,7 +20,7 @@ workspace_layout tabbed
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans Mono 14
+font pango:Hack 14
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -111,11 +111,11 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1:chat"
-set $ws2 "2:term"
-set $ws3 "3:work"
-set $ws4 "4:vm"
-set $ws5 "5:personal"
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
@@ -181,6 +181,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 bar {
+  font pango:Hack 13
   tray_output primary
   status_command i3status -c /home/brun0/.config/i3/i3status.conf
 }
