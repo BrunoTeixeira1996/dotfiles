@@ -50,7 +50,7 @@ floating_modifier $mod
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-#bindsym $mod+Return exec --no-startup-id  dmenu_run -fn 'Ubuntu Mono:pixelsize=15' # personal laptop 20
+bindsym $mod+Return exec --no-startup-id  dmenu_run -fn 'Hack:pixelsize=15' # personal laptop 20
 #bindsym $mod+Return exec --no-startup-id  rofi -show drun
 
 # A more modern dmenu replacement is rofi:
