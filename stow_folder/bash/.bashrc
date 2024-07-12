@@ -152,7 +152,6 @@ xmodmap -e "keycode 53 = x X x X greater greater"
 xmodmap -e "keycode 52 = z Z z Z less less"
 
 
-. "$HOME/.cargo/env"
 
 # Created by `pipx` on 2024-02-05 22:59:01
 export PATH="$PATH:/home/brun0/.local/bin"
