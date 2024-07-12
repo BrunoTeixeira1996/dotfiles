@@ -112,6 +112,7 @@ alias grn="grep -rn"
 # sudo fuser -n udp -k 53 -> this will kill port 53 listening and then responder works
 alias responder="source /home/brun0/Desktop/tools/Responder/env/bin/activate && sudo /home/brun0/Desktop/tools/Responder/env/bin/python3 /home/brun0/Desktop/tools/Responder/Responder.py"
 alias vpn="source ~/Desktop/work/scripts/l8vpn.sh $1"
+alias status="subl ~/Desktop/work/status"
 
 # Find files in current folder
 f() {
