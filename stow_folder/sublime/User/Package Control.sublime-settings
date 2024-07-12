@@ -2,9 +2,11 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"LSP-pyright",
 	],
 	"installed_packages":
 	[
+		"Colorsublime",
 		"FileIcons Mono",
 		"LSP",
 		"LSP-gopls",
