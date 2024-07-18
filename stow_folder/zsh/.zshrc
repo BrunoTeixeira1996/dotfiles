@@ -70,7 +70,7 @@ ZSH_THEME="brun0"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git fzf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -110,7 +110,11 @@ alias j='journalctl --full -e'
 alias ipa='ip -c a'
 alias grn="grep -rn"
 # sudo fuser -n udp -k 53 -> this will kill port 53 listening and then responder works
-alias responder="source /home/brun0/Desktop/tools/Responder/env/bin/activate && sudo /home/brun0/Desktop/tools/Responder/env/bin/python3 /home/brun0/Desktop/tools/Responder/Responder.py"
+responder(){
+    sudo /home/brun0/Desktop/tools/Responder/Responder.py "$@"
+}
+
+#alias responder="source /home/brun0/Desktop/tools/Responder/env/bin/activate && sudo /home/brun0/Desktop/tools/Responder/env/bin/python3 /home/brun0/Desktop/tools/Responder/Responder.py"
 alias vpn="source ~/Desktop/work/scripts/l8vpn.sh $1"
 alias status="subl ~/Desktop/work/status"
 
@@ -122,7 +126,9 @@ f() {
 alias s='sudo'
 
 export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin:/snap/bin
+export PATH="$PATH:/root/.local/bin"
 export PATH="$PATH:/home/brun0/.local/bin"
+export FZF_DEFAULT_OPTS='--height 30% --layout reverse'
 
 
 
