@@ -1,5 +1,6 @@
 [global_config]
   suppress_multiple_term_dialog = True
+  case_sensitive = False
 [keybindings]
   split_horiz = <Primary>h
   split_vert = <Primary>v
@@ -9,8 +10,12 @@
   [[default]]
     cursor_fg_color = "#000000"
     cursor_bg_color = "#aaaaaa"
+    cursor_color_default = False
+    font = Hack 13
+    foreground_color = "#ffffff"
     scrollbar_position = hidden
     scrollback_infinite = True
+    use_system_font = False
     bold_is_bright = True
     title_transmit_fg_color = "#739fcf"
     title_transmit_bg_color = "#181818"
@@ -19,14 +24,23 @@
     title_inactive_bg_color = "#181818"
 [layouts]
   [[default]]
-    [[[window0]]]
+    [[[child0]]]
       type = Window
       parent = ""
-    [[[child1]]]
+      order = 0
+      position = 2042:65
+      maximised = False
+      fullscreen = False
+      size = 1601, 892
+      title = '0:3:zsh - "n0thing" '
+      last_active_term = b94b2eb0-d77d-4a9e-b1f9-cbe1d7e742e9
+      last_active_window = True
+    [[[terminal1]]]
       type = Terminal
-      parent = window0
+      parent = child0
+      order = 0
       profile = default
-      command = ""
+      uuid = b94b2eb0-d77d-4a9e-b1f9-cbe1d7e742e9
   [[wp]]
     [[[child0]]]
       type = Window
