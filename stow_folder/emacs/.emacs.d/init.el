@@ -50,16 +50,10 @@
 (add-to-list 'load-path "~/Desktop/personal/dotfiles/stow_folder/emacs/.emacs.d/modes")
 
 ;; theme
-;; (use-package gruber-darker-theme
-;;   :ensure t
-;;   :config
-;;   (load-theme 'gruber-darker t))
-;; Better than the default.
 (use-package gruber-darker-theme
   :ensure t
   :config
-  (load-theme 'tango-dark t))
-
+  (load-theme 'gruber-darker t))
 
 ;; shortcuts
 (windmove-default-keybindings) ;; Shift  arrows to change between windows
