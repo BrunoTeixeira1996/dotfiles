@@ -2,3 +2,12 @@
   path = ~/.gitconfig-personal
 [includeIf "gitdir:~/Desktop/giteawork/"]
   path = ~/.gitconfig-work
+[protocol "file"]
+	allow = always
+[core]
+	symlinks = true
+[init]
+	defaultBranch = main
+[user]
+	name = BrunoTeixeira1996
+	email = brunoalexandre3@hotmail.com
