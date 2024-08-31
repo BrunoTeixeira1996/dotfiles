@@ -109,6 +109,9 @@ alias l='ll'
 alias j='journalctl --full -e'
 alias ipa='ip -c a'
 alias grn="grep -rn"
+alias sqlmap="~/Desktop/tools/sqlmap/sqlmap.py"
+alias nikto="~/Desktop/tools/nikto/program/nikto.pl"
+alias enum4linuxng="~/Desktop/tools/enum4linux-ng/enum4linux-ng.py"
 # sudo fuser -n udp -k 53 -> this will kill port 53 listening and then responder works
 responder(){
     sudo /home/brun0/Desktop/tools/Responder/Responder.py "$@"
