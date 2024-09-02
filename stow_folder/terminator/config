@@ -8,7 +8,6 @@
   close_window = <Primary><Shift>q
 [profiles]
   [[default]]
-    background_type = image
     background_image = /home/brun0/Desktop/terminal_background_images/pexels-alexandrep-junior-7736157.jpg
     cursor_fg_color = "#000000"
     cursor_bg_color = "#aaaaaa"
