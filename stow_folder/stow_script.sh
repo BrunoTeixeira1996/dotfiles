@@ -12,3 +12,4 @@ stow --target=/home/brun0/ zsh
 stow --target=/home/brun0/.oh-my-zsh/themes oh-my-zsh
 stow --target=/home/brun0/ gitconfig
 stow --target=/home/brun0/ screenlayout
+stow --target=/home/brun0/Desktop/installed_packages installed_packages
