@@ -1,0 +1,85 @@
+venvs are in /root/.local/pipx/venvs
+apps are exposed on your $PATH at /root/.local/bin
+   package autorecon 2.0.35, installed using Python 3.11.2
+    - autorecon
+   package bloodhound 1.7.2, installed using Python 3.11.2
+    - bloodhound-python
+   package certipy-ad 4.8.2, installed using Python 3.11.2
+    - certipy
+   package crackmapexec 6.1.0, installed using Python 3.11.2
+    - cme
+    - cmedb
+    - crackmapexec
+   package divideandscan 1.0.3, installed using Python 3.11.2
+    - das
+    - divideandscan
+   package impacket 0.11.0, installed using Python 3.11.2
+    - DumpNTLMInfo.py
+    - Get-GPPPassword.py
+    - GetADUsers.py
+    - GetNPUsers.py
+    - GetUserSPNs.py
+    - addcomputer.py
+    - atexec.py
+    - changepasswd.py
+    - dcomexec.py
+    - dpapi.py
+    - esentutl.py
+    - exchanger.py
+    - findDelegation.py
+    - getArch.py
+    - getPac.py
+    - getST.py
+    - getTGT.py
+    - goldenPac.py
+    - karmaSMB.py
+    - keylistattack.py
+    - kintercept.py
+    - lookupsid.py
+    - machine_role.py
+    - mimikatz.py
+    - mqtt_check.py
+    - mssqlclient.py
+    - mssqlinstance.py
+    - net.py
+    - netview.py
+    - nmapAnswerMachine.py
+    - ntfs-read.py
+    - ntlmrelayx.py
+    - ping.py
+    - ping6.py
+    - psexec.py
+    - raiseChild.py
+    - rbcd.py
+    - rdp_check.py
+    - reg.py
+    - registry-read.py
+    - rpcdump.py
+    - rpcmap.py
+    - sambaPipe.py
+    - samrdump.py
+    - secretsdump.py
+    - services.py
+    - smbclient.py
+    - smbexec.py
+    - smbpasswd.py
+    - smbrelayx.py
+    - smbserver.py
+    - sniff.py
+    - sniffer.py
+    - split.py
+    - ticketConverter.py
+    - ticketer.py
+    - tstool.py
+    - wmiexec.py
+    - wmipersist.py
+    - wmiquery.py
+   package man-spider 1.0.4, installed using Python 3.11.2
+    - manspider
+   package mitm6 0.3.0, installed using Python 3.11.2
+    - mitm6
+   package netexec 1.2.0+54cad53, installed using Python 3.11.2
+    - NetExec
+    - netexec
+    - nxc
+    - nxcdb
