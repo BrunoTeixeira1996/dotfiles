@@ -43,8 +43,16 @@
 
 
 ;; install use-package
+;; https://www.reddit.com/r/emacs/comments/4fqu0a/automatically_install_packages_on_startup/d2b7g30
 (unless (package-installed-p 'use-package)
+  (package-refresh-contents)
   (package-install 'use-package))
+
+(eval-when-compile
+  (require 'use-package))
+(setq use-package-verbose t)
+(setq use-package-always-ensure t)
+
 
 ;; load modes
 (add-to-list 'load-path "~/Desktop/personal/dotfiles/stow_folder/emacs/.emacs.d/modes")
