@@ -2,7 +2,7 @@
 	"font_size": 13,
 	"font_face" : "DejaVu Sans Mono",
 	"theme": "Adaptive.sublime-theme",
-	"color_scheme": "Monokai.sublime-color-scheme",
+	"color_scheme": "Mariana.sublime-color-scheme",
 	"remember_open_files": false,
 	"hot_exit": false,
 	"scroll_past_end": true,
@@ -16,6 +16,7 @@
 	"word_wrap": true,
 	"index_files": false,
     "caret_style": "smooth",
+    "auto_complete": false,
 	"ignored_packages":
 	[
 		"LSP-pyright",

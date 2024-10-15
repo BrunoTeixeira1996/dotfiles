@@ -1,6 +1,4 @@
 [
-        {"keys": ["ctrl+x", "1"], "command": "sbp_pane_cmd", "args": {"cmd": "destroy", "pane": "others"}},
-
 
    {
         "keys": ["alt+shift+1"], "command": "toggle_terminus_panel"

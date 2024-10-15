@@ -6,7 +6,9 @@
 	],
 	"installed_packages":
 	[
+		"Dayle Rees Color Schemes",
 		"FileIcons Mono",
+		"GitSavvy",
 		"LSP",
 		"LSP-gopls",
 		"LSP-pyright",
@@ -18,5 +20,6 @@
 		"SFTP",
 		"SideBarEnhancements",
 		"Terminus",
+		"TOML",
 	],
 }
