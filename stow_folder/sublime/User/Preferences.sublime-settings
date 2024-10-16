@@ -2,7 +2,7 @@
 	"font_size": 13,
 	"font_face" : "DejaVu Sans Mono",
 	"theme": "Adaptive.sublime-theme",
-	"color_scheme": "Mariana.sublime-color-scheme",
+	"color_scheme": "Packages/Dayle Rees Color Schemes/sublime/contrast/turnip-contrast.tmTheme",
 	"remember_open_files": false,
 	"hot_exit": false,
 	"scroll_past_end": true,

@@ -1,0 +1,10 @@
+// Packages/User/LSP-gopls.sublime-settings
+{
+  "command": [
+    "/home/brun0/go/bin/gopls"
+  ],
+  "settings": {
+    // linksInHover toggles the presence of links to documentation in hover.
+    "gopls.linksInHover": false,
+  }
+}
