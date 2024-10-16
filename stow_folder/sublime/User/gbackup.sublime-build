@@ -1,0 +1,35 @@
+{
+    "cmd": ["make", "compile"],
+    "selector": "source.go",
+    "working_dir": "/home/brun0/Desktop/personal/gbackup",
+    "file_regex": "^(.+?):([0-9]+):?([0-9]+)?",
+    "variants": [
+        {
+            "name": "compile",
+            "cmd": ["make", "compile"]
+        },
+        {
+            "name": "run-in-ssh",
+            "cmd": ["make", "run-in-ssh"]
+        },
+        {
+            "name": "gdb",
+            "cmd": ["make", "gdb"]
+        },
+        {
+            "name": "tests",
+            "cmd": ["make", "tests"]
+        },
+        {
+            "name": "deploy",
+            "cmd": ["make", "deploy"]
+        }
+    ],
+    "env": {
+        "REMOTE_USER": "brun0",
+        "REMOTE_HOST": "pinute",
+        "REMOTE_PATH": "/home/brun0/src/gbackup",
+        "TARGET_OS": "linux",
+        "TARGET_ARCH": "arm64"
+    }
+}
