@@ -3,12 +3,6 @@ super + Escape
 
 super + Return
       rofi -show drun
-
-super + t
-      terminator
-
-super + shift + t
-	terminator --layout=wp
       
 super + shift + w
       subl ~/Dropbox/notes/work2024.todo
