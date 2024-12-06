@@ -127,6 +127,16 @@ f() {
     q="*$1*"
     find . -iname $q
 }
+
+d() {
+    local dir
+    dir=$(find ~/Desktop -type d | fzf)
+    if [ -n "$dir" ]; then
+        pushd "$dir" || return 1
+    fi
+}
+
+
 alias s='sudo'
 
 export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin:/snap/bin
@@ -151,3 +161,4 @@ ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 if ! ps -e -o args | grep -q '^emacs --daemon$'; then
     emacs --daemon
 fi
+alias exegol='sudo -E /home/brun0/.local/bin/exegol'
