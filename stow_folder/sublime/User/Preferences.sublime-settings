@@ -2,7 +2,7 @@
 	"font_size": 13,
 	"font_face" : "DejaVu Sans Mono",
 	"theme": "Adaptive.sublime-theme",
-	"color_scheme": "Packages/Dayle Rees Color Schemes/sublime/contrast/turnip-contrast.tmTheme",
+	"color_scheme": "Monokai.sublime-color-scheme",
 	"remember_open_files": false,
 	"hot_exit": false,
 	"scroll_past_end": true,
@@ -19,7 +19,6 @@
     "auto_complete": false,
 	"ignored_packages":
 	[
-		"LSP-pyright",
 		"Vintage",
 	],
 }
