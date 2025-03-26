@@ -10,6 +10,7 @@
 		"LSP",
 		"LSP-gopls",
 		"LSP-pyright",
+		"LSP-rust-analyzer",
 		"Markdown Images",
 		"MarkdownEditing",
 		"Package Control",
