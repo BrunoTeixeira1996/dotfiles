@@ -10,4 +10,3 @@
 
 (add-hook 'python-mode-hook 'python-mode-hook)
 (add-hook 'python-mode-hook 'eglot-ensure)
-
