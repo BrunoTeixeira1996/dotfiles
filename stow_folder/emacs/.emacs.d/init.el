@@ -1,6 +1,8 @@
 ;; increase mode line face attribute
 (set-face-attribute 'mode-line nil  :height 120)
 
+(setq package-install-upgrade-built-in t)
+
 ;; prevent comp warnings
 (setq native-comp-async-report-warnings-errors 'silent)
 
@@ -213,11 +215,15 @@
 ;; Python-related settings.
 (load "brun0-python")
 
-;; eglot is a language server protocol (LSP) package for Emacs
+;; Rust-related settings.
+(load "brun0-rust")
+
+;;eglot is a language server protocol (LSP) package for Emacs
 (use-package eglot
   :ensure t
   :hook
   (go-mode . eglot-ensure)
+  (rust-mode . eglot-ensure)
   (python-mode . eglot-ensure))
 
 

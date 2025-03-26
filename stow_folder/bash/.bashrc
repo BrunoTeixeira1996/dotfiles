@@ -155,3 +155,4 @@ xmodmap -e "keycode 52 = z Z z Z less less"
 
 # Created by `pipx` on 2024-02-05 22:59:01
 export PATH="$PATH:/home/brun0/.local/bin"
+. "$HOME/.cargo/env"
