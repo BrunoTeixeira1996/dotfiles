@@ -120,7 +120,7 @@ responder(){
 
 #alias responder="source /home/brun0/Desktop/tools/Responder/env/bin/activate && sudo /home/brun0/Desktop/tools/Responder/env/bin/python3 /home/brun0/Desktop/tools/Responder/Responder.py"
 alias vpn="source ~/Desktop/work/scripts/l8vpn.sh $1"
-alias status="subl ~/Desktop/work/status"
+alias status="subl /home/brun0/Desktop/status/"
 
 # Find files in current folder
 f() {

@@ -9,6 +9,7 @@
 		"FileIcons Mono",
 		"LSP",
 		"LSP-gopls",
+		"LSP-pylsp",
 		"LSP-pyright",
 		"LSP-rust-analyzer",
 		"Markdown Images",
