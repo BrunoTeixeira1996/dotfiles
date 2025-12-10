@@ -120,7 +120,7 @@ responder(){
 
 #alias responder="source /home/brun0/Desktop/tools/Responder/env/bin/activate && sudo /home/brun0/Desktop/tools/Responder/env/bin/python3 /home/brun0/Desktop/tools/Responder/Responder.py"
 alias vpn="source ~/Desktop/work/scripts/l8vpn.sh $1"
-alias status="subl /home/brun0/Desktop/status/"
+alias status="emacs /home/brun0/Dropbox/notes &"
 
 # Find files in current folder
 f() {
@@ -161,4 +161,3 @@ ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 if ! ps -e -o args | grep -q '^emacs --daemon$'; then
     emacs --daemon
 fi
-alias exegol='sudo -E /home/brun0/.local/bin/exegol'
