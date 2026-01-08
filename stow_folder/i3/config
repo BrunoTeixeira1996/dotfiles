@@ -266,3 +266,17 @@ exec --no-startup-id dropbox start
 # https://git.sr.ht/~steef/snixembed
 # https://github.com/i3/i3/issues/2088
 exec --no-startup-id snixembed
+
+
+# scratchpad
+for_window [class="Sublime_text" title=".*status.*"] \
+    floating enable, \
+    resize set 1600 800, \
+    move position center, \
+    move to scratchpad
+
+bindsym $mod+Shift+s exec --no-startup-id subl /home/brun0/Dropbox/status; scratchpad show
+
+# floating stuff
+for_window [class="Galculator"] floating enable
+for_window [class="Pavucontrol"] floating enable resize set 900 500, move position center
