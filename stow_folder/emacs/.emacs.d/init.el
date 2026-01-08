@@ -60,10 +60,15 @@
 (add-to-list 'load-path "~/Desktop/personal/dotfiles/stow_folder/emacs/.emacs.d/modes")
 
 ;; theme
-(use-package gruber-darker-theme
+;; (use-package gruber-darker-theme
+;;   :ensure t
+;;   :config
+;;   (load-theme 'gruber-darker t))
+
+(use-package nordic-night-theme
   :ensure t
   :config
-  (load-theme 'gruber-darker t))
+  (load-theme 'nordic-midnight t))
 
 ;; shortcuts
 (windmove-default-keybindings) ;; Shift  arrows to change between windows
@@ -174,6 +179,9 @@
 (setq org-log-done 'time)
 (use-package org-bullets :ensure t)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+
+(setq org-archive-skip-function
+      (lambda () (org-entry-get (point) "NOARCHIVE")))
 
 ;; markdown mode
 (use-package markdown-mode
