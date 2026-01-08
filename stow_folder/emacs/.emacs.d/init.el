@@ -249,12 +249,17 @@
    (direction . right)))
 
 ;; useful to search faster in any file within a git repository
-(defun my/git-rgrep (pattern)
-  "Run rgrep from the root of the current git repository."
+(defun my/git-grep-rni (pattern)
+  "Run grep -rni from the root of the current git repository."
   (interactive
-   (list (read-string "rgrep pattern: " (thing-at-point 'symbol))))
-  (let ((root (locate-dominating-file default-directory ".git")))
+   (list (read-string "grep -rni pattern: "
+                      (thing-at-point 'symbol))))
+  (let* ((root (locate-dominating-file default-directory ".git"))
+         (root (and root (expand-file-name root))))
     (unless root
       (user-error "Not inside a git repository"))
-    (let ((default-directory root))
-      (rgrep pattern "*.*" root))))
+    (grep-compute-defaults)
+    (let ((cmd (format "grep -rni --exclude-dir=.git %s %s"
+                       (shell-quote-argument pattern)
+                       root)))
+      (grep cmd))))
