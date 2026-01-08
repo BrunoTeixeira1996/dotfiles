@@ -247,3 +247,14 @@
  'display-buffer-alist
  '("*compilation*" (display-buffer-reuse-window display-buffer-in-direction)
    (direction . right)))
+
+;; useful to search faster in any file within a git repository
+(defun my/git-rgrep (pattern)
+  "Run rgrep from the root of the current git repository."
+  (interactive
+   (list (read-string "rgrep pattern: " (thing-at-point 'symbol))))
+  (let ((root (locate-dominating-file default-directory ".git")))
+    (unless root
+      (user-error "Not inside a git repository"))
+    (let ((default-directory root))
+      (rgrep pattern "*.*" root))))
