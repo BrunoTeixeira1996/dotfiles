@@ -109,19 +109,15 @@ alias l='ll'
 alias j='journalctl --full -e'
 alias ipa='ip -c a'
 alias grn="grep -rn"
-alias sqlmap="~/Desktop/tools/sqlmap/sqlmap.py"
-alias nikto="~/Desktop/tools/nikto/program/nikto.pl"
-alias enum4linuxng="~/Desktop/tools/enum4linux-ng/enum4linux-ng.py"
-alias util="cd ~/Desktop/util/"
+alias st="subl ~/Dropbox/status"
 # sudo fuser -n udp -k 53 -> this will kill port 53 listening and then responder works
-responder(){
-    sudo /home/brun0/Desktop/tools/Responder/Responder.py "$@"
-}
-
-#alias responder="source /home/brun0/Desktop/tools/Responder/env/bin/activate && sudo /home/brun0/Desktop/tools/Responder/env/bin/python3 /home/brun0/Desktop/tools/Responder/Responder.py"
-alias vpn="source ~/Desktop/work/scripts/l8vpn.sh $1"
-#alias status="emacs /home/brun0/Dropbox/notes &"
-alias status="subl /home/brun0/Dropbox/status"
+alias s='sudo'
+alias responder="sudo /home/brun0/.local/bin/responder"
+alias ntlmrelayx="sudo /home/brun0/.local/bin/ntlmrelayx.py"
+alias mitm6="sudo /home/brun0/.local/bin/mitm6"
+alias pretender="sudo /home/brun0/Desktop/tools/pretender/pretender"
+alias sqlmap="python3 /home/brun0/Desktop/tools/sqlmap/sqlmap.py"
+alias psexecsvc="python3 /home/brun0/Desktop/tools/susinternals/psexecsvc.py"
 
 # Find files in current folder
 f() {
@@ -138,11 +134,12 @@ d() {
 }
 
 
-alias s='sudo'
+
 
 export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin:/snap/bin
 export PATH="$PATH:/root/.local/bin"
 export PATH="$PATH:/home/brun0/.local/bin"
+export PATH="$PATH:/home/brun0/.local/share/gem/ruby/3.3.0/bin"
 export FZF_DEFAULT_OPTS='--height 30% --layout reverse'
 
 
