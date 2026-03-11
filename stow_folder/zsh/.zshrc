@@ -118,6 +118,7 @@ alias mitm6="sudo /home/brun0/.local/bin/mitm6"
 alias pretender="sudo /home/brun0/Desktop/tools/pretender/pretender"
 alias sqlmap="python3 /home/brun0/Desktop/tools/sqlmap/sqlmap.py"
 alias psexecsvc="python3 /home/brun0/Desktop/tools/susinternals/psexecsvc.py"
+alias john="/home/brun0/Desktop/tools/john/run/john"
 
 # Find files in current folder
 f() {
