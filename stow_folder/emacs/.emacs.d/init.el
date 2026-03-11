@@ -23,7 +23,7 @@
 (column-number-mode 1)
 (show-paren-mode 1)
 (add-to-list 'default-frame-alist '(font . "Monospace-13")) ;; adding this makes emacsclient use this font too
-;;(set-frame-font "Monospace-13")
+;;(set-frame-font "Go Mono")
 (global-display-line-numbers-mode) ;; shows line numbers
 (toggle-frame-maximized)
 (setq backup-directory-alist `(("." . "~/.emacs.d/backups"))) ;; saves garbage backups in .saves folder
@@ -60,15 +60,10 @@
 (add-to-list 'load-path "~/Desktop/personal/dotfiles/stow_folder/emacs/.emacs.d/modes")
 
 ;; theme
-;; (use-package gruber-darker-theme
-;;   :ensure t
-;;   :config
-;;   (load-theme 'gruber-darker t))
-
-(use-package nordic-night-theme
+(use-package gruber-darker-theme
   :ensure t
   :config
-  (load-theme 'nordic-midnight t))
+  (load-theme 'gruber-darker t))
 
 ;; shortcuts
 (windmove-default-keybindings) ;; Shift  arrows to change between windows
