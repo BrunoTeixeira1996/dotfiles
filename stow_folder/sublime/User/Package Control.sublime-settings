@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"Dayle Rees Color Schemes",
+		"Dockerfile Syntax Highlighting",
 		"FileIcons Mono",
 		"LSP",
 		"LSP-gopls",
@@ -14,6 +15,7 @@
 		"LSP-rust-analyzer",
 		"Markdown Images",
 		"MarkdownEditing",
+		"Material Monokai",
 		"Package Control",
 		"PlainTasks",
 		"PowerShell",
@@ -22,5 +24,7 @@
 		"SideBarEnhancements",
 		"Terminus",
 		"TOML",
+		"TrailingSpaces",
+		"VCS Gutter",
 	],
 }
