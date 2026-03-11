@@ -17,11 +17,8 @@ workspace_layout tabbed
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 #font pango:monospace 12
-font pango:DejaVu Sans Mono 12
+font pango:DejaVu Sans Mono 15
 
-# This font is widely installed, provides lots of unicode glyphs, right-to-left
-# text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:Hack 12
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -182,22 +179,22 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 bar {
-  font pango:monospace 15
+  font pango:monospace 13
   tray_output primary
   status_command i3status -c /home/brun0/.config/i3/i3status.conf
 }
 
 
 # Lockscreen
-bindsym $mod+x exec i3lock -c 181818 
+bindsym $mod+x exec i3lock -c 181818
 
 # Borders
 #hide_edge_borders both
 
 # Execs for startups
 #exec --no-startup-id ~/.config/i3/scripts/laptop-monitor.sh
-bindsym $mod+Shift+p exec "~/.screenlayout/work-office.sh"
-bindsym $mod+Shift+o exec "~/.screenlayout/work_double_monitor.sh"
+bindsym $mod+Shift+h exec "~/.screenlayout/home.sh"
+bindsym $mod+Shift+w exec "~/.screenlayout/work.sh"
 bindsym $mod+m move workspace to output right
 
 # Title window with icon
@@ -221,8 +218,6 @@ assign [class="TelegramDesktop"] $ws9
 
 # Start pasystray for volume
 exec /usr/bin/pasystray
-
-exec --no-startup-id /opt/forticlient/fortitraylauncher
 
 
 # Powersystem
@@ -269,14 +264,13 @@ exec --no-startup-id snixembed
 
 
 # scratchpad
-for_window [class="Sublime_text" title=".*status.*"] \
-    floating enable, \
-    resize set 1600 800, \
-    move position center, \
-    move to scratchpad
-
-bindsym $mod+Shift+s exec --no-startup-id subl /home/brun0/Dropbox/status; scratchpad show
+#for_window [class="Sublime_text" title=".*status.*"] \
+#    floating enable, \
+#    resize set 1600 800, \
+#    move position center, \
+#    move to scratchpad
+#bindsym $mod+Shift+s exec --no-startup-id subl /home/brun0/Dropbox/status; scratchpad show
 
 # floating stuff
 for_window [class="Galculator"] floating enable
-for_window [class="Pavucontrol"] floating enable resize set 900 500, move position center
+for_window [class="pavucontrol"] floating enable resize set 900 500, move position center
