@@ -5,13 +5,12 @@
 	],
 	"installed_packages":
 	[
+		"ANSIescape",
 		"Dayle Rees Color Schemes",
 		"Dockerfile Syntax Highlighting",
 		"FileIcons Mono",
 		"LSP",
 		"LSP-gopls",
-		"LSP-pylsp",
-		"LSP-pyright",
 		"LSP-rust-analyzer",
 		"Markdown Images",
 		"MarkdownEditing",
