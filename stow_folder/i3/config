@@ -274,3 +274,9 @@ exec --no-startup-id snixembed
 # floating stuff
 for_window [class="Galculator"] floating enable
 for_window [class="pavucontrol"] floating enable resize set 900 500, move position center
+
+exec --no-startup-id xset s off
+exec --no-startup-id xset s noblank
+exec --no-startup-id xset -dpms
+
+#gaps inner 2
