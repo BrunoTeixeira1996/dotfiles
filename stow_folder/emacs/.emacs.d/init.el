@@ -59,6 +59,12 @@
 ;; load modes
 (add-to-list 'load-path "~/Desktop/personal/dotfiles/stow_folder/emacs/.emacs.d/modes")
 
+(use-package caddyfile-mode
+  :ensure t
+  :mode (("Caddyfile\\'" . caddyfile-mode)
+         ("caddy\\.conf\\'" . caddyfile-mode)))
+
+
 ;; theme
 (use-package gruber-darker-theme
   :ensure t
