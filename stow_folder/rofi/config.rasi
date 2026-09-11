@@ -1,6 +1,6 @@
 configuration {
   modi: "run,drun,combi";
-  font: "mono 12";
+  font: "mono 15";
   combi-modi: "drun,run";
   show-icons: true;
 }
