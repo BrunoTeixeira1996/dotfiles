@@ -152,6 +152,12 @@
 
 
 ;; org-mode
+
+;; changes color of the task description in orgmode
+(defun bruno-org-dim-body-text ()
+  (face-remap-add-relative 'default :foreground "#928374"))
+(add-hook 'org-mode-hook #'bruno-org-dim-body-text)
+
 (setq org-startup-indented t)
 (advice-add 'org-archive-subtree :after #'org-save-all-org-buffers)
 
@@ -162,9 +168,10 @@
 
 (setq org-todo-keyword-faces
       '(("TODO" . (:foreground "IndianRed" :weight bold))
-        ("STARTED" . (:foreground "coral" :weight bold))
+        ("STARTED" . (:foreground "#e9b96e" :weight bold))
         ("WAITING" . (:foreground "GoldenRod" :weight bold))
-        ("DONE" . (:foreground "LimeGreen" :weight bold))
+        ("DONE" . (:foreground "#73c936" :weight bold))
+	("CANCELED" . (:foreground "IndianRed"))
         ))
 
 (setq org-tag-persistent-alist
