@@ -152,12 +152,6 @@
 
 
 ;; org-mode
-
-;; changes color of the task description in orgmode
-(defun bruno-org-dim-body-text ()
-  (face-remap-add-relative 'default :foreground "#928374"))
-(add-hook 'org-mode-hook #'bruno-org-dim-body-text)
-
 (setq org-startup-indented t)
 (advice-add 'org-archive-subtree :after #'org-save-all-org-buffers)
 
@@ -190,6 +184,33 @@
 
 (setq org-archive-skip-function
       (lambda () (org-entry-get (point) "NOARCHIVE")))
+
+;; set org agenda files so I can search for tags
+(setq org-agenda-files '("~/Dropbox/notes/personal.org" "~/Dropbox/notes/work2026.org"))
+
+
+;; use colors in tags
+(use-package org-rainbow-tags
+  :ensure t
+  :custom 
+  (org-rainbow-tags-hash-start-index 10)
+  (org-rainbow-tags-extra-face-attributes
+   '(:inverse-video t :box t :weight 'bold))
+  (org-rainbow-tags-wanted-list '("CRITICAL" "HIGH" "TODAY"))
+  (org-rainbow-tags-wanted-invert t)
+  :hook
+  ((org-mode org-agenda-finalize) . org-rainbow-tags-mode))
+   
+(setq org-tag-faces
+      '(("CRITICAL" . (:foreground "red" :weight bold :box t))
+       ("HIGH"     . (:foreground "orange" :weight bold :box t ))
+        ("TODAY"    . (:foreground "cyan" :weight bold :box t))))
+
+;; changes color of the task description in orgmode
+(defun bruno-org-dim-body-text ()
+  (face-remap-add-relative 'default :foreground "#928374"))
+(add-hook 'org-mode-hook #'bruno-org-dim-body-text)
+
 
 ;; markdown mode
 (use-package markdown-mode
