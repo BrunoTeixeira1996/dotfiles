@@ -52,10 +52,22 @@
 ## Security
 
 - wireshark
+- bopscrk
+- git-dumper
+- gmapsapiscanner
+- ilspy
+- LAPSDumper
+- openfortivpn
+- PCredz
+- RelayKing-Depth
+- gMSADumper
+- cewl
 - hashcat
 - john the ripper
 - smbmap
 - smbclient
+- coercer
+- dfscoerce
 - whatweb
 - wpscan
 - whois
@@ -90,6 +102,16 @@
 	- mitm6
 	- netexec
 	- pypykatz
+	- adwsdomaindump
+	- apkleaks
+	- divideandscan
+	- evil-winrm-py
+	- httpmethods
+	- ldap_shell
+	- lsassy
+	- pre2k
+	- regpol
+	- wsuks
 	
 
 ## SSH
