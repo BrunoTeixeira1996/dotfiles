@@ -8,7 +8,7 @@ export ZSH=$HOME/.oh-my-zsh
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="brun0"
+ZSH_THEME="brun0-timestamp"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -110,6 +110,7 @@ alias j='journalctl --full -e'
 alias ipa='ip -c a'
 alias grn="grep -rn"
 alias st="subl ~/Dropbox/status"
+#alias st="e ~/Dropbox/notes"
 # sudo fuser -n udp -k 53 -> this will kill port 53 listening and then responder works
 alias s='sudo'
 alias responder="sudo /home/brun0/.local/bin/responder"
@@ -119,7 +120,8 @@ alias pretender="sudo /home/brun0/Desktop/tools/pretender/pretender"
 alias sqlmap="python3 /home/brun0/Desktop/tools/sqlmap/sqlmap.py"
 alias psexecsvc="python3 /home/brun0/Desktop/tools/susinternals/psexecsvc.py"
 alias john="/home/brun0/Desktop/tools/john/run/john"
-
+alias start='touch creds.out passwords.out users.out && mkdir exploits loot nmap'
+alias searchsploit='/home/brun0/Desktop/tools/exploitdb/searchsploit'
 # Find files in current folder
 f() {
     q="*$1*"
@@ -160,3 +162,5 @@ ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 if ! ps -e -o args | grep -q '^emacs --daemon$'; then
     emacs --daemon
 fi
+
+export target="192.168.129.190"

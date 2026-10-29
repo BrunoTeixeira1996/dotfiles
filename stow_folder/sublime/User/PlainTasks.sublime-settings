@@ -1,4 +1,5 @@
-{ "color_scheme": "Packages/PlainTasks/tasks-monokai.hidden-tmTheme" }
+{ "color_scheme": "Packages/PlainTasks/tasks-monokai.hidden-tmTheme",
+"done_tasks_bullet": "✔"}
 
     //   Packages/PlainTasks/tasks-eighties-colored.hidden-tmTheme
     //   Packages/PlainTasks/tasks-monokai.hidden-tmTheme

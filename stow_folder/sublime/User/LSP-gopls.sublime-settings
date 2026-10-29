@@ -3,6 +3,11 @@
   "command": [
     "/home/brun0/go/bin/gopls"
   ],
+  // Sublime is started by the desktop, not by zsh, so it doesn't get the PATH
+  // from ~/.zshrc: gopls needs to be told where the go command is.
+  "env": {
+    "PATH": "/usr/local/go/bin:/home/brun0/go/bin:/usr/local/bin:/usr/bin:/bin"
+  },
   "settings": {
     // linksInHover toggles the presence of links to documentation in hover.
     "gopls.linksInHover": false,
